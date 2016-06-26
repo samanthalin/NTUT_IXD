@@ -1,0 +1,3273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>國立臺北科技大學互動設計系</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet"  href="style/download.css">
+  <link rel="stylesheet" href="style/jquery.fatNav.css">
+  <link rel="stylesheet"  href="style/nav.css">
+  <link rel="stylesheet"  href="style/teacher.css">
+    <link rel="stylesheet" href="style/animate.min.css">
+  <link rel="shortcut icon" href="../favicon.png">
+</head>
+<body>
+    <!-------------------------------------------------- Preload -------------------------------------------->
+    <div class="hidden">
+        <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        './images/wu01.png','./images/wu02.png', './images/wu03.png', './images/wu04.png',
+    './images/wu05.png', './images/wu06.png', './images/wu07.png', './images/wu08.png', './images/lee01.png', './images/lee02.png', './images/lee03.png', './images/lee04.png',
+    './images/lee05.png', './images/lee06.png', './images/lee07.png', './images/lee08.png', './images/tsau01.png', './images/tsau02.png', './images/tsau03.png', './images/tsau04.png',
+    './images/tsau05.png', './images/tsau06.png', './images/tsau07.png', './images/tsau08.png', './images/chen01.png', './images/chen02.png', './images/chen03.png', './images/chen04.png',
+    './images/chen05.png', './images/chen06.png', './images/chen07.png', './images/chen08.png', './images/wang01.png', './images/wang02.png', './images/wang03.png', './images/wang04.png',
+    './images/wang05.png', './images/wang06.png', './images/wang07.png', './images/wang08.png', './images/cheng01.png', './images/cheng02.png', './images/cheng03.png', './images/cheng04.png',
+    './images/cheng05.png', './images/cheng06.png', './images/cheng07.png', './images/cheng08.png','./images/tai01.png','./images/tai02.png', './images/tai03.png', './images/tai04.png',
+    './images/tai05.png', './images/tai06.png', './images/tai07.png', './images/tai08.png', './images/lung01.png', './images/lung02.png', './images/lung03.png', './images/lung04.png',
+    './images/lung05.png', './images/lung06.png', './images/lung07.png', './images/lung08.png', './images/ko01.png', './images/ko02.png', './images/ko03.png', './images/ko04.png',
+    './images/ko05.png', './images/ko06.png', './images/ko07.png', './images/ko08.png', './images/teacher01.png', './images/teacher02.png', './images/teacher03.png', './images/teacher04.png',
+    './images/teacher05.png', './images/teacher06.png', './images/teacher07.png', './images/teacher08.png'
+      )
+    //--><!]]>
+        </script>
+    </div>
+    <!-------------------------------------------------- Preload -------------------------------------------->
+
+  <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fatNav.min.js"></script>
+  <!--spin_image_x3-->
+  <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/ScrollMagic.js"></script>
+  <script type="text/javascript" src="js/animation.gsap.js"></script>
+  <!--mix_up_x1-->
+  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+    <script type="text/javascript" src="js/ScrollImage.js"></script>
+  
+    <div class="Loading">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79518448-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <header>
+    
+         <div class="logo">
+                   <a href="http://www.ixd.ntut.edu.tw/"></a>
+                   <div class="logo-text">
+                       <div class="topNav-icon"><i class="fa fa-bars"></i></div>
+                   </div>
+               </div>
+               <div class="pc-version topNav">
+                   <ul>
+                       <li><a href="http://www.ixd.ntut.edu.tw/about">本所資訊</a></li>
+                       <li><a href="http://www.ixd.ntut.edu.tw/category/news1">最新消息</a></li>
+                       <li><a href="http://www.ixd.ntut.edu.tw/category/work1">學生作品</a></li>
+                       <li><a href="http://www.ixd.ntut.edu.tw/teacher">系所成員</a></li>
+                       <li><a href="http://www.ixd.ntut.edu.tw/document">下載專區</a></li>
+                   </ul>
+                   <div class="topNav-word">
+                     <a href=""><div class="zh"></div></a>
+                     <a href=""><div class="en"></div></a>
+                   </div>
+               </div>
+               <div class="mobile-version fat-nav">
+                   <div class="fat-nav__wrapper">
+                       <ul>
+                           <li><a href="http://www.ixd.ntut.edu.tw/about">系所資訊</a></li>
+                           <li><a href="http://www.ixd.ntut.edu.tw/category/news1">最新消息</a></li>
+                           <li><a href="http://www.ixd.ntut.edu.tw/category/work1">學生作品</a></li>
+                           <li><a href="http://www.ixd.ntut.edu.tw/teacher">系所成員</a></li>
+                           <li><a href="http://www.ixd.ntut.edu.tw/document">下載專區</a></li>
+                       </ul>
+                   </div>
+               </div>
+    <div class="title">系所成員</div>
+  </header>
+  <div class="teacher_banner">
+    <img id="myimg" class="teacher_heroslider" src="../../images/teacher01.png"/>
+        
+      
+
+
+    
+  </div>
+  
+  <div class="ToDown"> 
+      <div class="scroll">
+         <i class="fa fa-angle-down"></i>
+      </div>
+      <!-- <i class="fa fa-angle-down"></i> -->
+  </div>
+
+
+<div id="filter-button">
+  <button class="filter" data-filter=".category-teacher-1">專任師資</button>
+  <button class="filter" data-filter=".category-teacher-2">兼任師資</button>
+  <button class="filter" data-filter=".category-teacher-3">系所成員</button>
+  <button class="filter" data-filter=".category-teacher-4">諮商時間</button>
+     </div>      
+            
+ <div id="Container">
+  <div class="mix category-teacher-1" data-my-order="1">     
+  <div class="teacher-list news-frame" >
+
+     <a id="lee01" href="#teacher_list_lee" class="teacher-form news">
+      <div class="teacher-lee teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>李來春  (Lee, Lai-Chung)</h3>
+        主任 / 副教授<br><br>
+        研究範疇 ：互動介面設計 / 虛擬互動與情境企劃 / 遠距協同設計 / 產品設計實務
+      </div></a>
+
+
+    <a id="wu01" href="#teacher_list_wu" class="teacher-form news">
+      <div class="teacher-wu  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>吳可久  (Wu, Ko-Chiu)</h3>
+        副教授<br><br>
+        研究範疇 ：數位學習與互動技術 / 資訊科技與管理 / 建築設計與規劃
+      </div>
+    </a>
+
+    <a id="tsau01" href="#teacher_list_tsau" class="teacher-form news">
+      <div class="teacher-tsau  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>曹筱玥  (Tsau, Saiau-Yue)</h3>
+        副教授<br><br>
+
+        研究範疇 ：展示科技 / 互動藝術 / 性別研究與互動科技
+
+      </div>
+    </a>
+
+    <a id="chen01" href="#teacher_list_chen" class="teacher-form news">
+      <div class="teacher-chen  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>陳圳卿  (Chen, Chun-Ching)</h3>
+        副教授<br><br>
+        研究範疇 ：使用者經驗分析 / 人機介面設計 / 使用性工程 / 人因設計 / 產品設計
+      </div>
+    </a>
+
+    <a id="wang01" href="#teacher_list_wang" class="teacher-form news">
+      <div class="teacher-wang  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>王聖銘 (Wang, Sheng-Ming)</h3>
+        副教授 <br><br>
+        研究範疇 ：服務設計 / 智慧人機互動技術 / 使用者經驗設計與評估 / 智慧城市與空間互動 / 嚴肅遊戲設計與評估
+      </div>
+    </a>
+
+    <a id="cheng01" href="#teacher_list_cheng" class="teacher-form news">
+      <div class="teacher-cheng  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>鄭建文  (Cheng, Chien-Wen)</h3>
+        助理教授<br><br>
+        研究範疇 ：互動音樂與多媒體表演科技/ 聲音藝術 / 音效設計 / 數位音樂創作
+      </div>
+    </a>
+
+    <a id="tai01" href="#teacher_list_tai" class="teacher-form news">
+      <div class="teacher-tai  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>戴楠青  (Tai, Nan-Ching)</h3>
+        助理教授<br><br>
+        研究範疇 ：數位製造 / 實體互動設計 / 高動態範圍數位影像 / 光 / 空間感知 
+
+      </div>
+    </a>
+
+    <a id="lung01" href="#teacher_list_lung" class="teacher-form news">
+      <div class="teacher-lung  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>龍祈澔  (Lung, Chi-Hao)</h3>
+        助理教授<br><br>
+        研究範疇 ：虛擬與網路空間 /  後人類文化  /  數位介面與超身體現象 /  數位藝術相關研究
+      </div>
+    </a>
+
+    <a id="ko01" href="#teacher_list_ko" class="teacher-form news">
+      <div class="teacher-ko  teacher-img news-img"></div>
+      <div class="teacher-text">
+        <h3>葛如鈞  (Ko, Ju-Chun)</h3>
+        助理教授<br><br>
+        研究範疇 ：虛擬實境 / 擴增實境 / 人機互動介面 / 數位媒體設計 / 行動APP開發設計
+      </div>
+    </a>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+  
+     
+<!--兼任師資-->
+  <div class="sub-teacher-list mix category-teacher-2" data-my-order="2">
+
+
+    <h2>大學部授課</h2>
+        <div class="teacher-list" >
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>  盧育群</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:助理教授<br>
+            <b>最高學歷</b>:國立中山大學
+資訊工程研究所 博士<br>
+            <b>研究範疇</b>:數位學習系統、行動通訊系統、數位家庭網路系統、嵌入式系統設計、網路安全、無線區域網路安全<br>
+            <br>
+            <b>教授課程</b>:<br>
+            基本設計(一)
+基本設計(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            lur.ncku@gmail.com
+          </div>
+        </div>
+      
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>莊育鯉</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:助理教授<br>
+            <b>最高學歷</b>:日本公立函館未來大學
+系統情報科學研究所 博士<br>
+            <b>研究範疇</b>:互動設計、使用者經驗研究、訊息設計與認知心理<br>
+            <br>
+            <b>教授課程</b>:<br>
+            基本設計(一)
+基本設計(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            chuang.yuli@gmail.com
+          </div>
+        </div>
+
+         <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>傅斌暉</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:助理教授<br>
+            <b>最高學歷</b>:台灣師範大學
+美術研究所 博士<br>
+            <b>研究範疇</b>:藝術教育研究、西畫<br>
+            <br>
+            <b>教授課程</b>:<br>
+            互動式繪本分析與設計<br>
+            <br>
+            <b>E-mail</b>:<br>
+            tankfu@yahoo.com.tw
+          </div>
+        </div>
+        
+         <div  class="news">
+          <div class=""><img src="./images/girl_icon.png"></div>
+          <h3>楊馥如</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:助理教授<br>
+            <b>最高學歷</b>:台灣師範大學 美術研究所 博士<br>
+            <b>研究範疇</b>:平面設計、色彩學、基礎設計、設計方法等、網頁與多媒體設計、數位學習設計、電腦動畫、藝術課程與教學、藝術理論與創作<br>
+            <br>
+            <b>教授課程</b>:<br>
+            互動設計創作(一)、
+互動設計創作(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            yangfuzu@gmail.com
+          </div>
+        </div>
+
+      <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>張群儀</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任助理教授級專業技術人員<br>
+            <b>最高學歷</b>:Carnegie Mellon U.
+Computational Design 碩士<br>
+            <b>研究範疇</b>:使用者體驗設計、介面設計、服務設計、使用性設計<br>
+            <br>
+            <b>教授課程</b>:<br>
+           創意設計(一)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            ian@uxi-design.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>黃紘書</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任助理教授級專業技術人員<br>
+            <b>最高學歷</b>:國立台灣藝術學院
+工藝系視傳設計組 學士<br>
+            <b>研究範疇</b>:品牌媒體視覺、品牌識別、包裝系統、店頭商業空間、展覽及活動空間整合規劃等重要的品牌識別<br>
+            <br>
+            <b>教授課程</b>:<br>色彩學、設計史<br>
+            <br>
+            <b>E-mail</b>:<br>
+            edbook2@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>張瑞光</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任助理教授級專業技術人員<br>
+            <b>最高學歷</b>:台灣師範大學
+設計研究所 碩士<br>
+            <b>研究範疇</b>:品牌形象規劃、廣告創意、包裝設計、平面設計<br>
+            <br>
+            <b>教授課程</b>:<br>數位出版與設計<br>
+            <br>
+            <b>E-mail</b>:<br>
+            ray3tp@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>王明道</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師級專業技術人員<br>
+            <b>最高學歷</b>:亞東工專 電子工程科 學士
+樂亦非凡數位藝術  執行監製<br>
+            <b>研究範疇</b>:品牌行銷與廣告策略、多媒體商業展示企劃與創意<br>
+            <br>
+            <b>教授課程</b>:<br>互動設計創作(一)、互動設計創作(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            gavin.wang@smartjoy.net
+          </div>
+        </div>
+
+
+        <div  class="news">
+          <div class=""><img src="./images/girl_icon.png"></div>
+          <h3>葛毓茜</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:德國Stuttgart Media University
+媒體工程 碩士<br>
+            <b>研究範疇</b>:策展規劃、互動多媒體展示設計、跨領域設計（空間、產品）、視覺傳達、數位內容、品牌行銷<br>
+            <br>
+            <b>教授課程</b>:<br>創意設計(一)、
+創意設計(二) <br>
+            <br>
+            <b>E-mail</b>:<br>
+            ko1016@yahoo.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/girl_icon.png"></div>
+          <h3>蘇巧純</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:紐約大學  Interactive Telecommunications Program  碩士<br>
+            <b>研究範疇</b>:互動設計相關領域<br>
+            <br>
+            <b>教授課程</b>:<br>互動設計創作(一)、
+互動設計創作(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            chiao3.su@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>洪兆宣</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:臺灣師範大學
+美術研究所創作組 碩士<br>
+            <b>研究範疇</b>:西畫創作、藝術類展演策劃、藝評撰寫<br>
+            <br>
+            <b>教授課程</b>:<br>基本設計(一)、
+基本設計(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            leora50@yahoo.com.tw
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/girl_icon.png"></div>
+          <h3>陳韻如</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:國立台灣藝術大學
+多媒體動畫藝術系 碩士<br>
+            <b>研究範疇</b>:互動設計、多媒體設計、新媒體藝術、數位文創設計<br>
+            <br>
+            <b>教授課程</b>:<br>數位文創應用<br>
+            <br>
+            <b>E-mail</b>:<br>
+            if52030@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>簡明哲</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:台灣科技大學
+工程技術研究所商業設計組 碩士<br>
+            <b>研究範疇</b>:美術相關、遊戲開發與製作<br>
+            <br>
+            <b>教授課程</b>:<br>創意設計(一)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            ajer88@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>黃宗偉</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:London University, UCL
+Museum Studies 碩士<br>
+            <b>研究範疇</b>:博物館學、展覽規劃與展示設計<br>
+            <br>
+            <b>教授課程</b>:<br>創意設計(一)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            tamsuiad1127@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>蔡昕融</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:國立台灣藝術大學
+新媒體藝術研究所 碩士<br>
+            <b>研究範疇</b>:影片剪輯與實務、動態影像特效與實務、互動藝術、錄像藝術<br>
+            <br>
+            <b>教授課程</b>:<br>創意設計(一)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            ndd73go1234@hotmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>宋恆</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:元智大學
+資訊傳播學系 多媒體設計組 碩士<br>
+            <b>研究範疇</b>:互動設計、新媒體藝術、廣告行銷創意<br>
+            <br>
+            <b>教授課程</b>:<br>創意設計(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            hang0374@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>吳國禎</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:國立台灣師範大學
+設計研究所 碩士<br>
+            <b>研究範疇</b>:多媒體製作、動畫微電影、MOTION GRAPHIC<br>
+            <br>
+            <b>教授課程</b>:<br>互動設計創作(一)、
+互動設計創作(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            empire.wu@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>黃孝承</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:國立台北藝術大學
+科技藝術所 碩士<br>
+            <b>研究範疇</b>:程式設計<br>
+            <br>
+            <b>教授課程</b>:<br>程式設計入門<br>
+            <br>
+            <b>E-mail</b>:<br>
+            Lar.huang@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>韓秉軒</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:國立台北教育大學
+玩具與遊戲設計碩士<br>
+            <b>研究範疇</b>:人機互動、創意工程教育<br>
+            <br>
+            <b>教授課程</b>:<br>互動設計創作(二)<br>
+            <br>
+            <b>E-mail</b>:<br>
+            Robert19881004@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>蕭勝文</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:國立台灣科技大學
+設計研究所資訊設計組 碩士<br>
+            <b>研究範疇</b>:2D動畫、3D動畫、影片攝製、劇本構築<br>
+            <br>
+            <b>教授課程</b>:<br>故事板與角色設計<br>
+            <br>
+            <b>E-mail</b>:<br>
+            7.hsiao@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>許仲佑</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:元智大學
+資訊工程學系碩士<br>
+            <b>研究範疇</b>:網路、互動多媒體設計<br>
+            <br>
+            <b>教授課程</b>:<br>互動裝置程式設計<br>
+            <br>
+            <b>E-mail</b>:<br>
+            yooze715@gmail.com
+          </div>
+        </div>
+
+        <div  class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>王新仁</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任講師<br>
+            <b>最高學歷</b>:台北藝術⼤學
+新媒體藝術學系碩士<br>
+            <b>研究範疇</b>:互動多媒體程式、聲⾳合成、視覺特效<br>
+            <br>
+            <b>教授課程</b>:<br>互動程式設計II<br>
+            <br>
+            <b>E-mail</b>:<br>
+            aluan.wang@gmail.com
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+    
+    <h2>研究所授課</h2>
+    <div class="teacher-list" >
+         <div class="news">
+          <div class=""><img src="./images/girl_icon.png"></div>
+          <h3>盧禎慧</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:兼任副教授<br>
+            <b>最高學歷</b>:美國普渡大學心理系博士<br>
+            <b>研究範疇</b>:人因設計心理、產品經驗設計與使用者研究、消費性產品的認知科學研究、通用設計的認知解決方案<br>
+            <br>
+            <b>教授課程</b>:<br>
+            認知心理學<br>
+            <br>
+            <b>E-mail</b>:<br>
+            chenhui_lu@yahoo.com
+          </div>
+        </div>
+
+         <div class="news">
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>李明道</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:助理教授級專業技術人員<br>
+            <b>最高學歷</b>:台北藝術大學美術系 創作研究所碩士<br>
+            <b>研究範疇</b>:美術設計、藝術創作<br>
+            <br>
+            <b>教授課程</b>:<br>
+            動畫原理與創作<br>
+            電腦動畫製作<br>
+            <br>
+            <b>E-mail</b>:<br>
+            akibo-1@akibo.com.tw
+          </div></div>
+
+
+
+
+        <div class="news">
+        
+          <div class=""><img src="./images/boy_icon.png"></div>
+          <h3>李家祥</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:助理教授級專業技術人員<br>
+            <b>最高學歷</b>: 國立臺北科技大學機電科技研究所 博士班<br>
+            <b>研究範疇</b>:數位藝術、互動藝術創作、互動系統開發及整合與應用<br>
+            <br>
+            <b>教授課程</b>:<br>
+            程式設計入門I<br>
+            <br>
+            <b>E-mail</b>:<br>
+            jasonlee2357@gmail.com
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+<!--系辦成員--> 
+<div class="sub-teacher-list mix category-teacher-3"  data-my-order="3">
+<h2>系辦成員</h2>
+    <div class="teacher-list" >
+        
+         <div class="news">
+          <div class=""><img src="./images/girl_icon.png"></div>
+          <h3>賴玉芳</h3>
+          <div class="teacher-text">
+            
+            <b>職等</b>:專案助理<br>
+            <b>電話</b>:886-2-2771-2171  分機 8902、8903<br>
+            <b>傳真</b>:886-2-8773-2913<br>
+            <br>
+            <b>E-mail</b>:<br>
+             kellylai@mail.ntut.edu.tw<br>
+            <br>
+            <br>
+            <b>職掌</b>:<br>
+            所辦公室行政業務、公文處理、教師聘任、教學設備採購與管理、其它臨時交辦事項。
+          </div></div>
+      </div>
+</div>
+
+
+<!--諮商時間--> 
+<div class="sub-teacher-list mix category-teacher-4"  data-my-order="4">
+<h2>系辦成員</h2>
+  <div class="teacher-list" >
+     <div class="teacher-advisory">
+<br>
+      <h1>國立臺北科技大學 互動設計系碩士班 <br>
+105學年度第1學期 專任教師諮商時間表</h1><br>
+<img class="teacher_advisory_time_pc" src="./images/teacher_advisory_time_pc.png">
+  <img class="teacher_advisory_time_mobile" src="./images/teacher_advisory_time_mobile.png">
+      <br>
+<!--       <table border="0" cellpadding="0" cellspacing="0" class="myTable">
+      <tbody>
+      <tr>
+      <th rowspan="2">專任教師</th>
+      <th rowspan="2">職稱</th>
+      <th rowspan="2">教師研究室</th>
+      <th colspan="5">星期</th>
+      <th rowspan="2">諮商地點</th>
+      <th rowspan="2">分機</th>
+      </tr>
+      <tr>
+      <th width="7%">一</th>
+      <th width="7%">二</th>
+      <th width="7%">三</th>
+      <th width="7%">四</th>
+      <th width="7%">五</th>
+      </tr>
+      <tr>
+      <td>李來春</td>
+      <td>副教授<br>
+      (主任)</td>
+      <td>設計館 302 室</td>
+      <td>&nbsp;</td>
+      <td>234</td>
+      <td>&nbsp;</td>
+      <td>234</td>
+      <td>&nbsp;</td>
+      <td>設計館 302 室</td>
+      <td>2826</td>
+      </tr>
+      <tr>
+      <td>吳可久</td>
+      <td>副教授</td>
+      <td>設計館 701-4 室</td>
+      <td>&nbsp;</td>
+      <td>12</td>
+      <td>1234</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>設計館 701-4 室</td>
+      <td>4574</td>
+      </tr>
+      <tr>
+      <td>曹筱玥</td>
+      <td>副教授</td>
+      <td>設計館 212 室</td>
+      <td>5678</td>
+      <td>&nbsp;</td>
+      <td>34</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>設計館 212 室</td>
+      <td>2809<br>
+      2876</td>
+      </tr>
+      <tr>
+      <td>陳圳卿</td>
+      <td>副教授</td>
+      <td>設計館 701-3 室</td>
+      <td>&nbsp;</td>
+      <td>5678</td>
+      <td>34</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>設計館 701-3 室</td>
+      <td>4573</td>
+      </tr>
+      <tr>
+      <td>王聖銘</td>
+      <td>副教授</td>
+      <td>設計館 705-3 室</td>
+      <td>&nbsp;</td>
+      <td>1234</td>
+      <td>1234</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>設計館 705-3 室</td>
+      <td>8907</td>
+      </tr>
+      <tr>
+      <td>鄭建文</td>
+      <td>助理教授</td>
+      <td>設計館 705-4 室</td>
+      <td>567<br>
+      89</td>
+      <td>&nbsp;</td>
+      <td>8</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>設計館 705-4 室</td>
+      <td>8908</td>
+      </tr>
+      <tr>
+      <td>戴楠青</td>
+      <td>助理教授</td>
+      <td>光華館 100 室</td>
+      <td>
+      <p>6789AB</p>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>四教 203-1 室</td>
+      <td>8909</td>
+      </tr>
+      <tr>
+      <td>龍祈澔</td>
+      <td>助理教授</td>
+      <td>光華館 407 室</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>234</td>
+      <td>ABC</td>
+      <td>&nbsp;</td>
+      <td>光華館 100 室</td>
+      <td>8910</td>
+      </tr>
+      <tr>
+      <td>葛如鈞</td>
+      <td>助理教授</td>
+      <td>光華館 408 室</td>
+      <td>&nbsp;</td>
+      <td>
+      <p>456789</p>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>光華館 408 室</td>
+      <td>8911</td>
+      </tr>
+      <tr>
+      <td colspan="10">第 1 節：08:10~09:00、第 2 節：09:10~10:00、第 3 節：10:10~11:00、第 4 節：11:10~12:00、<br>
+      第 5 節：13:10~14:00、第 6 節：14:10~15:00、第 7 節：15:10~16:00、第 8 節：16:10~17:00、<br>
+      第 9 節：17:10~18:00、第 A 節：18:30~19:20、第 B 節：19:20~20:10、第 C 節： 20:20~21:10、<br>
+      第 D 節：21:10~22:00</td>
+      </tr>
+      </tbody>
+      </table> 
+      <p><span>* 此表若有異動將公布於</span><a href="http://www.imd.ntut.edu.tw/">本所網站</a></p>-->
+  </div>
+</div>
+</div>
+
+
+   <!--Call your modal-->
+       
+            
+        
+      
+      
+        <!--DEMO01-->
+        <div id="teacher_list_lee">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content">
+
+                      <div class="close-teacher_list_lee">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container"  onscroll="scrollimg('lee01');">
+                                <div class="teacher_detail_img">
+        <img class="lee01"  src="./images/lee01.png">
+        </div>
+        <div class="teacher_detail_description">
+    <h2>李來春 Ray Lai-Chung Lee 《互動設計系 主任》</h2>
+    <p><strong>E-mail</strong> :&nbsp;<a href="mailto:hd8901@ntut.edu.tw">hd8901@ntut.edu.tw</a>&nbsp; &nbsp;/ &nbsp;&nbsp;<a href="mailto:f10666@ntut.edu.tw">f10666@ntut.edu.tw</a><br>
+    <strong>聯絡電話</strong> ：886-2-2771-2171 分機 2826、8901<br>
+    <strong>職稱</strong>：專任副教授<br>
+    <strong>研究範疇</strong>：互動介面設計 /&nbsp;虛擬互動與情境企劃 /&nbsp;遠距協同設計 /&nbsp;產品設計實務</p>
+    <p><strong>學歷</strong>：<br>
+    英國 Coventry Univ. Design Research Center 博士<br>
+    英國 Central Saint Martins College of Art &amp; Design 工業設計碩士</p>
+    <p><strong>經歷</strong>：<br>
+      國立台北科技大學工業設計系助理教授<br>
+      國立台北科技大學工業設計系講師<br>
+      國立台北科技大學工業設計系助理教授<br>
+      國立台北科技大學工業設計系講師<br>
+      國立台北技術學院工業設計系講師<br>
+      國立台北工專工業設計科講師<br>
+    三大產品設計公司工業設計部負責人</p>
+
+    <p><strong>著作</strong>：</p>
+    <p><strong>(期刊論文)</strong></p>
+    <ul>
+    <li>(2011)
+    <ol>
+    <li>李來春、郝光中、鄭宇翔，(2011)，不同體感操控介面對遊戲經驗之比較研究，投稿設 計學報。</li>
+    <li>Lee, L.C., Wei, W.J. and Yang, K.M. (2011). Exploring design principles in the situated learning environment for young children. Submitted to Journal of Early Childhood Education.</li>
+    <li>Wei, W.J., Lee, L.C., Hsieh, K.C. and Lin, H.Y. (2011).The development of emotional intelligence inventory for 4‐ to 6‐year‐old children in Taiwan: factor analysis and item reduction. Submitted to Psychological Reports.</li>
+    <li>Wei, W.J., Lee, L.C., Hsieh, K.C. and Lin, H.Y. (2011). Establishment of emotional developmental norms for 4‐ to 6‐year‐old children in Taiwan. Submitted to Early Childhood Research Quarterly.</li>
+    <li>李來春、魏惠貞，（2010），幼兒園e化檔案評量系統管理模式建置與實施之研究(2/3)，工程科技通訊，108，57-61，NSC95-2520-S-133-001-MY3。</li>
+    <li>&nbsp;Lee, L.C. and Wei, W.J. (2008). Comparison study on sketching behaviors with and without interactive pen displays. In W. Shen et al. (Eds.): CSCWD 2007. LNCS 5236 , pp.567~574. New York: Spring-Verlag Berlin Heidelberg.</li>
+    <li>&nbsp;魏惠貞、李來春，（2008），e 化教學檔案平台在幼稚園實習應用之建置研究。臺灣教師專業發展學會學刊，創刊號，頁1-30。NSC95-2520-S-133-001-MY3。</li>
+    <li>&nbsp;Lee, L.C. and Wei, W.J. (2007). A strategic approach development for a personal digital travelassistant used in 2008 Olympic game. In W. Shen et al. (Eds.): CSCWD 2006. LNCS 4402, pp.170-177. New York: Spring-Verlag Berlin Heidelberg.</li>
+    <li>李來春、魏惠貞，（2007），家用網路電話之通用設計與開發。第35卷，第1期，工業設計，頁61-71，NSC 94-2622-E-027 002 -CC3。</li>
+    <li>&nbsp;Lee, L.C. and Wei, W.J. (2006). Case study of breakdown analysis on identification of remote team communication problems. In W. Shen et al. (Eds.): CSCWD 2005. LNCS 3865, pp.122-130. New York: Spring-Verlag Berlin Heidelberg, NSC 92-2213-E-027-009.</li>
+    <li>張文德、閻建政、陳建雄、李來春，(2005)，「遠距設計平台之使用者經驗研究」。</li>
+    </ol>
+    </li>
+    <li>（2008）
+    <ol>
+    <li>Lee, L.C. &amp; Wei, W.J. (2007). A strategic approach development for a personal digital travel assistant used in 2008 Olympic game. In W. Shen et al. (Eds.): CSCWD 2006. LNCS 4402, pp.170-177. New York: Spring-Verlag Berlin Heidelberg.</li>
+    </ol>
+    </li>
+    <li>（2007）
+    <ol>
+    <li>李來春、魏惠貞，，家用網路電話之通用設計與開發。第35卷，第1期，工業設計，頁61-71，NSC 94-2622-E-027 -002 -CC3。</li>
+    </ol>
+    </li>
+    <li>（2006）
+    <ol>
+    <li>Lee, L.C. &amp; Wei, W.J. Case study of breakdown analysis on identification of remote team communication problems. In W. Shen et al. (Eds.): CSCWD 2005. LNCS 3865, pp.122-130. New York: Spring-Verlag Berlin Heidelberg, NSC 92-2213-E-027-009.</li>
+    </ol>
+    </li>
+    <li>（2005）
+    <ol>
+    <li>張文德、閻建政、陳建雄、李來春，「遠距設計平台之使用者經驗研究」。銘傳學刊，第14期，頁105-120，NSC 91-2745-P-130-003。</li>
+    </ol>
+    </li>
+    </ul>
+    <p><strong>(研討會論文)</strong></p>
+    <ul>
+    <li>Lee, L.C. and Wei, W.J. (2011). <em>Impacts on Attention with Computer-Supported Learning Devices.</em> Submitted to the 15th International Conference on CSCWD in Design.</li>
+    <li>李來春、魏惠貞、蔡明晃，（2010），應用互動多媒體於互動牆與幼兒遊戲之實驗評估。2010新媒體藝術設計創作展覽國際研討會，彰化建國科技大學，頁38-55。</li>
+    <li>魏惠貞、李來春、吳承鴻，（2010），應用互動科技於互動桌之建置與幼兒科學實驗之實施評估。2010新媒體藝術設計創作展覽國際研討會，彰化建國科技大學，頁89-110。</li>
+    <li>蘇修毅、李來春，(2010)， 電子書閱讀器之使用性研究。2010國際創新設計研討會，台北，頁88-94。</li>
+    <li>王兆羽、陳殿禮、李來春，(2010)， 中國武術套路節奏與介面設計關聯性之探討。2010國際創新設計研討會，台北，頁231-240。</li>
+    <li>李來春、魏惠貞，(2009)，滿足親師溝通的e化學習檔案平台建置與實施之研究。本文發表於「行政院國科會工業工程與管理學門97年度專題計畫成果發表會」。2009年11月7日，明新科技大學承辦，NSC 96-2221-E-027-078。</li>
+    <li>魏惠貞、李來春、鄭永進。（2009）。增進夥伴關係的e化教學檔案平台建置與實施之研究（3/3）。97年度國科會科教處資訊學門研究成果，NSC95-2520-S-133-001-MY3。</li>
+    <li>Lee, L.C. and Wei, W.J. (2009). Constructing Electronic Learning Portfolio for Parent-Teacher Communication. International Association of Societies of Design Research 2009, pp. 204-207. October 18-22, 2009, Seoul, Korea. </li>
+    <li>李建宏、李來春，(2009)， 固態照明燈具造形與散熱關係之研究。2009國際創新設計研討會，台北，B18-23。</li>
+    <li>許維呈、李來春，(2009)，新產品策略對創新績效影響之研究—以台灣工業電腦產業為例。2009國際創新設計研討會，台北，A02-07。</li>
+    <li>俞豪、李來春，(2009)，設計師人格特質對創業績效之初探—以多層次傳銷為例。2009國際創新設計研討會，台北，B01-06。</li>
+    <li>鄭宇翔、李來春、魏惠貞，(2009)，互動多媒體應用於幼兒自然教學上之初探。2009國際創新設計研討會，台北，E02-07。</li>
+    <li>周永耀、李來春、魏惠貞，(2008)，運用圖形辨識於幼兒學習的互動媒體介面。2008互動設計論壇與成果發表會，桃園，頁22-36。</li>
+    <li>魏惠貞、李來春、鄭永進。（2008）。增進夥伴關係的e化教學檔案平台建置與實施之研究（2/3）。張國恩(主持人)，96年度國科會科教處資訊學門研究成果。科教處96年度「資訊教育學門專題研究計畫」成果討論會，97/12/19 -20, 國立台灣師範大學，NSC95-2520-S-133-001-MY3。</li>
+    <li>Lee, L.C. (2008). An analysis on interface usability of VoIP phone, Applied Human Factors and Ergonomics 2008, July 14-17, Las Vegas, Nevada, USA. NSC 94-2622-E-027 -002 -CC3.</li>
+    <li>魏惠貞、李來春，（2008）。以幼教師資為核心的e化教學檔案建構與非同步線上評量。黃意舒（主持人），台灣教師專業發展學會96年度年會暨國際學術研討會，台中弘光科技大學，NSC95-2520-S-133-001-MY3。</li>
+    <li>周永耀、李來春，（2008），數位互動閱讀科技 - 圖形辨識與無限手柄之應用。2008國際創新設計研討會，台北，E1/1-8。</li>
+    <li>黃國華、李來春，（2008），工業設計師之部落格使用性研究。2008國際創新設計研討會，台北，G20/1-8。</li>
+    <li>陳匡緯、李來春，（2008），竹材之綠色產品設計。2008國際創新設計研討會，台北，D6/1-9。</li>
+    <li>黃琠祥、王緯誌、林明達、呂文傑、李來春，(2008)，捷運車廂與乘車行為初探─以淡水車站為例。2008國際創新設計研討會，台北，C12/1-9。</li>
+    <li>Lee, L.C. and Wei, W.J. (2008). Action research on collaborative design: A case study. The 12th International Conference on CSCWD in Design, April 16-18, 2008, Xian, China.</li>
+    <li>李來春、魏惠貞，（2007），幼兒學習檔案平台內容脈絡之探討。2007資訊教育與科技應用研討會，台中，頁239-244，NSC95-2221-E-027-024。</li>
+    <li>魏惠貞、李來春、鄭永進（2007）。增進夥伴關係的e化教學檔案平台建置與實施之研究（1/3）。張國恩、林陳涌(主持人)，95年度國科會科教處資訊學門研究成果。科教處95年度「資訊教育學門專題研究計畫」成果討論會，2007年12月7-8日, 蕙蓀林場, 亞洲大學承辦，NSC95-2520-S-133-001-MY3。</li>
+    <li>魏惠貞、李來春，（2007），應用兒童安全知識在情緒玩具之設計開發。2007兒童事故傷害防治研討會—嬰幼兒用品安全。</li>
+    <li>Lee, L.C. and Wei, W.J. (2007). Behavior analysis between paper sketching and interactive pen display sketching in collaborative design. The 11th International Conference on CSCWD in Design, April 26-28, 2007, Melbourne, Australia.</li>
+    <li>李來春、魏惠貞，（2007），消費者需求導向的網路電話之開發設計。第一工業工程與管理產學研究成果研討會，台北，頁11-22，NSC 94-2622-E-027 -002 -CC3。</li>
+    <li>陳育群、李來春，（2007），應用即時通訊系統於遠距協同設計專案之研究。2007國際創新設計研討會，台北，G-13/1-10。</li>
+    <li>李維國、李來春，（2007），企業形象的產品識別之初探。2007國際創新設計研討會，台北，頁A-07/1-6。</li>
+    <li>江和哲、李來春，（2007），遊戲產業的藍海—分段式故事導向遊戲之探討。2007國際創新設計研討會，台北，頁E-03/1-10。</li>
+    <li>李來春、魏惠貞，（2006），模組化兒童肢體活動遊具之設計。本文發表於「2006兒童知識與創新設計國際研討會」。2006年10月28日，國立台北科技大學創新設計與知識管理研究中心主辦。</li>
+    <li>李來春、魏惠貞，（2006），應用數位學習平台在幼兒多元智能發展與評量之研究。本文發表於「行政院國科會工業工程與管理學門94年度專題計畫成果發表會」。2006年11月11日，義守大學承辦。</li>
+    <li>Lee, L.C. and Wei, W.J. (2006). Impact of modularized learning materials in project approach upon teaching performance. Invited oral address 2 at The 8th International Congress on Behavior Studies on CIEC2006, September 27-30, 2006.</li>
+    <li>Wei, W. J. and Lee, L.C. (2006). Desired competencies for kindergarten teachers: a modified Delphi study. Invited oral address 1 at The 8th International Congress on Behavior Studies on CIEC2006, September 27-30, 2006.</li>
+    <li>Lee, L.C. and Wei, W.J. (2006). A case study on scenario approach in Taipei-Beijing collaborative design through computer-mediated communication」. Invited presentation at The 10th International Conference on CSCWD in Design, May 3-5, 2006, Nanjing, China.</li>
+    <li>簡仲威、李來春，(2006)，運用筆式輸入螢幕於遠距設計構想表達之初探，2006 知識處新與前瞻設計研討會，台北，頁81-88。</li>
+    <li>Lee, L.C. and Wei, W.J. (2005). Breakdown analysis on distributed group communication. Invited presentation at The 9th International Conference on CSCWD in Design, May 24-26, 2005, Coventry, UK.</li>
+    <li>歐庭綱、李來春，(2005)，產品裝飾設計之消費者喜好度初探—以筆記型電腦為例，2005國際創新設計研討會，台北，頁343-350。</li>
+    <li>王國興、李來春，(2005)，網路消費者自主性和客製化探討，2005國際創新設計研討會，台北，頁335-342。</li>
+    <li>邱永鴻、鄧怡莘、李來春，(2005)，行動工作者使用行動資訊裝置時資訊同步化之探討，2005國際創新設計研討會，台北，頁435-442。</li>
+    <li>Lee, L.-C. and Woodcock, A. (2004). Deriving user requirements from face-to-face and online focus groups. Future Ground Design Research Society International Conference 2004. pp. 1-14. Monash University, Australia. NSC 92-2218-E-027-010.</li>
+    <li>林春吉、李來春，(2004)，電腦中介群體溝通於協同產品設計模式之研究，2004 國際暨兩岸創新設計研討會，台北，頁277-284，NSC92-2218-E-027-010。</li>
+    <li>劉泓璋、李來春，(2004)，下肢殘障者福祉車操作分析之初探，2004 國際暨兩岸創新設計研討會，台北，頁323-329，NSC 92-2213-E-027-009。</li>
+    <li>Woodcock, A. and Lee, L.-C. (2004) International collaborative design projects: problems, solutions and lesson plans. Proceedings of the Ergonomics Society’s Annual Conference 2004 April 14-16, pp. 480-484, Swansea, United Kingdom.</li>
+    <li>閻建政、張文德、李來春，(2003)，「遠距設計平台之使用者經驗研究」，2003 銘傳大學創新與知識管理學術研討會，頁709-724. NSC 91-2213-E-027-006。</li>
+    <li>施嘉承、李來春，(2003)，以全球資訊網為基礎的研發管理系統之規劃與實作，2003創新設計研討會，台北，頁67-74，NSC 91-2622-E-027-017-CC3。</li>
+    <li>游政達、李來春，(2003)，應用焦點團體法於使用者需求為中心之設計過程之探討—以數位相機為例，2003創新設計研討會，台北，頁368-375，NSC 91-2213-E-027-006。</li>
+    <li>謝芳昌、李來春，(2003)，企業體應用電腦中介溝通之探討—以產學合作為例，2003創新設計研討會，台北，頁 360-367。</li>
+    <li>Lee, L.-C. et al. (2002). Intervention Strategies for alleviating problems in international co-operative design projects Common Ground Design Research Society International Conference 2002,, pp. 641-653. Staffordshire University Press. U.K.</li>
+    <li>Lee, L.-C. (2001). Resolving design management issues in international cooperative design projects,2001 Cross-strait Industrial Design Symposium, pp. 272-277. Da-Yeh University, Taiwan.</li>
+    <li>Lee, L.-C. (2001). Alleviating management problems in international cooperative design projects, 5th Asian Design Conference: International Symposium on Design Science, pp. 1-10. Seoul National University, Korea.&nbsp;</li>
+    <li>Woodcock, A., Lee, L.-C. and Scrivener, S. A. R. (2000). Communication and management issues in international collaborative design. In S. A. R. Scrivener, L. J. Ball and A. Woodcock (Eds.), CoDesigning 2000, pp. 369-377. Coventry, U.K.: Springer.</li>
+    <li>Lee, L.-C., Woodcock, A. and Scrivener, S. A. R. (1999). Breakdowns in the management of international collaborative design project, 6th International Product Development Management Conference, pp. 689-699. Cambridge, U.K.</li>
+    <li>李來春，(1995)，探討設計顧問公司的管理模式，第一屆設計與管理學術暨實務研討會，台北，頁 159-181。</li>
+    </ul>
+    <p><strong>(其他)</strong></p>
+    <ul>
+    <li>（2001）
+    <ol>
+    <li>Lee, L.-C. The Development of Intervention Strategies for Problems in International Cooperative Design Projects, PhD thesis, Coventry University.</li>
+    </ol>
+    </li>
+    <li>（1992）
+    <ol>
+    <li>Lee, L.-C. Design Strategies for Manufacturing Industry in Taiwan: With a Case Study of Taiwanese company – Mitac, Central Saint Martins College of Art and Design, The London Institute.</li>
+    </ol>
+    </li>
+    </ul>
+
+    <p><strong>專書：</strong></p>
+    <ul>
+    <li>（2003）
+    <ol>
+    <li>Scrivener, S.A.R., Lee, L.-C. and Woodcock, A. Managing breakdowns in international distributed design projects. In: U. Lindemann (ed.) Human Behaviour in Design: Individuals, Teams, Tools. Springer-Verlag, Heidelberg. pp. 174-183.</li>
+    </ol>
+    </li>
+    <li>（2004）
+    <ol>
+    <li>Woodcock, A., Lee, L.-C. International collaborative design projects: problems, solutions and lesson plans. Contemporary Ergonomics 2004 (edited by P T McCabe), pp. 480-484, CRC Press: Boca Raton, London.</li>
+    </ol>
+    </li>
+    <li>（2001）
+    <ol>
+    <li>Lee, L.-C. The Development of Intervention Strategies for Problems in International Cooperative Design Projects, PhD thesis, Coventry University.</li>
+    </ol>
+    </li><li>（1992）
+    <ol>
+    <li>Lee, L.-C. Design Strategies for Manufacturing Industry in Taiwan: With a Case Study of Taiwanese company – Mitac, Central Saint Martins College of Art and Design, The London Institute.</li>
+    </ol>
+    </li>
+    </ul>
+    <p><strong>技術報告：</strong></p>
+    <ul>
+    <li>（2010）
+    <ol>
+    <li>李來春，(2010)，嬰幼兒用品產品設計實例，DESIGNING ’10國際設計創作與實務研討會設計實務展作品集，頁19。</li>
+    </ol>
+    </li><li>（2009）
+    <ol>
+    <li>李來春，(2009) ，積木展示的物件偵測與圖形辦識程式與3D模型技術報告，國立台北科技大學/智高實業股份有限公司，S09800226-224。</li>
+    <li>李來春，(2009)，積木的物件偵測與圖形辨識技術報告，國立台北科技大學/智高實業股份有限公司，S09800226-224。</li>
+    <li>李來春，(2009)，互動桌原理說明與內部架構技術報告，國立台北科技大學/智高實業股 份有限公司，S09800226-224。</li>
+    <li>李來春，(2009)，積木3D模型拆網面貼圖技術報告，國立台北科技大學/智高實業股 份有限公司，S09800226-224。</li>
+    </ol>
+    </li>
+    <li>（2008）
+    <ol>
+    <li>李來春， LOHAS 樂活書桌、辦公室等桌上用品概念設計，因特林企業有限公司， 275704。</li>
+    <li>李來春，手工具產品識別設計之開發與實際應用，金統立工業股份有限公司，NSC96-2622-E-027-004-CC。</li>
+    </ol>
+    </li>
+    <li>（2006）
+    <ol>
+    <li>李來春，以未來生活型態為導向的創新健身器材之開發設計，高?國際設計有限公司。</li>
+    </ol>
+    </li>
+    <li>（2007）
+    <ol>
+    <li>李來春，日本高齡者市場的生活用品與救急物品之開發設計，寶來國際有限公司， NSC95-2622-E-027-002-CC3。</li>
+    </ol>
+    </li>
+    <li>（2006）
+    <ol>
+    <li>李來春，消費者需求導向的網路電話之開發設計，旺德電通股份有限公司，NSC 94-2622-E-027 -002 -CC3。</li>
+    </ol>
+    </li>
+    <li>（2004）
+    <ol>
+    <li>李來春，網路消費者自主性與客設化生產之研究與實作，玉兔文具工廠股份有限公司，NSC 92-2622-E-027-008-CC3。</li>
+    </ol>
+    </li>
+    <li>（2003）
+    <ol>
+    <li>李來春，以全球資訊網為基礎的協同設計環境之設計與製作，德淵企業股份有限公司，NSC 91-2622-E-027-017-CC3。</li>
+    </ol>
+    </li>
+    <li>（2002）
+    <ol>
+    <li>李來春，企業內協同設計合作模式之研究，中華民國對外貿易發展協會設計推廣中心，9101010109-013。</li>
+    </ol>
+    </li>
+    <li>（2000）
+    <ol>
+    <li>李來春，(電腦支援共同工作(CSCW)於產品開發上的應用，設計，期93，頁 67-69。</li>
+    </ol>
+    </li>
+    <li>（1997）
+    <ol>
+    <li>李來春，從新產品開發觀點談文具禮品的設計，設計，期75，頁 32-34。</li>
+    </ol>
+    </li>
+    <li>（1995）
+    <ol>
+    <li>李來春，兒童美勞版畫用具之設計，經濟部工業局，84-1900-2002-4D。</li>
+    <li>李來春，隨身文具組合系列之設計，經濟部工業局，84-1900-2003-1。</li>
+    <li>李來春，個人語音產品系列之設計，經濟部工業局，84-1900-2004-1。</li>
+    </ol>
+    </li>
+    <li>（1994）
+    <ol>
+    <li>李來春，桌上文具組設計，經濟部工業局，8301020301-1900-D505-1。</li>
+    <li>李來春，高級禮品開發設計，經濟部工業局，8301020301-1900-D505-2。</li>
+    </ol>
+    </li>
+    </ul>
+
+
+        </div>  
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_wu">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content">
+
+                      <div class="close-teacher_list_wu">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container" onscroll="scrollimg('wu01');">
+                            
+    <div class="teacher_detail_img">
+      <img class="wu01" src="./images/wu01.png">
+    </div>
+    <div class="teacher_detail_description">
+        <h2>吳可久 Ko-Chiu Wu</h2>
+        <p><strong>E-mail</strong> :&nbsp;<a href="mailto:kochiuwu@ntut.edu.tw">kochiuwu@ntut.edu.tw</a><br>
+        <strong>聯絡電話</strong> ：886-2-2771-2171 分機 4574<br>
+        <strong>職稱</strong> ：專任副教授<br>
+        <strong>研究範疇</strong> ：數位學習與互動技術 /&nbsp;資訊科技與管理 /&nbsp;建築設計與規劃</p>
+        <p><strong>學歷</strong>：<br>
+        國立台灣大學土木工程系營建工程與管理組 博士<br>
+        維拉諾瓦大學 Villanova University計算機科學 碩士<br>
+        賓夕凡尼亞大學 University of Pennsylvania建築系 碩士<br>
+        國立成功大學建築系學士</p>
+        <p><strong>經歷</strong>：<br>
+        中華技術學院 建築工程系專任副教授<br>
+        國立台灣大學圖書資訊學系 兼任助理教授<br>
+        國立台北科技大學建築系兼任副教授The Kling-Lindquist Partnership, Inc<br>
+        建築師Registered Architect</p>
+        <p><strong>著作</strong>：</p>
+        <ul>
+        <li>(2006)
+        <ol>
+        <li>Wu KC, Huang SM, Mao KC. “Design information seeking for architects, using memory accessibility and diagnosis.” Journal of Architectural and Planning Research. (SSCI, EI), 23(spring): 60-76.</li>
+        </ol>
+        </li>
+        <li>(2008)
+        <ol>
+        <li>吳可久﹑劉吉軒﹑柯雲娥. ” 研究型大學讀者對數位化圖書館使用需求與空間概念”,中華民國建築學報（TSSCI）接受刊登付印中.</li>
+        <li>吳可久,「智慧型」公共圖書館之發展與建築特色”,台北市立圖書館館刊,第26卷第1期.pp.31-43.</li>
+        </ol>
+        </li>
+        <li>(2006)
+        <ol>
+        <li>吳可久﹑黃世孟﹑莫國箴,”圖書館建築典型訊息對建築師設計資訊尋求模式之影響”,中華民國建築學報（TSSCI）,57期, pp.101-122.</li>
+        </ol>
+        </li>
+        <li>(2005)
+        <ol>
+        <li>吳可久, ”有效的溝通讓美夢成真”,書香遠傳-台中圖書館館刊,第29期,pp.20-23.</li>
+        <li>吳可久﹑黃世孟,”國家檔案館建築計畫課題”,檔案季刊, 第四卷第二期,pp.1-21.</li>
+        <li>黃世孟﹑吳可久, ”國家檔案館建築的願景與建設”,檔案季刊, 第一卷第一期,pp.38-45.</li>
+        </ol>
+        </li>
+        <li>(1992)
+        <ol>
+        <li>吳可久, ”美國的高層建築消防法規”,空間, 第34期,pp.27-31.</li>
+        </ol>
+        </li>
+        <li>(2002)
+        <ol>
+        <li>Huang, S. M. and Wu, K.C., “The Facility Management Information System of Taiwan Urban School Buildings”, The Ninth International Conference on Computing in Civil and Building Engineering, Taipei, Taiwan, pp.1237-1241.</li>
+        </ol>
+        </li>
+        <li>(2008)
+        <ol>
+        <li>Hsieh, P.N., Wu, K.C.* ” The Communication of Typical Messages for Library Building Programming”, ‘Looking Back, Moving Forward: Asian Libraries in the World of Information- The Hong-Kong Library Association 50th Anniversary Conference’, The Hong-Kong Library Association: Hong-Kong.</li>
+        <li>吳可久﹑郭邦宇, “用後評估觀點檢視合作式規劃大學校園架構與調適－以東華大學為例”, 2008海峽兩岸「大學的校園」學術研討會論文集.</li>
+        </ol>
+        </li>
+        <li>(2007)
+        <ol>
+        <li>宋立垚﹑吳可久, “無線射頻識別對圖書館建築空間之影響”, 海峽兩岸「圖書館建築學術研討會」研討會論文集.</li>
+        </ol>
+        </li>
+        <li>(2006)
+        <ol>
+        <li>吳可久﹑謝寶煖﹑宋立垚, “圖書館員對圖書館建築需求書的看法”, 海峽兩岸「大學圖書館建築、管理、服務理念」學術研討會論文集.</li>
+        <li>吳可久﹑游國華, “檔案館館藏容量、市中心距離與基地規模之迴歸分析”,中華民國建築學會第十八屆第一次建築研究成果發表會論文集.</li>
+        <li>吳可久﹑江品蓉, “檔案人員認知建築設計條件訊息之研究”, 中華民國建築學會第十八屆第一次建築研究成果發表會論文集.</li>
+        </ol>
+        </li>
+        <li>(2005)
+        <ol>
+        <li>吳可久﹑王淑萍, “檔案館建築中人員避難逃生傾向分析”, 中華民國建築學會第十七屆第二次建築研究成果發表會論文集.</li>
+        <li>吳可久﹑廖美婷, “檔案館建築用後調查課題研析”, 中華民國建築學會第十七屆第二次建築研究成果發表會論文集.</li>
+        <li>王淑萍﹑吳亭毅﹑翁彩瓊﹑吳可久, “檔案館建築外殼耗能與光電板應用之研究”, 中華民國建築學會第十七屆第二次建築研究成果發表會論文集.</li>
+        <li>王文安﹑吳可久﹑何家偉, “我國大學圖書館人員密度基礎調查之研究---休閒文教類建築物用途類組及各類組用途使用人數負荷系數調查研究”, 中華民國建築學會第十七屆第一次建築研究成果發表會論文集.</li>
+        </ol>
+        </li>
+        <li>(2004)
+        <ol>
+        <li>吳可久﹑莫國箴﹑黃世孟, “建築師的設計資訊尋求差異初探”, 第八屆營建工程與管理研究成果聯合發表會論文集, pp.7-8</li>
+        <li>黃世孟﹑吳可久, “現代化國家檔案館建築之設置策略”, 現代檔案管理研討會議實錄, pp.205-221.</li>
+        </ol>
+        </li>
+        <li>(2003)
+        <ol>
+        <li>吳可久, “圖書館建築設計條件與理念溝通”, 2003海峽兩岸圖書館建築設計論文集, 戴利華主編, 北京圖書館出版社, pp104-119.</li>
+        <li>吳可久﹑林文凱, “圖書館火災時讀者逃生避難行為模式之研究”,現代防火科技展望與應用國際研討會論文集, pp.7-1-20.</li>
+        <li>莫國箴﹑吳可久﹑黃世孟, “專業訊息傳遞對建築師認知效果影響之研究“,第七屆營建工程與管理研究成果聯合發表會論文全集, pp.79-88. 高雄:高雄第一科技大學.</li>
+        <li>楊粧媚﹑吳可久, “探討設計者與管理者對挑空空間認知差異之研究”, 中華民國設計學會第八屆研究成果發表會論文集</li>
+        </ol>
+        </li>
+        <li>(2002)
+        <ol>
+        <li>黃世孟﹑吳可久, “國家檔案典藏策略之探討-設置國家檔案適足典藏環境,推展檔案數位化典藏”, 檔案管理策略研討會議題報告彙編,pp.1-1-16.</li>
+        <li>莫國箴﹑黃世孟﹑葉士玄﹑吳可久, “由專業認知差異探討建築設備設計條件研擬課題分析”, 中華民國建築學會第十四屆建築研究成果發表會論文集.</li>
+        <li>黃世孟﹑吳可久, “北京大學圖書館再發展專案之課程設計與教學演練”,?2002海峽兩岸「大學的校園」學術研討會論文集,pp.171-186.</li>
+        <li>吳可久, “大專圖書館建築設計條件書防火避難性能條件研擬分析” 中華技術學院90學年度『建築、環境、防災、技術』研討會論文集, pp.122-131.</li>
+        <li>吳可久﹑盧冠文﹑洪耀聰, “鋼筋混凝土圓柱與方柱施工性比較分析” 中華技術學院91年度論文發表研討會建築土木類組論文集, pp.1-39-58.</li>
+        </ol>
+        </li>
+        <li>(2001)
+        <ol>
+        <li>吳可久、黃世孟, “大學圖書館建築挑空空間評估分析- 圖書館與建築專業之認知差異”, 中華民國建築學會第十三屆建築研究成果發表會論文集.</li>
+        <li>黃世孟、吳可久, “國家檔案館建築及設備設計規範研擬之課題分析與個案經驗”,? 中華民國建築學會第十三屆建築研究成果發表會論文集.</li>
+        <li>吳可久, “圖書館家俱設計酬勞給付觀念與統包製作之探討” 中華技術學院90年度論文發表研討會建築土木類組論文集, pp.48-54.</li>
+        </ol>
+        </li>
+        <li>(2000)
+        <ol>
+        <li>吳可久﹑劉彤雯﹑林崇逸﹑黃世孟﹑郭斯傑, ”學校工程管理資訊系統需求分析及資料庫形式規劃”, 中華民國建築學會第十二屆建築研究成果發表會論文集,pp.849-852.</li>
+        <li>王鵬智﹑丁育群﹑陳建忠﹑吳可久, ”由加拿大經驗探討我國性能防火法規之執行策略”, 中華民國建築學會第十二屆建築研究成果發表會論文集,pp.781-784.</li>
+        <li>吳可久﹑黃世孟, “圖書館建築課程之規劃” 中華技術學院慶祝改制週年論文發表研討會建築土木類組論文集, pp.73-81.</li>
+        </ol>
+        </li>
+        <li>(1999)
+        <ol>
+        <li>李美月﹑吳可久 “國立東華大學圖書館建築的人文心”, 1999海峽兩岸圖書館建築研討會論文集, pp.107-110.</li>
+        </ol>
+        </li>
+        </ul>
+        <p><strong>其他</strong>：</p>
+        <ul>
+          <li>(2003)
+          <ol>
+          <li>吳可久 編撰. 圖書館建築規劃與設計演練－大學圖書資訊大樓建築設計專題教學成果彙編, 台北:建築情報.</li>
+          </ol>
+          </li>
+          <li>(2002)
+          <ol>
+          <li>吳可久﹑龍佩妤, “圖書館研究小間設置條件評估與空間規劃”, 中華學報,第27期, pp.174-184.</li>
+          </ol>
+          </li>
+          <li>(2006)
+          <ol>
+          <li>吳可久, “東華大學的校園規劃理念與競圖方案回顧” 國立東華大學圖書館訊息報導－月眉 第一版.</li>
+          </ol>
+          </li>
+        </ul>
+
+
+
+
+
+    </div>  
+    
+  
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_tsau">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content">
+
+                      <div class="close-teacher_list_tsau">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container"  onscroll="scrollimg('tasu01');">
+                                <div class="teacher_detail_img">
+    <img class="tsau01"  src="./images/tsau01.png">
+    </div>
+    <div class="teacher_detail_description">
+      <h2>曹筱玥 Saiau-Yue Tsau</h2>
+      <p><strong>E-mail</strong> ：<a href="mailto:sytsau@ntut.edu.tw">sytsau@ntut.edu.tw</a>&nbsp;062842@yahoo.com.tw<br>
+      <strong>聯絡電話</strong> ：886-2-2771-2171 分機 2809/2876<br>
+      <strong>職稱</strong> ：專任副教授<br>
+      <strong>研究範疇</strong> ：展示科技 /&nbsp;互動藝術 /&nbsp;性別研究與互動科技</p>
+
+      <p>學歷：<br>
+      2006 國立臺灣師範大學美術研究所美術教育與行政組博士<br>
+      2000 國立臺灣師範大學美術研究所西洋美術史組碩士<br>
+      1998 國立臺中師範學院87級美勞教育學系學士<br>
+      1994 國立師大附中美術實驗班第三名畢業<br>
+      1991 新竹市立建華國中美術資優班畢業</p>
+      <p>經歷：<br>
+      &lt; 現任 &gt;<br>
+      台北科技大學 互動媒體設計研究所 副教授<br>
+      互動藝術實驗室 主持人<br>
+      中華民國大學藝文中心協會理事、中華創意發展協會理事<br>
+      中華平面設計協會 副理事長<br>
+      臺灣科技藝術教育協會理事<br>
+      國語日報週刊藝術專欄作家、巧連智雜誌編審</p>
+      <p>&lt; 曾任 &gt;<br>
+      國立台北科技大學 藝文中心主任<br>
+      國立台北科技大學 秘書室公關組組長<br>
+      南台科技大學 視覺傳達系講師<br>
+      國立台灣師範大學 進修推廣部兼任講師<br>
+      文建會「台灣美術地方發展史撰述計畫」撰述委員<br>
+      國立台灣美術館「台灣美術丹露」教學網站建置計劃主持人</p>
+      <p><strong>著作</strong>：</p>
+      <p><strong>&lt; 研討會論文 &gt;</strong></p>
+      <ul>
+      <li>(2002)
+      <ol>
+      <li>社區取向的美術教育教案設計範例 — 文化勇士：排灣族文化的保存與再生。九年一貫國三藝術與人文領域統整課程教學活動設計研習會參考資料集，5 - 8。</li>
+      <li>團體研究交換計劃出訪報告書。國際扶輪社團體研究交換計劃委員會，47-58。</li>
+      <li>70年代鄉土寫實風格對於水墨畫在台灣發展之影響。師大「水墨新紀元－2002年水墨畫理論與創作國際學術研討會」， 317-326。</li>
+      </ol>
+      </li>
+      <li>(2003)
+      <ol>
+      <li>產官學三位一體，形塑台灣彩瓷的主體性—以「行動陶藝館」為例。2003文化創意產業設計學術研討會。環球技術學院，33-50。</li>
+      <li>以物質文化為主題的課程設計—以上海月份牌中的女性圖像為例。第四屆海峽兩岸美術教育交流會。香港中文大學，頁數57~78。</li>
+      <li>70年代鄉土寫實風潮對於台灣水墨發展影響之觀察。2003中國水墨藝術之回顧與前瞻 ~ 研究生學術研討會論文集。中央研究院，213 -247。</li>
+      <li>讓傅珂與拉崗一同遊美術館~如何在美術館中形塑出建構學習機制的展示設計。國立中央大學「議藝」研討會。</li>
+      </ol>
+      </li>
+      <li>(2004)
+      <ol>
+      <li>發揚水墨之空中兵團-- 以「國立歷史博物館」傳統水墨畫數位學習課程設計為例。2004InSEA亞洲會議。北京首都師範大學。</li>
+      <li>女人的鏡?~以拉崗「鏡像階段論」詮釋女性出現於美術館與百貨公司的觀看行為。兩性平等教育學術研討會。樹德科技大學，421~442。</li>
+      <li>文本的異化--月份牌中女性旗袍在不同時代呈現之文化意涵。視覺文化與終身教育國際研討會發表。台北市立師院。</li>
+      </ol>
+      </li>
+      <li>(2005)
+      <ol>
+      <li>Cultural Warriors----- The Paiwan Cultural Preservation and New Birth of the PaiwanCulture。芬蘭赫爾辛基大學。</li>
+      <li>都市漫遊者－以精神分析結構學詮釋美術館參觀行為之個案研究。藝術教育研究，10，127-154。( THCI. TSSCI )</li>
+      <li>讓觀者發聲—觀看理論運用於美術館展場設計與規劃之研究。現代美術學報，台北市立美術館，9，51-85。</li>
+      </ol>
+      </li>
+      <li>(2006)
+      <ol>
+      <li>當拉崗走入美術館----- 以精神分析結構學的觀點規劃美術館展示設計與觀眾參觀行為的探索性研究。國立台灣師範大學美術教育與行政博士論文，未出版，台北市。</li>
+      <li>藝術無國界: 多元文化藝術教育課程的理論與實務，高中藝術領域課程輔助教學參考手冊1: 美術。台北市：藝術館，85~115。</li>
+      <li>從解嚴前後(1977~1997)的全省美展西畫部門得獎作品—看制式化的省展風格與權力結構的機制關係。全省美展一甲子紀念專輯。南投市：台灣省政府。</li>
+      </ol>
+      </li>
+      <li>(2007)
+      <ol>
+      <li>台灣數位藝術發展史。國立台灣美術館台灣美術丹露專題網站。</li>
+      <li>科技與藝術—數位藝術時代-數位科技下藝術新風貌。國立台灣美術館台灣美術丹露專題網站。</li>
+      <li>The Flaneur in the city: A Case Study on Art Museum Visiting Behavior Using a Psychoanalysis and Structualist Approach 。InSEA Asian Regional Congress2007 (韓國首爾大學)。</li>
+      </ol>
+      </li>
+      <li>(2008)
+      <ol>
+      <li>科藝之美—台灣數位藝術之發展。2008海峽兩岸創產業合作與發展高峰論壇文集。中國．福州，105~112。</li>
+      <li>新媒材的視界—數位藝術的教學。2008海峽兩岸藝術教育論文發表文集。中國．首都師範大學。</li>
+      </ol>
+      </li>
+      <li>(2009)
+      <ol>
+      <li>女性消費體驗療傷系商品特性研究─以Bandai系列療傷系商品為例。2009明治科技大學技術與教學研討會暨台灣感性學會研討會論文集。台灣。</li>
+      <li>數位藝術教育的分享。2009國際視覺傳達設計研討會─感知與體驗的設計迴路研討會。台灣。</li>
+      </ol>
+      </li>
+      <li>(2010)
+      <ol>
+      <li>漢字互動傳達中國哲學思想之互動設計創作─以〈隨行〉一作為例。2010台灣感性學會研討會論文集。台灣。</li>
+      <li>漢字互動創作─上上籤。2010台灣感性學會研討會論文集。台灣。</li>
+      <li>網路數位公共藝術之探討與創作。2010台灣感性學會研討會論文集。台灣。</li>
+      <li>互動科技與水墨藝術之融合─以黃光男水墨創作「圓仔花」為例。2010台灣感性學會研討會論文集。台灣。</li>
+
+      </ol>
+      </li><li>(2011)
+      <ol>
+      <li>The Application of Wireless communication on interactive technology that raises the participation of the female in science education: A case study with Taipei Municipal Zhongshan Girls High School. World Congress on Engineering and Technology（CET，2011國際工程與科技大會）. China.</li>
+      <li>新媒材的視界─科技藝術的教育。「兩岸清風‧双潭映月」海峽兩岸研究生美術教育論文集。中國，北京。</li>
+      <li>都市漫遊者在馬祖～馬祖文化創意產業之空間生產未來性初探。福建省金馬歷史回顧與展望學術研討會論文集。中國，福建。</li>
+      <li>透過網路社群集體參與互動式線上藝術創作模組，建立公民美學之提升機制。2011博物館與文化機構科技應用研討會論文集。台灣。</li>
+      <li>結合中國詩詞之互動創作─以《字衍》一作為例。2011新媒體創作與資訊科技國際研討會論文集。台灣，彰化。</li>
+      <li>3D立體投影視覺呈現及互動之概念研究─以《築城》為例。2011新媒體創作與資訊科技國際研討會論文集。台灣，彰化。</li>
+      <li>運用數位媒材於漢字表現之互動設計創作─以作品《築城》為例。2011新媒體創作與資訊科技國際研討會論文集。台灣，彰化。</li>
+      </ol>
+      </li><li>(2013)
+      <ol>
+      <li>超展示設計：數位內容策展的文創新思維-以2010花博夢想館V.S.2013行動@夢想館為例。2013中華文化創意發展論壇。桃園，國立中央大學。</li>
+      <li>台灣文化網路社群之App介面設計研究-以「相遇時刻」App為例。2013中華文化創意發展論壇。桃園，國立中央大學。
+      </li>
+      </ol>
+      </li></ul>
+
+      <p>&nbsp; </p>
+      <p><strong>&lt;期刊論文&gt;</strong></p>
+      <ul>
+      <li>(2010)
+      <ol>
+      <li>探討21世紀展示設計中的互動價值─以精神分析結構學詮釋美術館參觀行為之個案研究。現代美術學報：台北市立美術館出版。5。p113-142</li>
+      </ol>
+      </li>
+
+      <li>(2011)
+      <ol>
+      <li>The Application of Wireless Communication on Interactive Technology that Raises the Participation of the Female in Science Education: A case study with Taipei Municipal Zhongshan Girls High School. 2011.World Congress on Engineering and Technology. 8. p830-833. (EI)</li>
+      <li>字摸: 文字互動展—一場漢字的心靈改造工程。台北數位藝術中心2010年刊。2。p5-8。</li>
+      <li>結合網路參與創作的互動公共藝術之設計探討。華梵藝術與設計學報：華梵大學藝術設計學院出版。7。p164-176。</li>
+      <li>新型爵士鼓靈感紀錄應用程式互動介面設計研究-以Dr.Helper-Rock Kit為例。文化創意產業研究學報。1。p75-92。</li>
+      <li>女性生活美學特質與陶瓷工藝之關係：以茶具設計為例。陶業研究學會會刊。30。p71-79。</li>
+      </ol>
+      </li>
+      <li>(2012)
+      <ol>
+      <li>想像力量表之編製。教育科學研究期刊。57。p1-37。(TSSCI)</li>
+      <li>傳達關懷情感於互動產品設計之研究。北科學報。44-2。p67-86。</li>
+      </ol>
+      </li>
+      <li>(2013)
+      <ol>
+      <li>由激發想像力思維探索設計課程教學方式。建築學報。83。p19-35。</li>
+      <li>The development of an imaginative thinking scale. Journal of Imagination, Cognition and Personality. 3. p207-238.</li>
+      </ol>
+      </li>
+
+      </ul>
+      <p><strong>&lt;專書及專書論文 &gt;</strong></p>
+      <ul>
+      <li>(2000)
+      <ol>
+      <li>從解嚴前後的全省美展西畫部門得獎作品~ 看制式化的省展風格與權力結構的機制關係。國立台灣師範大學美術史研究所碩士論文，未出版，台北市。</li>
+      </ol>
+      </li>
+      <li>(2001)
+      <ol>
+      <li>中國錢幣通親子學習手冊。歷史博物館。週休二日樂陶陶—打造休閒藝術「陶」花源親子學習手冊。財團法人金車文教基金會。</li>
+      </ol>
+      </li>
+      <li>(2002)
+      <ol>
+      <li>行動陶藝館親子學習手冊。行政院青輔會。</li>
+      </ol>
+      </li>
+      <li>(2003)
+      <ol>
+      <li>台灣美術地方發展史全集(宜蘭地區)。文建會、國立台灣美術館編印。</li>
+      </ol>
+      </li>
+      <li>(2004)
+      <ol>
+      <li>人性進化論—袁金塔2004作品發表。創價學會。</li>
+      <li>水墨百寶箱—水墨親子學習手冊。國父紀念館。</li>
+      <li>高級中學 美術1。台北縣：泰宇。</li>
+      </ol>
+      </li>
+      <li>(2005)
+      <ol>
+      <li>四季偵探，2005典藏常設展親子手冊。台北市立美術館。</li>
+      <li>現代水墨宅即變親子手冊。桃園縣政府。</li>
+      <li>高職 美術1。台北縣：泰宇。</li>
+      </ol>
+      </li>
+      <li>(2006)
+      <ol>
+      <li>高級中學 美術2。台北縣：泰宇。</li>
+      <li>當拉崗走入美術館----- 以精神分析結構學的觀點規劃美術館展示設計與觀眾參觀行為的探索性研究。國立台灣師範大學美術教育與行政博士論文，未出版，台北市。</li>
+      </ol>
+      </li>
+      <li>(2007)
+      <ol>
+      <li>高級中學 藝術生活(基礎課程篇)。台北縣：泰宇。</li>
+      </ol>
+      </li>
+      <li>(2008)
+      <ol>
+      <li>數位奇航記(編排中)。台北:木馬文化。</li>
+      <li>愛戀陶花源(編排中)。台北:采泥藝術印刷。</li>
+      <li>台灣藝術名家選析(編排中)。台北:空中大學。</li>
+      </ol>
+      </li>
+
+      <li>(2010)
+      <ol>
+      <li>藝術概論。新頁圖書股份有限公司。</li>
+      <li>【我思。我畫】袁金塔美術文選(下冊)。正修科技大學藝文中心。</li>
+      <li>字摸: 文字互動展暨飛墨之光: 新媒體藝術 三校聯展畫冊專輯。台北：臺北數位藝術中心。</li>
+      <li>字生字滅：漢字互動三校聯展。行政院文化建設委員會。</li>
+      <li>教育部高審字第0558號普通高級中學藝術生活－視覺應用藝術篇。泰宇出版股份有限公司。</li>
+      <li>教育部高審字第0568號普通高級中學美術(一)。泰宇出版股份有限公司。</li>
+      <li>教育部職審字第01491號職業學校一般科目藝術領域(美術) 。泰宇出版股份有限公司。</li>
+      </ol>
+      </li>
+      <li>(2011)
+      <ol>
+      <li>台灣美術圖像與文化詮釋。台北：采泥藝術印刷有限公司</li>
+
+      </ol>
+      </li>
+      <li>(2013)
+      <ol>
+      <li>她者即我、我即她者：SHOW HER / HER SHOW 曹筱玥 數位藝術專輯」。台北：財團法人數位藝術基金會</li>
+
+      </ol>
+      </li>
+      </ul>
+      <p>&nbsp;</p>
+      <p><strong>&lt; 藝評 &gt;</strong></p>
+      <ul>
+      <li>(2000)
+      <ol>
+      <li>他者的凝視—看林憲茂的心象風景畫。藝術家，306，548。</li>
+      <li>形構、福爾摩莎、台灣社會殊相：從袁金塔的影像拼貼反省台灣世紀末之時代氛圍，形塑21世紀台灣人的生活及世界觀。Cans藝術新聞，39，110-112。</li>
+      <li>探尋靈魂深處，美的追尋者—專訪楊淑惠。藝術家，307，520。</li>
+      <li>美術教育的省思—九年一貫課程改革之際整體運行遠行遠景分析之我見。Airiti，4， 20-22。</li>
+      <li>藝術界的實驗．冒險．革命家—劉國松專訪。Airiti，4，23-25。</li>
+      <li>吟詩揮毫—桃園縣「行動陶藝館」揭幕。藝術家，372，522-523。</li>
+      </ol>
+      </li>
+      <li>(2001)
+      <ol>
+      <li>中國錢幣通親子學習手冊。歷史博物館。</li>
+      <li>都會心．田園情—專訪張韻明。Airiti，6，28-29。</li>
+      <li>情色乎?色情是也?—女性裸體美學的社會變遷。Airiti，6，15-17。</li>
+      <li>裝置藝術究竟在搞什麼鬼。Airiti，7，11-13。</li>
+      <li>新世代彩墨畫。藝術家，310。</li>
+      <li>情繫磺溪‧墨彩台灣--記「磺溪鄉情特展」/許文融、袁金塔、張永村、莊連東、陳朝寶。藝術家，314，443-447。</li>
+      <li>情繫磺溪、墨彩台灣—記「磺溪鄉情特展」--許文融、袁金塔、張永村、莊連東、陳朝寶。典藏今藝術，106，116-120。</li>
+      <li>形構、慾望情愫—評介二○○一袁金塔的「日本福岡美術館」新作發表。藝術家，319， 460-463。</li>
+      <li>週休二日樂陶陶—打造休閒藝術「陶」花源親子學習手冊。</li>
+      <li>偶像、偶像？ (從Andy Warhol的作品認識並比較西方偶像內容與中國偶像繪畫的差異性,並藉由練習與討論釐清自我對偶像崇拜的價值觀)。坦克美教網。</li>
+      </ol>
+      </li>
+      <li>(2002)
+      <ol>
+      <li>行動陶藝館親子學習手冊。行政院青輔會。</li>
+      <li>社區取向的美術教育教案設計範例—文化勇士：排灣族文化的保存與再生。九年一貫國三術與人文領域統整課程教學活動設計研習會參考資料集，5-8。</li>
+      <li>空靈的斷裂—四季和風中的拼湊與迷思。朱銘美術館季刊，10，22。</li>
+      <li>評析慾望新地圖—情慾主從關係之展現。藝術家，321，432-434。</li>
+      <li>孤寂的走在藝術這條路上。Airiti，4，20-22。</li>
+      <li>團體研究交換計劃出訪報告書。國際扶輪社團體研究交換計劃委員會，47-58。</li>
+      <li>比較西方十九世紀新古典主義與浪漫派兩股藝術思潮之不同 (建立對西洋18、19世紀畫派的基本概念，學習對18、19世紀畫作的鑑賞能力)。坦克美教網。</li>
+      </ol>
+      </li>
+      <li>(2003)
+      <ol>
+      <li>台灣美術地方發展史全集(宜蘭地區)。文建會、國立台灣美術館編印。</li>
+      <li>從展示的真實性開始談起-論袁金塔2003「人性進化論」新作發表。典藏藝術，134，77。</li>
+      <li>人性進化論—袁金塔2004作品發表。創價學會。</li>
+      <li>產官學三位一體，形塑台灣彩瓷的主體性—以「行動陶藝館」為例。2003文化創意產業設計學術研討會。環球技術學院。</li>
+      <li>以物質文化為主題的課程設計—以上海月份牌中的女性圖像為例。第四屆海峽兩岸美術教育交流會。香港中文大學。</li>
+      <li>6. 70年代鄉土寫實風潮對於台灣水墨發展影響之觀察。2003中國水墨藝術之回顧與前瞻~研究生學術研討會。中央研究院。</li>
+      <li>日本山形縣參觀見學之旅。藝術與人文國中教學快訊南一版，3，14-15。</li>
+      <li>美術館的展示~由觀畫者發聲。藝術與人文國中教學快訊南一版，4，10-16。</li>
+      <li>從高仕到入世-論袁金塔二○○三＜人性進化論＞新作發表。藝術家，341，416-419。</li>
+      <li>吃喝玩樂—大千(上)。長流藝術，157。</li>
+      <li>吃喝玩樂—大千(中)。長流藝術，158，10-11。</li>
+      <li>吃喝玩樂—大千(下)。長流藝術，159。</li>
+      <li>認同與回歸-七○年代本土意識下繪畫的產製與通路。藝術家，335，481-485。</li>
+      <li>藝術人文鑑賞教學範例(美術史結合性別的鑑賞教學範例，以台灣本土女性藝術品為主軸，其間融入肢體分析與音樂配合，最後與西洋的女性作對照)。坦克美教網。</li>
+      </ol>
+      </li>
+      <li>(2004)
+      <ol>
+      <li>讓傅柯與拉崗一同來逛美術館—如何在美術館中形塑出建構學習機制的展示設計。</li>
+      <li>發揚水墨之空中兵團。2004InSEA亞洲會議。</li>
+      <li>水墨百寶箱—水墨親子學習手冊。國父紀念館。</li>
+      <li>高級中學 美術1。台北縣：泰宇。</li>
+      <li>讓觀者發聲—觀看理論運用於美術館展場設計與規劃之研究。現代美術學報，9。</li>
+      <li>女人的鏡?~以拉崗「鏡像階段論」詮釋女性出現於美術館與百貨公司的觀看行為。兩性平等教育學術研討會。樹德科技大學。</li>
+      <li>水墨百寶箱，國立國父紀念館兒童學習手冊。台北市：國立國父紀念館。</li>
+      <li>大畫家小故事—美國懷鄉寫實主義繪大師~安德魯．魏斯(1917-)介紹。和成季刊，65， 37-38。</li>
+      <li>塗鴉不只是亂畫而已—你家寶貝可能成為小小藝術家。聰明寶貝，23，36-38。10. 2004-2005 聰明寶教案。階梯。</li>
+      </ol>
+      </li>
+      <li>(2005)
+      <ol>
+      <li>四季偵探，2005典藏常設展親子手冊。台北市立美術館。</li>
+      <li>現代水墨宅即變親子手冊。桃園縣政府。</li>
+      <li>記「文人戀物—台灣現代文人墨境創作展」。台灣現代文人墨境創作展畫冊專輯5。</li>
+      <li>真實與想像的非洲。典藏今藝術，11，120。</li>
+      <li>都市漫遊者－以精神分析結構㈻詮釋美術館參觀行為之個案研究。藝術教育研究，10，127-154。</li>
+      <li>向大師挑戰─解構袁金塔「我是一條書蟲」中的閹割情結。典藏藝術，148，119-120。</li>
+      <li>寫在「文人戀物─台灣現代文人墨境創作展」之前。藝術家，365，499-501。</li>
+      <li>記曹筱玥「小瓶子的歡樂叢林─繪畫暨裝置藝術」作品展。藝術家，356，464-466。</li>
+      <li>從水墨創作人口分布比例探究水墨創作與教育推廣之困境。國際現代水墨大展專輯。</li>
+      <li>化一坏春泥為我家寶貝—詩人彩繪陶瓷之創與賞析。行動陶藝術e世代陶藝運動畫專輯，6。</li>
+      <li>2009 當拉崗走入美術館----- 以精神分析結構學的觀點規劃美術館展示設計與觀眾參觀行為的探索性研究。國立台灣師範大學藝術教育與藝術行政博士班博士論文，未出版，台北市。</li>
+      <li>高中藝術領域課程輔助教學參考手冊1美術。台北市：藝術館。</li>
+      <li>北科大仲夏花語錄—我看「仲夏花弄影」林靜師生聯展。花藝家，62，64-65。</li>
+      <li>水墨，也能如此時尚。典藏今藝術，10，138。</li>
+      <li>遊走在美術館與夜店之間的時尚水墨展。藝術家，379，432-433。</li>
+      <li>滄桑歷史的閹割情結－窺視韓國1980年代以降的當代藝術奧妙。藝術家，378，254-257。</li>
+      <li>驚見韓國文化策略的一片藍海－韓國光州雙年展、釜山雙年展。藝術家，377，188-189。</li>
+      <li>閱讀袁金塔〈書蟲趴趴走〉立體陶書作品中的閹割情結。藝術家，371，517。</li>
+      <li>尋找達文西－記一場科學與藝術的對話「高中職社區化北適性學習社區裝置藝術大賽」。藝術家，371，509-511。</li>
+      <li>搭積木對於幼兒開發的貢獻。遊走在美術館與夜店之間的時尚水墨展。第一屆2006當代水墨雙年展畫冊，8。</li>
+      </ol>
+      </li>
+      <li>(2007)
+      <ol>
+      <li>台灣數位藝術發展史。國立台灣美術館台灣美術丹露專題網站。</li>
+      <li>科技與藝術—數位藝術時代-數位科技下藝術新風貌。國立台灣美術館台灣美術丹露專題網站。</li>
+      <li>高級中學 藝術生活(基礎課程篇)。台北縣：泰宇。</li>
+      <li>E世代廚房—兼具設計、美感與經濟的新主張。2007台北廚具，46-51。</li>
+      <li>校長的異想世界:十大學校長聯展。藝術家，385，506-507。</li>
+      <li>移動的城市Moving City－體驗車輛創意新時代。藝術家，383，318-321。</li>
+      <li>新苑藝術--黃心健個展【人間機關術】。</li>
+      <li>設計百分百 時尚看倫敦--2007英國倫敦設計節現場。藝術收藏+設計，11月號，第2期。</li>
+      </ol>
+      </li>
+      <li>(2008)
+      <ol>
+      <li>薪傳推手—黃子坤老師。國立台北科技大學教學卓越計畫雙語專刊，5，9-11。</li>
+      </ol>
+      </li>
+      </ul>
+      <p><strong>&lt; 報導 &gt;</strong></p>
+      <ol>
+      <li>2001/2/15 大象用的保險套-性病防治所昨辦博覽會「小夜衣」。自由時報，12版。</li>
+      <li>2002/10/17 リサイク学び日本文化觸れる。日本山形縣山形新聞，20版。</li>
+      <li>2002/10/27 日本の印象それぞれに。國際ロ-タリ-グル-プ交換台灣から青年4人來庄。日本山形縣莊內日報，6版。</li>
+      <li>2002/2/10 慾望新地圖攤開情慾—朱銘美術館特展五位藝術家各有剖析。中國時報， 12版。</li>
+      <li>2008/5/22 海峽兩岸開啟創意產業合作之門。福建新聞網-福建線上，新華社。</li>
+      </ol>
+      <p><strong>&lt; 設計 / 攝影 / 插畫 / 編審 &gt;</strong></p>
+      <ul>
+      <li>(2002)
+      <ol>
+      <li>立體小說設計。城市獵人：民生主義系列住書。台北市：天培文化。</li>
+      <li>封面設計，李健銘《真相之五》。社教雙月刊，111。</li>
+      <li>封面設計，袁金塔《孕》。社教雙月刊，112。</li>
+      <li>2003 封面設計。社教雙月刊，113。</li>
+      <li>封面設計。社教雙月刊，114。</li>
+      <li>封面設計。社教雙月刊，115。</li>
+      <li>封面設計。社教雙月刊，116。</li>
+      <li>封面設計。社教雙月刊，117。</li>
+      <li>封面設計。社教雙月刊，118。</li>
+      </ol>
+      </li>
+      <li>(2004)
+      <ol>
+      <li>封面設計。社教雙月刊，119。</li>
+      <li>封面設計。社教雙月刊，120。</li>
+      <li>封面設計。社教雙月刊，121。</li>
+      <li>封面設計。社教雙月刊，122。</li>
+      <li>封面設計。社教雙月刊，123。</li>
+      <li>封面設計。社教雙月刊，124。</li>
+      </ol>
+      </li>
+      <li>(2005)
+      <ol>
+      <li>化腐朽為神奇—改裝後的美術館。社教雙月刊，125。</li>
+      <li>都市漫遊者—漫談公共藝術。社教雙月刊，126。</li>
+      <li>行動美術館—現代水墨到我家。社教雙月刊，127。</li>
+      <li>藝術無國界—愛知博覽會。社教雙月刊，129。</li>
+      <li>戰地風情畫—海上桃花源~馬祖。封面畫作，130。</li>
+      <li>2006 現代藝術美術館。社教雙月刊，131。</li>
+      <li>封面設計。社教雙月刊，132。</li>
+      <li>封面設計。社教雙月刊，133。</li>
+      <li>驚見韓國文化策略的一片藍海。社教雙月刊，134。</li>
+      <li>封面設計。社教雙月刊，135。</li>
+      <li>封面設計。社教雙月刊，136。</li>
+      </ol>
+      </li>
+      <li>(2008)
+      <ol>
+      <li>編審。看名畫學塗鴉。巧連智，9月號迄今。</li>
+      <li>作家。國語日報週刊藝術專欄。</li>
+      </ol>
+      </li>
+      </ul>
+      <p><strong>獲獎：</strong></p>
+      <ol>
+      <li>金潤作藝術表現優異獎學金得主，1996</li>
+      <li>獲選擔任國際扶輪社3520地區GSE團體研究交換藝術類代表，赴日本山形縣進行表敬訪問一個月，2002。</li>
+      <li>獲教育部補助赴芬蘭首都赫爾辛基發表論文＜文化勇士~社區文化保存實例：排灣族圖像的保存與再生＞，2003。</li>
+      <li>桃花源第ㄧ屆繪本大賽獲成人組競賽優勝，2003。</li>
+      <li>獲教育部補助赴北京發表論文&lt;發揚水墨之空中兵團－以「國立歷史博物館」傳統水墨畫數位學習課程設計為例&gt;，2004。</li>
+      <li>2006 榮獲國立台北科技大學95學年度教材教具製作競賽優等。</li>
+      <li>2007 台新藝術獎視覺藝術類初選提名。</li>
+      </ol>
+      <p><strong>經歷：</strong></p>
+      <ul>
+      <li>1992~1993 連續兩年獲頒師大附中模範生，並獲頒第一名獎學金</li>
+      <li>1993 曾任 師大附中國樂社第十九屆社長</li>
+      <li>1994 獲得82年臺灣省國樂比賽高中組亞軍，並於同年獲師大附中社團服務優秀獎學金</li>
+      <li>1995 擔任臺中師院美勞教育學會副會長</li>
+      <li>1996 金潤作藝術表現優異獎學金得主</li>
+      <li>1998 台中師院畢業展複合媒材優勝、國畫創作優勝、油畫佳作，作品並獲台中師院校方留校收藏榮譽獎學金。</li>
+      <li>擔任國立臺灣師範大學美研所專案研究助理。</li>
+      <li>1999 巴黎文教基金會巴黎獎入圍</li>
+      <li>參與袁金塔教授「鄉土文學論戰時期水墨畫家」之研究專案</li>
+      <li>當選師大美研所研究生學會總幹事</li>
+      <li>郭禎祥主委籌辦「國立編譯館國中美術課本」工作人員</li>
+      <li>參與畫家謝理法為台中市政府所策劃之「台中地區的畫家」之撰述，主編黃海雲、陳夏雨、詹前裕、簡嘉助、張炳南、詹益秀、謝文昌等文字工作。</li>
+      <li>2000 擔任airiti（華藝）藝術雜誌採訪記者，撰寫陳景容、劉國松等畫家專訪</li>
+      <li>2001 台北縣立永平高級中學教師，並指導學生榮獲北市美展設計類第二名暨第三名。</li>
+      <li>籌備師大「進修推廣部」與美術系所合辦之推廣藝術系列課程總策劃</li>
+      <li>籌備師大美術研究所9月舉辦的「新世紀藝術教育的理論與實務國際學術研討會」專案行政</li>
+      <li>擔任 airiti（華藝）數位藝術股份有限公司電子報總編輯</li>
+      <li>2月起擔任「佳音廣播電台」＜藝論紛紛＞節目主持人</li>
+      <li>擔任「新世紀之聲－－師大研究生論文發表會」評論人</li>
+      <li>受邀擔任7月份「彰化縣文化局」＜磺溪鄉情五人聯展＞藝評撰寫</li>
+      <li>籌備「國立台灣師範大學視聽教育館」合拍趙寧館長主持＜文化廣場＞藝術類教學錄影帶，擔任企劃書與劇本撰寫</li>
+      <li>擔任國立歷史博物館「中國錢幣通親子學習手冊」主編</li>
+      <li>擔任國立歷史博物館「行動美術館」外聘講師</li>
+      <li>擔任「金車文教基金會」＜週休二日樂陶陶~行動陶藝館＞活動負責人</li>
+      <li>受聘為交通部「90年全國國民小學金安交通英雄」兒童繪畫比賽初審評選委員</li>
+      <li>擔任師大美術系5月「水墨新紀元國際學術研討會」專案助理</li>
+      <li>擔任「財團法人和成文教基金會」任期一年之專案策展</li>
+      <li>2002 擔任永平高中九年一貫「藝術與人文」領域召集人</li>
+      <li>3月受邀參與「朱銘美術館」觀雨季＜雨的實驗小屋＞裝置藝術創作展與藝評撰寫</li>
+      <li>第一二四五期九年一貫課程深耕計畫「藝術與人文學習領域」種子教師研習。</li>
+      <li>2003-2004 南台科技大學視覺傳達系講師。</li>
+      <li>2003 參與「第四屆海峽兩岸美術教育交流會(主題：視覺文化解)」。</li>
+      <li>於師大藝廊策劃畫家袁金塔2003＜人性進化論＞新作發表暨創作全紀錄，10/11。</li>
+      <li>「國立歷史博物館」傳統水墨畫數位學習課程設計專案顧問，2003/8/1-2004/7/31。</li>
+      <li>2004 擔任「國立歷史博物館」國科會&lt;傳統水墨化數位學習課程設計及學習素材分析研究&gt;研究專員行政院文化建設委員會「台灣美術地方發展史撰述計畫」撰述委員。</li>
+      <li>首都師範大學亞洲美術教育研究發展中心研究員。</li>
+      <li>2004-至今 國立台北科技大學兼代本校藝文中心主任。</li>
+      <li>2005 中華民國大學院校藝文中心協會第三屆理事。</li>
+      <li>2006 國立台北科技大學專任助理教授。</li>
+      <li>國立台北科技大學兼任秘書室公共關係組組長。</li>
+      <li>國防部後備司令部95年度心輔創意漫畫徵選評審委員。</li>
+      <li>台北科技大學親善大使甄選評審委員。</li>
+      <li>國防部後備司令部97年度「全面關懷、珍惜生命」心輔創意漫畫徵選評審委員。</li>
+      <li>國立台北科技大學96年運動大會委員會常務委員。</li>
+      <li>國立台北科技大學96學年度研究所招生委員。</li>
+      <li>國立台北科技大學「科技研究大樓新建工程」公共藝術設計執行小組委員。</li>
+      <li>國立台北科技大學「科技研究大樓榮譽藝術設計小組」委員。</li>
+      <li>「國華人壽兒童彩繪公車比賽」評審委員。</li>
+      <li>指導「2007裕隆日產汽車創新風雲賞」造型設計組初選活動。</li>
+      <li>「IEYI世界青少年發明展台灣選拔活動」評審委員。</li>
+      <li>獲邀教育部個案教學推動計畫－個案撰寫研習營（第二期）。</li>
+      <li>國立台灣美術館「台灣美術丹露」網站建置計畫主持人。2007/8/1-2007/12/31。</li>
+      <li>2007-2009 國科會高瞻計畫子計畫三：「自動化科技與人性創意」創新課程研究，共同主持人。</li>
+      <li>2008 國防部後備司令部97年度「珍愛生命、希望無限」心輔創意漫畫徵選評審委員。</li>
+      <li>「2008全國創意教學獎」評審委員。56. 參與「2008海峽兩岸創意產業合作展高峰論壇」。</li>
+      <li>國立台北科技大學96學度第二學期創新設計研究所碩士學位考試委員。</li>
+      <li>國立台北科技大學科技研究大樓榮譽牆設置工程採購案評選委員。</li>
+      <li>國立台北科技大學創新創意學程委員。</li>
+      </ul>
+      <p><strong>演講：</strong></p>
+      <ol>
+      <li>2002 海峽兩岸美術教育演進與展望座談會。</li>
+      <li>2005 正修科技大學藝術中心國際現代水墨學術座談會。</li>
+      <li>2006 藝術與新意—國立台北科技大學設計學院上圓建築講座—大師設計講座。(總策劃)</li>
+      <li>紙傘彩墨活動彩墨示範。2006/2/22。</li>
+      <li>創意過生活—設計相關產官學合作分享。MFA(美術碩士)系</li>
+      </ol>
+
+
+          </div>  
+                                </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_chen">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content">
+
+                      <div class="close-teacher_list_chen">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container"  onscroll="scrollimg('chen01');">
+                            
+    <div class="teacher_detail_img">
+    <img class="chen01"  src="./images/chen01.png">
+    </div>
+    <div class="teacher_detail_description">
+      <h2>陳圳卿 Chun-Ching Chen</h2><br>
+      <p><strong>E-mail</strong>&nbsp;：<a href="mailto:cceugene@ntut.edu.tw">cceugene@ntut.edu.tw</a><br>
+      <strong>聯絡電話</strong>&nbsp;：886-2-2771-2171 分機 4573<br>
+      <strong>職稱</strong>&nbsp;：專任副教授<br>
+      <strong>研究範疇</strong>&nbsp;：使用者經驗分析 /&nbsp;人機介面設計 /&nbsp;使用性工程 /&nbsp;人因設計 /&nbsp;產品設計</p>
+      <p><strong>學歷</strong>：<br>
+        英國 Coventry University, VIDe Design Research Centre 博士<br>
+        大同工學院工業設計研究所碩士<br>
+        大同工學院工業設計學系學士</p>
+      <p><strong>經歷</strong>：<br>
+        銘傳大學商品設計學系專任助理教授<br>
+        國立台北科技大學設計學院兼任助理教授<br>
+        大同大學工業設計學系兼任助理教授<br>
+        國立台北教育大學造形設計學系兼任助理教授</p>
+
+      <p><strong>專書論文：</strong></p>
+      <ul>
+      <li>（2010）
+      <ol>
+      <li><u>Chen, C. C.</u> &amp; Chieu, Y. J. 2010. A Study of Different Users' Evaluation on Museum Guide Map Design. In D. Y. Lin &amp; H. C. Chen (Eds.) <em>Ergonomics for All: Celebrating PPCOE's 20 years of excellence</em>, 485-489. London: Taylor &amp; Francis.</li>
+      </ol>
+      </li>
+      </ul>
+      <p><strong>期刊論文：</strong></p>
+      <ol>
+      <li><u>陳圳卿</u>、陳嘉妮，2011。多點觸控手持式行動裝置之互動介面使用性評估研究。臺北科技大學學報。44-1，89-118。</li>
+      <li>何明錦、吳可久、<u>陳圳卿</u>、毛犖、廖慧燕，2011。通用設計理念下之都市公園設計指引。建築學報，76，技術專刊，105-128。(TSSCI)</li>
+      <li>Huang, K. C., Wang, H. F. &amp; <u>Chen, C. C.</u> 2010. Effects of Shape, Size, and Chromaticity of Stimuli on Estimated Size in Normally Sighted, Severely Myopic, and Visually Impaired Students. <em>Perceptual and Motor Skills</em>, 110(3), 931-940. (SSCI)</li>
+      <li><u>陳圳卿</u>、陳遠修、廖芷宜，2010。自創品牌企業內部之設計指導研究。<em>設計競爭力期刊</em>，2，73-96。</li>
+      </ol>
+      <p><strong>研討會論文：</strong></p>
+      <ol>
+      <li>Chen, C. C., Hsu, Y. T. 2012. Using an Interactive Art Installation to Elicit Interaction Experience. In <em>2012 IEEE CSAE Proceedings</em>, Zhangjiajie, China, May. 25-27, 2012.(EI)</li>
+      <li>Chen, C. D., Tsai, C. H. &amp; <u>Chen, C. C.</u> 2011. The Usability of Augmented Reality Supporting the Mockup Making in Industrial Design Learning. In <em>IASDR 2011 Proceedings</em>, Delft, the Netherlands, Oct. 31-Nov. 4, 2011. (NSC99-2221-E-027-079-)</li>
+      <li><u>Chen, C. C.</u>, Chen, C. M. 2011. The Application of Interactive Media Display Technology in Environmental Science Learning. <em>HCI International 2011</em>.(EI)</li>
+      <li><u>Chen, C. C.</u> &amp; Wen, C. M. 2010. A Usability Study of Digital Game Interface. In <em>APCHI 2010 Proceedings</em>, 626-631, Bali, Indonesia, Aug. 2-6, 2010. (NSC 95-2221-E-130-009-)</li>
+      <li><u>Chen, C. C.</u>, Chieu, Y. J. 2010. A Study of Different Users' Evaluation on Museum Guide Map Design. In D. Y. Lin &amp; H. C. Chen (Eds.) <em>Proceedings of The 9th Pan-Pacific Conference on Ergonomics</em>. Kaoshiung, Taiwan, Nov. 7-10, 2010.</li>
+      <li><u>Chen, C. C.</u> &amp; Chen, E. T. 2009. A Study on Taiwanese Readers’ Preference of Book Binding Design. In <em>IASDR 2009 Proceedings</em>, Souel, Korea, Oct. 18-20, 2009.</li>
+      <li><u>Chen, C. C.</u>, Woodcock, A. &amp; Scrivener, S. A. R. 2006. A simulation based evaluation method for in-car interface designers. In R. N. Pikaar (Eds.) <em>Proceedings IEA2006 Congress</em>, Oxford: Elsevier.</li>
+      <li>許育慈、王立全、<u>陳圳卿</u>、李來春，2011。互動性滲入觀賞經驗產生觀眾主客體角色轉換探討-以互動創作Mechanical Neurons為例。<em>2011</em><em>台灣感性學會研討會論文集</em>。高雄：高雄師範大學。</li>
+      <li>蔡佩珊、<u>陳圳卿</u>，2011。應用情境劇本設計於智慧化會展服務系統規劃。<em>第十六屆中華民國設計學會學術研討會</em>。台北：國立台北科技大學。</li>
+      <li>廖若廷、<u>陳圳卿</u>，2011。應用情境互動式遊戲設計於個人化中風復健系統。<em>第十六屆中華民國設計學會學術研討會</em>。台北：國立台北科技大學。</li>
+      <li>廖若廷、<u>陳圳卿</u>、曹筱玥，2011。「軍爭之璽」 - 以互動創作傳達古代中國戰爭文化。<em>2011</em><em>數位內容與多媒體應用研討會</em>。苗栗：育達商業科技大學。</li>
+      <li>吳孟純、<u>陳圳卿</u>、曹筱玥，2011。結合中國詩詞之互動創作-以&lt;&lt;字衍&gt;&gt;一作為例。<em>2011</em><em>新媒體創作與資訊科技國際研討會</em>。彰化：建國科技大學。</li>
+      <li>謝昀、<u>陳圳卿</u>、曹筱玥，2011。3D立體投影視覺呈現及互動概念研究-以&lt;&lt;築城&gt;&gt;為例。<em>2011</em><em>新媒體創作與資訊科技國際研討會</em>。彰化：建國科技大學。</li>
+      <li>陳嘉妮、張秀如、<u>陳圳卿</u>、張登文，2010。情境互動家具設計之探討-以「Swan Girl」創作為例。<em>2010</em><em>台灣感性學會研討會論文集</em>，115-120。台中：東海大學。</li>
+      <li>蔡佩珊、<u>陳圳卿</u>、曹筱玥，2010。漢字傳達中國哲學思想之互動設計創作–以＜隨行＞一作為例。<em>2010</em><em>台灣感性學會研討會論文集</em>，295-300。台中：東海大學。</li>
+      <li>劉瑞祥、<u>陳圳卿</u>、曹筱玥，吳可久，2010。漢字互動創作–上上籤。<em>2010</em><em>台灣感性學會研討會論文集</em>，343-348。台中：東海大學。</li>
+      <li>蔡承佑、曹筱玥、<u>陳圳卿</u>，2010。互動科技與水墨藝術之融合<strong>-</strong>以黃光男水墨畫作「圓仔花」為例。<em>2010</em><em>台灣感性學會研討會論文集</em>，349-354。台中：東海大學。</li>
+      <li>李吉思、蔡仁惠、吳可久、<u>陳圳卿</u>，2010。公園路徑通用化設計方針之探討。<em>第</em><em>17</em><em>屆中華民國人因工程學會年會暨學術研討會論文集</em>，E198。台北：大同大學。</li>
+      <li><u>陳圳卿</u>、廖芷宜、衛萬里，2009。自創品牌企業內部之設計指導模式初探。<em>2009</em><em>銘傳大學設計國際學術研討會論文集</em>。桃園：銘傳大學。</li>
+      <li><u>陳圳卿</u>、溫茜棉，2008。數位遊戲操作介面設計之研究─以任天堂遊戲機為例。<em>第</em><em>15</em><em>屆中華民國人因工程學會年會暨學術研討會論文集</em>。台北：聖約翰大學。(NSC 95-2221-E-130-009)</li>
+      <li>林怡劭，<u>陳圳卿</u>，2008。印刷設計管理現況改善之初探─以某國營個案印刷廠為例。<em>2008</em><em>華梵大學設計與文化學術研討會論文集下冊</em>，309-316。台北：華梵大學。</li>
+      <li>陳怡岑，<u>陳圳卿</u>，2008。書籍裝幀設計與讀者偏好關係之初探。<em>2008</em><em>銘傳大學設計國際學術研討會論文集</em>。桃園：銘傳大學。</li>
+      <li>邱駿鵬，<u>陳圳卿</u>，2007。網頁中文字編排方式對視認績效影響之初探。<em>2007</em><em>年第一屆創新管理學術與實務研討會論文集</em>。桃園：萬能科技大學。</li>
+      <li>邱瀅如，<u>陳圳卿</u>，2007。導覽圖設計原則之初探─以臺北地區展示館為例。<em>2007</em><em>銘傳大學設計國際學術研討會論文集</em>，387-396。桃園：銘傳大學。</li>
+      <li>沈育璘，<u>陳圳卿</u>，2007。女性消費愉悅性與產品設計關係之初探-以機車為例。<em>2007</em><em>銘傳大學設計國際學術研討會論文集</em>，488-497。桃園：銘傳大學。</li>
+      <li>黃于軒，<u>陳圳卿</u>，2007。符號消費與運動產品設計關係之初探。<em>2007</em><em>銘傳大學設計國際學術研討會論文集</em>，498-507。桃園：銘傳大學。</li>
+      <li><u>陳圳卿</u>，2006。車內人機介面使用性測試工具之設計與評估。<em>第</em><em>13</em><em>屆中華民國人因工程學會年會暨學術研討會論文集</em>，A076。高雄：義守大學。</li>
+      <li>簡詩穎，<u>陳圳卿</u>，邵耀華，2006。自閉症兒童創新玩具之設計。<em>第十一屆中華民國設計學會設計學術研討會論文集</em>，D-01。台中：東海大學。</li>
+      <li>楊亦婷，<u>陳圳卿</u>，2006。數位行動遊戲人機介面設計使用性之探討-以手持式遊戲介面為例。<em>2006</em><em>知識創新與前瞻設計研討會論文集</em>，編號6-6。台北：國立台北科技大學。</li>
+      <li>簡詩穎，<u>陳圳卿</u>，2006。遊憩設施安全設計之初探-以大台北地區幼稚園為例。<em>2006</em><em>知識創新與前瞻設計研討會論文集</em>，編號6-14。台北：國立台北科技大學。</li>
+      <li>陳品岑，<u>陳圳卿</u>，2006。品牌影響消費購買行為與愉悅性關係初探─以手機產品為例。<em>2006</em><em>銘傳大學設計國際學術研討會論文集</em>，93-102。桃園：銘傳大學。</li>
+      <li>朱嘉雯，<u>陳圳卿</u>，2006。品牌與產品風格關係之初探─以臺灣地區消費型數位相機為例。<em>2006銘傳大學設計國際學術研討會論文集</em>，103-110。桃園：銘傳大學。</li>
+      </ol>
+      <p><strong>其他：</strong></p>
+      <ul>
+      <li>（2007）
+      <ol>
+      <li>陳圳卿數位遊戲人機介面使用性設計研究 (國科會專題研究計畫成果報告，NSC95-2221-E-130-009)。</li>
+      <li>簡詩穎、陳圳卿、邵耀華。空間概念學習輔助裝置-新型專利，專利號碼：新型第M314634號。</li>
+      </ol>
+      </li>
+      <li>（2003）
+      <ol>
+      <li>Chen, C. C. Embedding ergonomics in in-car interface design: The development of a simulation based evaluation method (Doctoral dissertation,University, 2003).</li>
+      </ol>
+      </li>
+    </ul>
+    </div>  
+    
+  
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_wang">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content"  >
+
+                      <div class="close-teacher_list_wang">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container" onscroll="scrollimg('wang01');">
+                                <div class="teacher_detail_img">
+    <img class="wang01" src="./images/wang01.png">
+    </div>
+    <div class="teacher_detail_description">
+<h2>王聖銘 Wang, Sheng-Ming</h2>
+<p><strong>E-mail</strong> :&nbsp;<a href="mailto:ryan5885@mail.ntut.edu.tw" target="_blank">ryan5885@mail.ntut.edu.tw</a><br>
+<strong>聯絡電話</strong> ：886-2-2771-2171 分機 8907<br>
+<strong>職稱</strong>&nbsp;：專任助理教授<br>
+<strong>研究範疇</strong>：服務設計/智慧人機互動技術/使用者經驗設計與評估/智慧城市與空間互動/嚴肅遊戲設計與評估</p>
+<p><strong>學歷背景</strong>：<br>
+英國里茲大學電腦學院資訊學系博士<br>
+國立台灣大學 建築與城鄉研究所碩士<br>
+國立成功大學都市計畫學系學士</p>
+<p><strong>學術專長</strong>：<br>
+  網路互動程式與媒體設計<br>
+  網際網路技術與應用<br>
+  數位影像處理<br>
+  空間資料庫、資訊系統與知識管理<br>
+  文化創意產業知識管理<br>
+  智慧城市</p>
+<p><strong>開授課程</strong>：<br>
+  數位影像處理（研究所）<br>
+  虛擬實境技術與應用（研究所）<br>
+  互動介面技術原理與應用（研究所）<br>
+  智慧城市專論（研究所）<br>
+  文化創意產業知識管理（研究所）<br>
+  研究方法（研究所）<br>
+  互動設計概論（大學部）<br>
+  多媒體創意設計（大學部）<br>
+  設計研討（大學部）</p>
+  
+
+
+<p><strong>科技部研究計畫：</strong></p>
+<ol>
+<li>智慧聯網電視互動模式之設計思考與使用者經驗評估</li>
+<li>搭配多元智慧載具並結合影像與聲音技術之聯網電視人性化互動介面</li>
+<li>智慧城市多模式互動資訊服務節點之服務設計</li>
+<li>能源科技計畫成果轉化及太陽能光電多模式互動展示平台發展之服務設計智慧城市互動資訊服務節點之規劃研究</li>
+<li>以語音和影像為基礎之聯網電視多使用者自然人機介面</li>
+</ol>
+
+<p><strong>期刊審稿委員：</strong></p>
+<ol>
+<li>Journal of Industrial and Production Engineering, 2014</li>
+<li>International Journal of Design Creativity and Innovation, 2013</li>
+</ol>
+<p><strong>國際研討會議程及審稿委員：</strong></p>
+<ol>
+<li>The 2014 International Symposium on Interaction design and Human Factors (IDHF)</li>
+<li>The Second International Symposium of Chinese CHI (Chinese CHI 2014)</li>
+<li>The 3rd international Conference on Consumer Electronics, Communications and Networks (CECNet2013)</li>
+<li>2013 Fifth International Conference on Service Science and Innovation (ICSSI)</li>
+<li>The 2013 Asia Pacific Signal and Information Processing Association Annual Summit and Conference</li>
+</ol>
+
+<p><strong>研究著作：</strong></p>
+<p><strong>一、期刊論文</strong></p>
+<ol>
+<li>Sheng-Ming Wang (2015, Jul). Integrating Service Design and Eye Tracking Insight for Designing Smart TV User Interfaces. International Journal of Advanced Computer Science and Applications, 6(7). (SCIE). MOST 103-2221-E-027-062. 本人為第一作者、通訊作者.</li>
+<li>Sheng-Ming Wang and CHeih-Ju Huang (2015, Mar). Service Design for
+Developing Multimodal Human-Computer Interaction for Smart TVs.
+International Journal of Advanced Computer Science and Applications, 6(2),
+227-234. (SCIE). MOST 103-2221-E-027-026. 本人為第一作者、通訊作者.</li>
+<li>Sheng-Ming Wang and Chieh-Ju Huang (2014, Dec). The Design of Interactive
+Services in a Smart City Node. Architecture Science. MOST 102-2410-H-027-
+014. 本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming (2014, Mar). Public Service Space Remodeling based on
+Service Design and Behavioral Maps. Journal of Industrial and Production
+Engineering (TSSCI, EI), 31(2), 76-84. NSC 101-2410-H-027-019. 本人為第一 作者、通訊作者.</li>
+<li>Chu, Ho-Tsung, Wang, Sheng-Ming , Hou, Jia-Li , Tang, Jih-Hsin and Sheu, JyhJian
+(2012, Nov). Customer Behavior Analysis by Using Multiple Databases: a
+Case of University Students’ Use of Online Bookstore Services. Journal of
+Internet technology, 13(6), 891-907. (SCI).</li>
+<li>Wang, Sheng-Ming , Yang, Wei-Pang , Chou, Hsin-Ping , Chen, Fu-Mei , Hou,
+Jia-Li , and Sheu, Jyh-Jian (2012, Sep). Automatic Bibliographic Component
+Extraction Using Conditional Random Fields. Journal of Internet technology,
+13(5), 737-748. (SCI). 本人為第一作者.</li>
+<li>王聖銘（2015年06月）。群眾外包災情資訊之評估與檢證-以莫拉克颱風為例。災害防救科技與管理學刊，7(1)。科技部：102-2410-H-027-014。本人為 第一作者、通訊作者.</li>
+</ol>
+
+<p><strong>二、專書論文</strong></p>
+<ol>
+<li>Sheng-Ming Wang, Cheij-Ju Huang, Lun-Chang Chou, and Pei-Lin Chen. An
+Innovation Design for Hazardous Chemical/Gases Disaster Detection and
+Analysis Equipment by Using Cross-Cultural User Scenarios and Service
+Design.. Cross-Cultural Design Methods, Practice and Impact: 7th International
+Conference, CCD 2015, Held as Part of HCI International 2015, Los Angeles,
+CA, USA, August 2-7, 2015, Proceedings, Part I (ISBN: 978-3-319-20906-7).
+Cham, USA: Springer International Publishing. Aug, 2015: pp 232-240.</li>
+<li>王聖銘、陳富美、賴坤成、林峰田 （2011年11月）。鄉鎮市層級行政體系地理 資訊系統發展的經驗分析–以台東市多目標地理資訊系統的發展為例。電子 治理：理論與實務的臺灣經驗（ISBN：9789571163628）（343-354）。台 灣：五南圖書出版公司</li>
+</ol>
+
+<p><strong>三、具審查制度之論文發表</strong></p>
+<ol>
+<li>Jyh-Jian Sheu, Sheng-Ming Wang, Ko-Tsung Chu, Jih-Hsin Tang, Customer Behavior Analysis by Using Multiple Databases: a Case of University Students’ Use of Online Bookstore Services, Journal of Internet Technology (Accepted and in Publishing, SCI, EI)</li>
+<li>Sheng-Ming Wang, Fu-Mei Chen, Hsin-Ping Chou, Wei-Pang Yang, And Jyh-Jian Sheu, Automatic Bibliographic Component Extraction Using Conditional Random Fields, Journal of Internet Technology (Accepted and in Publishing, SCI, EI)</li>
+<li>王聖銘、陳富美、陳信成，鄉鎮戶籍資料流通風險分析與管理策略，電腦稽核期刊，第21 期，2009 年12 月。</li>
+<li>Sheng-Ming Wang, Fu-Mei Chen, Kai-Wei Chen, Wei-Pang Yang, Using Reversible Steganography Algorithm to Embed Metadata in Vector Maps, 資訊管理學報，第16 期，第四卷，2009 年10 月。(TSSCI)</li>
+<li>王聖銘、陳富美，利用Open API 的技術發展互動式空間資訊服務，台灣人文地理資訊系統案例與研究，國立東華大學鄉土文化學系出版，2009 年5 月。</li>
+<li>Sheng-Ming Wang and Fu-Mei Chen, The Development of a Ubiquitous Geographic Information Service by Using Service-Oriented Architecture, Proceeding of 2008 IEEE Asia-Pacific Services Computing Conference (IEEE APSCC 2008). December 2008 (EI),</li>
+<li>王聖銘、陳富美、張李來，台東偏遠原住民部落社區自然災害資訊管理應用調查與分析，現代物業管理，2008 年7 月。</li>
+<li>王聖銘、洪斯婷、謝瑋凌，整合Web 2.0 及RIA 技術探討知識管理系統的發展，經營管理論叢，Vol 3, No. 2，2007 年12 月。</li>
+<li>陳凱威、王聖銘、張勝杰、王宗銘，向量地圖資料隱藏演算法，興大工程學刊，Vol 18, No. 2, pp 111-124，2007 年7 月。</li>
+<li>陳凱威、王聖銘、鄭友銘、王宗銘，轉換域上的數位地圖資料隱藏演算法， 資訊安全通訊，Vol 13, No. 1, pp 112-130，2007 年1 月。</li>
+<li>王聖銘、陳富美、鄭智航、賴坤成、林峰田，鄉鎮市層級行政體系地理資訊系統發展的經驗分析–以台東市多目標地理資訊系統的發展為例，規劃學報，2006。</li>
+<li>王聖銘，An Object-Based Method to Integrate Remote Sensing and Geographical Information for Advanced Feature Extraction，台灣地理資訊學刊，2005。</li>
+<li>謝昆霖、王聖銘、鄭承昌、吳朝筆，超級視訊格網技術應用於軍事院校協同教學之先期研究，陸軍工兵軍事期刊，2005。</li>
+<li>王聖銘、鄭承昌、謝昆霖，以寬頻學術網路視訊會議開設國際通識講座的發展與應用，通識年刊，2005 年1 月。</li>
+<li>王聖銘、陳泰弘，網際網路智慧型大樓災害管理空間資訊系統的發展，國土資訊系統通訊，第43 期，2002 年9 月。</li>
+<li>王聖銘，921 地震網際網路線上災情資訊管理系統的發展，國科會科學發展月刊，第29 卷第1 期，2001 年1 月。</li>
+<li>王聖銘、羅俊雄、孫志鴻(2000)，921 集集地震資料分析與災情資訊管理系統之發展，土木技術雜誌，2000 年8 月。</li>
+<li>孫志鴻、朱子豪、林峰田、蔡博文、王聖銘，災害管理決策支援系統之研究， 中央警察大學防災管理學報。2000 年3 月</li>
+</ol>
+<p><strong>四、研討會發表文章</strong></p>
+<ol>
+<li>Sheng-Ming Wang and Chieh-Ju Huang (2015, Jul). Fusion of Old and New,Creativity in Educational and Historical Way: Board Game with Servicescape Concept in TaipeiTech University Town . International Conference on Engineering Design 2015, Milan, Italy. MOST 102-2410-H-027-014. 本人為第 一作者、通訊作者.</li>
+<li>Guan-Lin Liu, Chieh Ju Huang, Sheng-Ming Wang (2015, Apr). HAND ON:
+CHINESE GLOVE PUPPETRY CULTURAL PERFORMANCE EXPERIENCE
+WITH GESTURE TECHNOLOGY. The Third International Symposium of
+Chinese CHI (Chinese CHI 2015), Seoul, Korea. MOST 103-2221-E-027-062.</li>
+<li>Sheng-Ming Wang and Cheih-Ju Huang (2014, Nov). USING EYE-TRACKING
+SYSTEM FOR PROTOTYPE EVALUATION OF SMART TV USER
+INTERFACE DESIGN. 2014 Asia Design Engineering Workshop (A-DEWS
+2014). MOST 101-2219-E-027-007. 本人為第 一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming, Bailey, Veronique and Hartanto, Cipto (2014, May).
+Developing Hybrid Internet Broadcast Television User Interface Base on User
+Experience Design Principle. 2014 IEEE International Conference on Consumer
+Electronics - Taiwan, Taipei, TAIWAN. MOST 101-2219-E-027-007. 本人為第 一作者、通訊作者.</li>
+<li>Cheih-Ju Huang and Sheng-Ming Wang (2014, May). Developing Cultural
+Creative Product Conceptual Design Teaching System: Case Study of an
+Industry-University Collaboration Project. International Conference on Service
+Science and Innovation 2014, Taipei, TAIWAN.</li>
+<li>Sheng-Ming Wang and Cheij-Ju Huang (2014, May). Service Design for Smart
+TV Human-Computer Interaction Development. International Conference on
+Service Science and Innovation 2015. MOST 101-2219-E-027-007. 本人為第一 作者、通訊作者.</li>
+<li>Wang, Sheng-Ming and Huang, Cheih Ju (2014, May). QFD and AHP
+Integration for Smart TV Human-Computer Interaction Design. IEEE
+International Conference on Consumer Electronics - Taiwan (IEEE 2014 ICCETW)
+, Taipei, TAIWAN. NSC 101-2219-E-027-007. 本人為第一作者、通訊作者</li>
+<li>Wang, Sheng-Ming and Huang, Chieh-ju (2014, Apr). User Experience Analysis
+on Urban Interaction and Information Service in Smart City Nodes. The Second
+International Symposium of Chinese CHI (Chinese CHI 2014) jointly with the
+ACM SIGCHI Conference on Human Factors in Computing Systems (CHI
+2014). (Acceptance Rate: 30.9%), Toronto, Canada. MOST 102-2410-H-027-
+014. 本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming and Chen, Fu-Mei (2014, Mar). The Analysis of Information
+Crowdsourcing Cloud for Disaster Management: Case Studies of Taiwan
+Morakot Typhoon. International Symposium on Grids and Clouds 2014, Taipei,
+TAIWAN. NSC 102-2410-H-027-014. 本人為第一作者、通訊作者</li>
+<li>Molina, Rhecel and Wang, Sheng-Ming (2013, Nov). Reconfiguring
+Servicescape of Historical Sites: in the case of City Elements in TaipeiTech
+University Town. The 12th Asian Planning Schools Association Conference.
+NSC 102-2410-H-027-014. 本人為通訊作者.</li>
+<li>Cobar, Frida and Wang, Sheng-Ming (2013, Oct). Urban Regeneration by
+Applying Creative City Concepts and Service Design in a Smart City: Case
+Study of TaipeiTech University Town. The 7th conference of the International
+Forum on Urbanism (IFoU): CREATIVE RENAISSANCE, Tainan, TAIWAN.
+NSC 102-2410-H-027-014. 本人為通訊作者.</li>
+<li>Wang, Sheng-Ming and Hartanto, Cipto (2013, Oct). An Observation and
+Evaluation of Urban Interaction Created by Interactive Digital Signage. The 7th
+conference of the International Forum on Urbanism (IFoU), Tainan, TAIWAN.
+NSC 101-2410-H-027-014. 本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming and Olivia, Sisca (2013, Oct). The Integration of Eco-City
+and Smart City Concepts for Innovative Urban Service Development in The
+Case Study of TaipeiTech University Green Gate Area. The 7th conference of the
+International Forum on Urbanism (IFoU): CREATIVE RENAISSANCE. NSC
+101-2410-H-027-019. 本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng Ming (2013, Aug). The Design of Interactive Services in Smart
+City Node. International Symposium on Urban Planning 2013: Resilient and
+Sustainable Cities. MOST 101-2410-H-027-019. 本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming , Hartanto, Cipto , Ho, Hsu-Young (2013, Aug). Service
+Design for the Multimodal Interaction Development of Hybrid Internet
+Broadcast TV. The 26th IPPR Conference on Vision, Graphics and Image
+Processing, I-Lan University, TAIWAN. NSC 101-2219-E-027-007. 本人為第一 作者、通訊作者.</li>
+<li>Wang, Sheng-Ming; Molina, Rhecel; Anizar, Meutia; Wilczek, Wojciech (2013,
+Aug). Remodel the Public Service based on Behavioral Maps and Service Design
+in Case of Taipei MRT Exit.. 19th International Conference on Engineering
+Design (ICED13), Seoul, Korea. NSC 101-2410-H-027-019. 本人為第一作者、 通訊作者.</li>
+<li>Wang, Sheng-Ming; Aguilera, Daniel (2013, May). Service Design for the Urban
+Interaction in Smart City Node: A Case Study of Taipei MRT Exit. 7th, 2013
+International Conference on Planning and Design. NSC 101-2410-H-027-019. 本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming and Tseng, Clare L.T. (2012, Dec). The Servicescape of
+Urban Flows: Mapping Experiences for the Urban Node of Taipei MRT Exit.
+2012 10th Annual Conference of Asia Digital Art and Design Association and 6th
+International Conference of Taiwan Association of Digital Media Design, 台
+中，台灣. NSC 101-2410-H-027-019. 本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming , Chiu, Ching-Sheng (2012, Nov). A Reversible Information
+Hiding Algorithm for 2D Vector Maps. 2011 IEEE International Symposium on
+Intelligent Signal Processing and Communication Systems, Tamshui, Taiwan.
+NSC 100-2410-H-027-013. 本人為第一作者、通訊作者.</li>
+<li>王聖銘、王如薏、張唯倫（2015年07月）。應用眼動儀於運動資訊介面設計之 使用者經驗評估。第一屆人計畫動研討會(TAI-CHI 2015)，新北市，台灣。科 技部：103-2221-E-027-062。本人為第一作者</li>
+<li>王聖銘、林誠展（2015年07月）。設計思考結合創客運動之研究。第一屆人機 互動研討會(TAI-CHI 2015)，新北市，台灣。本人為第一作者</li>
+<li>王聖銘、葉永森（2015年05月）。數位遊戲式學習設計與評估:以嚴肅遊戲 「能源戰爭」為例。第19屆全球華人計算機教育應用大會（GCCCE
+2015），Taipei, TAIWAN。科技部：102-3113-S-027-001。本人為第一作者、 通訊作者.</li>
+<li>王聖銘、劉官霖、徐耿皓（2015年05月）。三維數位內容互動學習系統之發展 與應用－以布袋戲為例。第19屆全球華人計算機教育應用大會(GCCCE
+2015)。科技部：104-2514-S-009-001。本人為第一作者、通訊作者.</li>
+<li>王聖銘, 劉官霖,徐耿皓（2013年11月）。節能減碳數位學習嚴肅遊戲之多模 式互動設計。TWELF 2013 第9屆台灣數位學習發展研討會，台中，台灣。國 科會：102-3113-S-027-001。本人為第一作者、通訊作者.</li>
+<li>Wang, Sheng-Ming; Aguilera, Daniel; Cobar, Frida; Aganda, John（2013年08 月）。Service Design for Social Space in Smart City in Case of a Taipei MRT Station Exit. 19th International Conference on Engineering Design (ICED13)，Seoul, Korea。國科會：101-2410-H-027-019。本人為第一作者、通訊作者.</li>
+<li>何煦陽，王聖銘（2013年05月）。年輕族群智慧聯網電視互動介面發展的服 務設計。2013 世界華人工業設計論壇，台灣，台北。國科會：101-2219-E-027-007。本人為通訊作者.</li>
+<li>王聖銘（2012年06月）。地理標記語言之可逆式資訊隱藏方法。2012台灣地 理資訊學會年會暨學術研討會，台中，台灣。國科會：100-2410-H-027-013。
+本人為第一作者、通訊作者.</li>
+<li>王聖銘、陳富美、宋立垚、彭光輝（2012年06月）。智慧城市互動式資訊服務 節點規劃。2012台灣地理資訊學會年會暨學術研討會，台中，台灣。國科 會：101-2410-H-027-019。本人為第一作者、通訊作者.</li>
+<li>王聖銘、黃馨慧、陳富美（2012年06月）。多模式互動節能減碳數位學習嚴肅 遊戲之發展。2012第八屆知識社群國際研討會(The 8th International
+Conference on Knowledge Community)，台北， 台灣。國科會：100-3113-S-
+143-001。本人為第一作者、通訊作者.</li>
+<li>王聖銘、陳富美、劉炯錫（2012年05月）。災害資訊群眾外包資訊信任度之關 連性探討-以莫拉克颱風為例。2012第23屆國際資訊管理國際研討會(2012
+International Conference on Information Management)，高雄，台灣。本人為第 一作者、通訊作者.</li>
+<li>王聖銘、張沛喬、黃馨慧、劉韋婷（2011年12月）。發展國小學童節能減碳教 育之嚴肅遊戲。2011數位內容學術暨橋接計畫成果研討會，中壢，台灣。國 科會：100-3113-S-143-001。本人為第一作者、通訊作者.</li>
+<li>李柏萱，吳知秦，陳慈欣，羅俋青，黃楷棠，王聖銘（2011年11月）。發展 體感互動之嚴肅遊戲：以消化系統為例。2011 IXDDA 互動經驗設計與數典服務應用學術研討會，臺北，台灣。本人為通訊作者.</li>
+<li>王聖銘、楊水生，應用案例推理於住宅竊盜犯罪偵防之分析，第20 屆國際資訊管理學術研討會：資訊科技服務與價值創造，2010 年5 月。（聯絡作者）</li>
+<li>陳富美、王聖銘，原住民排灣族琉璃珠文化創意產業知識混搭與加值應用， 第20 屆國際資訊管理學術研討會：資訊科技服務與價值創造，2010 年5 月。（聯絡作者）</li>
+<li>陳啟章、王聖銘、施政鴻、吳俊德、陳富美，網路互動式情境感知3D 空間資訊介面發展，第15 屆資訊管理實務研討會，2009 年12 月。（聯絡作者）</li>
+<li>林延錄、王聖銘、陳富美，原住民文化創意產業知識分類初探-以排灣族琉璃珠為例，第10 屆資訊管理學術暨新興科技實務國際研討會。2009 年11 月。（聯絡作者）</li>
+<li>周義育、楊水生、王聖銘，跨單位協同整合犯罪偵查所需資通訊紀錄之SOA 架構規劃，第11 屆「網際空間：資安、犯罪與法律社會」學術暨實務研討會， 2009 年11 月。 （聯絡作者）</li>
+<li>楊水生、周義育、王聖銘，電信業者協助犯罪偵查的SOA 架構-以空間資訊提供為例，2009 年台灣地理資訊學會年會暨學術研討會，2009 年10 月。 （聯絡作者）</li>
+<li>李育儒、王聖銘、黃琬婷、陳冠宏、黃泊澔，建置於FLV 影音串流平台之生態旅遊導覽系統-以台東杉原海域為例，TANET 2009 臺灣網際網路研討會暨全球IPv6 高峰會議， 2009 年10 月。 （聯絡作者）</li>
+<li>林瀚品、王聖銘、林延錄、吳昀峰、陳啟章，整合資訊混搭技術發展互動式三度空間資訊操作介面，第20 屆國際資訊管理學術研討會─資訊科技與創新， 2009 年5 月。（聯絡作者）</li>
+<li>王聖銘、黃鴻鈞、孫珮娟、孫敏慈，以Open API 為基礎架構之多媒體資料與空間資訊整合界面的發展與應用，，第19 屆國際資訊管理學術研討會，2008 年5 月。</li>
+<li>Sheng-Ming Wang, The Development of an Open Source Ubiquitous Geographic Information Management and Service Environment, International Symposium on Grid Computing 2008, April, 2008.</li>
+<li>Sheng-Ming Wang, Fu-Mei Chen, and Jen-Wei San, Using Service-Oriented Architecture for Ubiquitous Geographic Information Service Environment, The Fourth Workshop on Grid Technologies and Applications, 2007 年12 月。</li>
+<li>孫敏慈、孫銘輝、申峻瑋、王聖銘，數位多媒體空間資訊嵌入式系統之發展， TANET 2007, 2007 年10 月。</li>
+<li>王聖銘、陳富美、張李來，台東偏遠原住民部落社區災害管理資訊應用調查與分析，第18 屆國際資訊管理學術研討會，2007 年5 月</li>
+<li>黃鴻鈞、申峻瑋、孫珮娟、孫敏慈、陳富美、王聖銘，互動式空間資訊服務分享技術在行動電子商務上的應用，第八屆電子化企業經營管理理論暨實務研討會，2007 年4 月</li>
+<li>王聖銘、陳富美，(2005)整合地理資訊系統與時序性航照影像資料庫在環境變遷分析上的應用--以九二一地震重大工程及災害地區之變遷分析為例，卑南溪溪流生態調查成果發表及學術研討會。</li>
+<li>謝昆霖、王聖銘、鄭承昌、郭俊賢、林俊男、石啄韋，（2005），「應用視訊格網技術來達成協同教學模式」，2005 電子商務教學系統建置研討會。</li>
+<li>王聖銘、謝昆霖，（2005），「災害防救科技教育、資訊傳播及知識管理系統之建置規劃」」，2005 年第6 屆環境、旅遊學術研討會。</li>
+<li>謝昆霖、謝明哲、王聖銘、楊義清、周君妍、鄭秀慧，（2005），「適合於台東地區的整合式生態旅遊資源管理系統雛形架構之研析」，2005 第6 屆環境、旅遊學術研討會。</li>
+<li>謝昆霖、王聖銘、鄭承昌、郭俊賢、林俊男、石啄韋，（2005），「應用視訊格網技術來達成協同教學模式」，2005 電子商務教學系統建置研討會</li>
+<li>謝昆霖、王聖銘、鄭承昌，超級視訊格網應用於製商整合協同教學之先期研， 2004 新世紀供應鏈變革管理-產業創新與科技整合新思維研討會，2004 年12月。</li>
+<li>王聖銘、鄭承昌，網際網路災害資訊與知識管理系統的規劃與雛型發展， TANET 2004 台灣學術網路研討會，2004 年10 月。</li>
+<li>謝昆霖、王聖銘，AG 在製商整合協同教學雛形架構之研究，2004 電子商務與經營管理研討會，2004 年11 月。</li>
+<li>王聖銘、林峰田，網路互動式災害防就規劃資訊交換平台之系統發展，中日防災科技研討會，2003 年10 月。</li>
+<li>王聖銘，主題式災害空間知識管理之先期研究(英文)，國科會管理學門二成果發表會，2003 年11 月。</li>
+<li>S. M. Wang, T.H. Chen, C. K. Sun, NCHC’s Spatial KM GRID Project, SC 2003, Phoenix, USA, November, 2003.</li>
+<li>李伯潁、陳泰弘、王聖銘、朱賢良，以三度空間影像處理技術發展數位化遙測影像之互動式立體地形，2002 中華地理資訊學會年會暨學術研討會論文集， 2002 年10 月。</li>
+<li>Sheng-Ming Wang, The Development of Chi-Chi Earthquake Building DamageAnalysis System, Proceeding of ICSSD 2000, The first International Conference on Structural Stability and Dynamics, 7-9 Dec, 2000, Taipei, TAIWAN.</li>
+<li>Sheng-Ming Wang and C. H. Loh, Developing a Virtual Disaster Information Management and Analysis System in Internet for Chi-Chi Earthquake, Proceeding of International Workshop on Annual Commemoration of Chi-Chi Earthquake: Volume II Technology Aspect, September 18-20, 2000, Taipei, TAIWAN.</li>
+<li>C.H. Sun, C. L. Yen, Sheng-Ming Wang, S. C. Chan and C. F. Hsieh, Flood Mitigation in Taiwan, Proceeding of Symposium on Science and Policy Working Together in Catchment Management, 國立台灣大學澳洲研究小組出版，2000 年1 月。</li>
+<li>游怡芳、王聖銘、詹仕堅、謝奇峰，災害管理決策支援系統空間資料庫之建置，1999 中華地理資訊學會年會暨學術研討會，27-28 Dec, 1999 台中。</li>
+<li>Sheng-Ming Wang, C.H. Sun and L.C. Chou, Organizing an Integrated Disaster Information network for Hazard Mitigation, 1999 Workshop on Disaster Prevention / Management and Green Technology, 26-28 June, 1999 Foster City, CA, USA.</li>
+<li>C.H. Sun, Sheng-Ming Wang and L.C. Chou, The Collection of Data for the Earthquake Loss Estimation Methodology in Taiwan, 1999 Workshop on Disaster Prevention / Management and Green Technology, 26-28 June, 1999 Foster City, CA, USA.</li>
+<li>Sheng-Ming Wang, C.H. Sun, C.L. Yen, S.C. Chan and C.F. Hsieh, Development of A Spatial Decision Support System for Hazards Mitigation in Taiwan, Codata98, International CODATA Conference, Scientific &amp; Technical Data and Communication for the Sustainable Development of Nations – Data Management in the Evolving Information Society, 8-12 November, 1998, New Delhi, India.</li>
+<li>王聖銘、孫志鴻，防救災空間決策支援系統的發展，1998 中華地理資訊系統學會學術研討會，3 - 4 Dec, 1998, 台北。</li>
+<li>孫志鴻、王聖銘、詹仕堅、謝奇峰， 防救災決策支援系統的研發， Geoinformatic’98 International Conference，中國北京，June, 1998。</li>
+<li>Sheng-Ming Wang, S.A. Roberts and N.D. Efford, Object-Based Approach to Integrate Remotely Sensed Data with Geodata within A GIS Context for Land Use Classification at Urban-Rural Fringe Areas, Proceedings of European Symposium of Aerospace Remote Sensing, Conference on Image and Signal Processing for Remote Sensing III, Institute of Electrical Engineers (IEE), London, United Kingdom, 22-26 September 1997.</li>
+<li>Sheng-Ming Wang, N.D. Efford and S.A. Roberts, Object-Based Approach to Integrate Remotely Sensed Data within A GIS Context for Land Use Change Detection at Urban-Rural Fringe Areas, Proceedings of European Symposium of Aerospace Remote Sensing, Conference on Remote Sensing for Geology Land Management, and Cultural Heritage, Institute of Electrical Engineers (IEE), London, United Kingdom, 22-26 September 1997.</li>
+<li>Sheng-Ming Wang, S.A. Roberts and N.D. Effords, An Object-Based Approach to Integrate Landsat TM Data within A GIS Context for Detecting Land Use Changes at Urban-Rural Fringe Areas, in Proceedings of RSS 97, Observation and Interactive, 23rd Annual Conference and Exhibition of the Remote Sensing Society, The University of Reading, 2-4 September 1997.</li>
+<li>Sheng-Ming Wang, S.A. Roberts, &amp; N.D. Efford, Integration of Object-Oriented Geographical Information Systems with Remote Sensing Data, UK Information System Consortium 1995, Bath, UK, July 1995.</li>
+<li>Sheng-Ming Wang &amp; F.T. Lin, The Application of Cluster Classification Methods for Extracting Spatial Data from Digital Panchromatic Aerial Photograph, The 1st Symposium of The Chinese Institute of Engineers in UK, Cambridge, UK, April 1-2, 1995.</li>
+<li>Sheng-Ming Wang, C.W. Tseng, &amp; C. M. Wang, Parallel Ray Tracing on Distributed Computing Environments. In Proceedings of the Twelfth IASTED International Conference for Applied Informatics, Annecy, France, May 18-20, 1994.</li>
+<li>Sheng-Ming Wang, C.W. Tseng, &amp; C. M. Wang, The Development of a Parallel Ray Tracing System in Distributed Workstation Environment. In Proceedings of The International Conference of Pacific Graphics ‘94, Beijing, China, August 26-29, 1994.</li>
+</ol>
+<p><strong>三、專書報告</strong></p>
+<ol>
+<li>王聖銘，98 年度台東縣數位機會中心輔導計畫結案報告，教育部，2010 年5 月</li>
+<li>王聖銘，97 年度農村再生培根計畫-東一區結案報告，農委會水土保持局台東分局，2009 年6 月</li>
+<li>蔡典謨、王聖銘，96 年度台東縣數位機會中心輔導計畫結案報告，教育部， 2009 年3 月</li>
+<li>王聖銘，96 年度水保局志工培訓計畫結案報告，水保局第五工程所，2007 年12 月</li>
+<li>王聖銘、余偉銘，台東杉原海洋生態社區導覽解說訓練，觀光局東部海岸國家風景區管理處，2007 年11 月</li>
+<li>王聖銘、陳富美，網路互動式都市災害管理資訊交換平台之系統發展，內政部建築研究所，2003 年11 月。</li>
+<li>王聖銘，網路互動式都市災害空間資訊管理系統之發展，內政部建築研究所， 2002 年11 月。</li>
+<li>王聖銘、陳富美，921 地震重建區重大工程與災害範圍時序性航照影像處理與分析，國家地震工程研究中心，2002 年10 月。</li>
+<li>王聖銘、陳坤淼，921 集集大地震-車籠埔斷層重建成果導覽，921 地震重建推動委員會，2002 年12 月。</li>
+<li>王聖銘、羅俊雄，九二一集集大地震後續研究-建置地震資料中心及數位化地震知識庫之先期規劃研究：「九二一集集地震資料分析與災情資訊管理系統」之發展，國家地震工程研究中心，2001 年1 月。</li>
+<li>王聖銘，九二一集集大地震全面勘災精簡報告 – 第十一章：資料庫建置及資料分析與災情資訊管理系統之發展，國家地震工程研究中心，1999 年12 月。</li>
+<li>孫志鴻、王聖銘…等，災害管理決策支援系統架構規劃與雛型系統之建置國科會防災國家型科技計畫資訊研究群八十八年度報告，1999 年9 月。</li>
+<li>孫志鴻、王聖銘…等，防救災決策支援系統的發展，國科會防災國家型科技計畫資訊研究群八十七年度報告，1998 年10 月。</li>
+</ol>
+
+
+
+
+
+
+
+    </div>  
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_cheng">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content">
+
+                      <div class="close-teacher_list_cheng">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container"  onscroll="scrollimg('cheng01');">
+                                <div class="teacher_detail_img">
+    <img class="cheng01" src="./images/cheng01.png">
+    </div>
+    <div class="teacher_detail_description">
+<h2>鄭建文 Chien-Wen Cheng</h2>
+<p><strong>E-mail</strong> ：<a href="mailto:cwcheng@mail.ntut.edu.tw">cwcheng@mail.ntut.edu.tw</a><br>
+<strong>聯絡電話</strong> ：886-2-2771-2171 分機 8908<br>
+<strong>個人網頁</strong>：<a href="http://cwcheng2009.blogspot.com/" target="_blank">http://cwcheng2009.blogspot.com</a><br>
+<strong>戶動音樂與多媒體實驗室</strong>：<a href="http://ilab-ntut.blogspot.tw/" target="_blank">http://ilab-ntut.blogspot.tw/</a><br>
+<strong>職稱</strong> ：專任助理教授<br>
+<strong>研究範疇</strong> ：互動音樂與多媒體表演 /&nbsp;聲音藝術 /&nbsp;音效設計 /&nbsp;數位音樂創作</p>
+<p><strong>學歷</strong>：<br>
+北德州大學音樂藝術博士<br>
+國立交通大學理論作曲碩士<br>
+國立清華大學外國語文學系學士</p>
+<p><strong>經歷</strong>：<br>
+<strong>〈現任〉</strong><br>
+中華民國電腦音樂學會理事<br>
+國立臺北教育大學音樂系兼任助理教授</p>
+<p><strong>〈曾任〉</strong><br>
+私立華夏技術學院數位媒體設計系專任助理教授<br>
+國立臺北藝術大學音樂系兼任助理教授<br>
+國立台灣藝術大學音樂系兼任助理教授<br>
+國立交通大學音樂所兼任助理教授<br>
+私立實踐大學媒體傳達設計系兼任助理教授<br>
+私立明道大學數位設計系兼任助理教授<br>
+華邦電子約聘IC音效、音樂設計師<br>
+臺北數位藝術中心Max/MSP/Jitter互動影音系列工作坊講師</p>
+
+<p><strong>獲獎：</strong></p>
+<table border="0" cellpadding="0" cellspacing="0" class="myTable" width="640">
+<tbody>
+<tr>
+<th>參賽年份</th>
+<th>參賽作品</th>
+<th>作品編制</th>
+<th>名次</th>
+<th>作曲比賽</th>
+<th>主辦單位</th>
+</tr>
+<tr>
+<td>2010</td>
+<td>《晨雨》(Morning Rain)</td>
+<td>鋼琴、電子音樂&nbsp;</td>
+<td>決選作品</td>
+<td>Musica Nova International Competition of Electro-acoustic Music</td>
+<td>Society for Electroacoustic Music in Czech Republic</td>
+</tr>
+<tr>
+<td>2010</td>
+<td>《旅程》(The Journey)</td>
+<td>電子音樂</td>
+<td>決選作品</td>
+<td>the International Competition for Composers "Città di Udine" – Eighth Edition</td>
+<td>Taukay Edizioni Musicali and Delta Produzioni Associazione Culturale</td>
+</tr>
+<tr>
+<td>2009</td>
+<td>《旅程》(The Journey)</td>
+<td>電子音樂</td>
+<td>決選作品</td>
+<td>Bourge&nbsp;國際電子音樂作曲比賽「聲音藝術」組</td>
+<td>Institut International de Musique Electroacoustique de Bourges (Bourge&nbsp;國際電子音樂研究所)</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>《旅程》(The Journey)</td>
+<td>電子音樂</td>
+<td>決選作品</td>
+<td>第六屆Confluencias國際短篇電子音樂創作比賽（VI Electro-Acoustic Miniatures International Contest）</td>
+<td>The Ministry of Culture of the Junta de Andalucía, Spain</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>《風雷引》(Tune of Wind, Rain, and Thunder)</td>
+<td>電子音樂</td>
+<td>區域作曲獎（Regional Composition Prize）</td>
+<td>國際電腦音樂學會&nbsp;年會ICMC年度音樂創作獎項</td>
+<td>國際電腦音樂學會（ICMA）及北愛爾蘭Queens University</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>《扁舟行》(2006修訂版) (Sail Away)</td>
+<td>給豎笛、小提琴、大提琴、鋼琴之四重奏</td>
+<td>首獎(Russell Horn &nbsp;Award)</td>
+<td>Vocies of Change&nbsp;作曲比賽</td>
+<td>美國達拉斯交響樂團</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>《風雷引》</td>
+<td>電子音樂</td>
+<td>優選（第二名）</td>
+<td>全國學生創意作品線上競賽「數位音樂創意類」</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>《三摩地》</td>
+<td>電子音樂</td>
+<td>特優（第一名）</td>
+<td>全國藝術創意作品線上競賽「音樂、音效創意類」</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>《我思》</td>
+<td>電子音樂</td>
+<td>決選作品</td>
+<td>美國電子音樂學會（SEAMUS）Electroclips電子音樂創作比賽</td>
+<td>Society of Electroacoustic Music in the United States</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>《晚春》</td>
+<td>二胡獨奏</td>
+<td>優選（第二名）</td>
+<td>教育部文藝創作獎</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>《雪咒》</td>
+<td>給長笛、二胡、大提琴鋼琴之四重奏</td>
+<td>決選作品</td>
+<td>「2006&nbsp;許常惠音樂創作獎」國際作曲比賽</td>
+<td>文建會</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>《海底尋夢》</td>
+<td>電子音樂</td>
+<td>特優（第一名）</td>
+<td>全國藝術創意作品線上競賽「音樂、音效創意類」</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>《雨夜札記》</td>
+<td>給擊樂的六重奏</td>
+<td>佳作</td>
+<td>第三屆青年打擊樂作曲比賽</td>
+<td>台北打擊樂團</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>《扁舟行》</td>
+<td>給豎笛、小提琴、大提琴、鋼琴之四重奏</td>
+<td>佳作</td>
+<td>教育部文藝創作獎</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>《夜盡長》</td>
+<td>給聲樂與鋼琴</td>
+<td>佳作</td>
+<td>第四屆客家新曲獎歌曲甄選比賽「藝術歌曲組」</td>
+<td>新竹縣文化局</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>《發夢的家鄉》</td>
+<td>給聲樂</td>
+<td>佳作</td>
+<td>第四屆客家新曲獎歌曲甄選比賽「一般歌謠組」</td>
+<td>新竹縣文化局</td>
+</tr>
+</tbody>
+</table>
+<p><strong>影音出版</strong></p>
+<table border="0" cellpadding="0" cellspacing="0" class="myTable" width="640">
+<tbody>
+<tr>
+<th>年份</th>
+<th>出版作品</th>
+<th>出版品名稱</th>
+<th>出版單位</th>
+</tr>
+<tr>
+<td>2009</td>
+<td>電子音樂《旅程》（The Journey）</td>
+<td>VI Concurso Internacional de Miniaturas Electroacusticas 2008&nbsp;（Confluencias短篇電子音樂決賽作品選集）</td>
+<td>Junta de Amdalucia, Consejeria de Cultura</td>
+</tr>
+<tr>
+<td>2009</td>
+<td>影音作品《輪迴》(Samsara)</td>
+<td>SEAMUS DVD One (美國電腦音樂學會影音作品選集)</td>
+<td>Society for Electro-Acoustic Music in the United States</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>電子音樂《風雷引》(Tune of Wind, Rain, and Thunder)</td>
+<td>ICMC 2008 – Routes/Roots (國際電腦音樂學會年會電子音樂作品選集)</td>
+<td>International Computer Music Association</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>影音作品《輪迴》(Samsara)</td>
+<td>Computer Music Journal – Sound and Video Anthology&nbsp; (Vol 31: 4)</td>
+<td>Massachusetts Institute of Technology</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>電子音樂《三摩地》</td>
+<td>95年全國藝術創意作品線上競賽得獎作品集，&nbsp;GPN-4309504203</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>二胡獨奏曲《晚春》</td>
+<td>九十五年度教育部文藝創作獎得獎作品集，&nbsp;GPN-4309503219</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>電子音樂《我思》(Methinks)</td>
+<td>美國電子音樂學會（SEAMUS）二十週年Electroclips&nbsp;電子音樂選集,EAM-2006-2</td>
+<td>Society for Electro-Acoustic Music in the United States</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>電子音樂《海底尋夢》</td>
+<td>94年全國藝術創意作品線上競賽得獎作品集，GPN-4309404027</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>室內樂《扁舟行》</td>
+<td>九十二年度教育部文藝創作獎得獎作品集，GPN-4309204360</td>
+<td>國立台灣藝術教育館</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>聲樂曲《夜盡長》、《發夢的家鄉》</td>
+<td>第四屆客家新曲獎得獎作品集，ISBN-9570276274</td>
+<td>新竹縣文化局</td>
+</tr>
+</tbody>
+</table>
+<p><strong>歷年國內外創作發表暨展演</strong></p>
+<table border="0" cellpadding="0" cellspacing="0" class="myTable" width="640">
+<tbody>
+<tr>
+<th>演出日期</th>
+<th>音樂會、展演名稱</th>
+<th>主辦單位</th>
+<th>演出地點</th>
+<th>發表作品</th>
+</tr>
+<tr>
+<td>2010/11/12</td>
+<td>第六屆國際電腦音樂與音訊技術研討會暨台灣電聲音樂會</td>
+<td>中華民國電腦音樂學會、元智大學資訊傳播系</td>
+<td>元智大學有庠廳</td>
+<td>電子音樂《門後》</td>
+</tr>
+<tr>
+<td>2010/11/12</td>
+<td>《Nexus II關聯》互動多媒體跨領域表演創作發表會</td>
+<td>台灣藝術大學多媒體動畫藝術學系</td>
+<td>景美人權文化園區 中正堂</td>
+<td>Nexus II&nbsp;跨領域互動多媒體表演（與「林珮淳數位藝術實驗室」合作）</td>
+</tr>
+<tr>
+<td>2010/08/18</td>
+<td>Festival International D'Art Acousmatique -Carnets de voyages &nbsp;</td>
+<td>Futura Festival</td>
+<td>Crest (Drôme, France)</td>
+<td>電子音樂《旅程》</td>
+</tr>
+<tr>
+<td>2010/06/28</td>
+<td>《磨合》多媒體舞蹈跨領域創作發表</td>
+<td>國立台灣藝術大學</td>
+<td>國立台灣藝術大學戲劇系八角廳實驗劇場</td>
+<td>Nexus&nbsp;跨領域互動多媒體表演（與「林珮淳數位藝術實驗室」合作）</td>
+</tr>
+<tr>
+<td>2010/06/15</td>
+<td>「第一屆數位藝術表演獎」決選實地演出</td>
+<td>臺北市政府</td>
+<td>皇冠藝文中心小劇場</td>
+<td>Nexus&nbsp;跨領域互動多媒體表演（與「林珮淳數位藝術實驗室」合作）</td>
+</tr>
+<tr>
+<td>2009/10/18</td>
+<td>第五屆國際電腦音樂與音訊技術研討會暨台灣電聲音樂會</td>
+<td>中華民國電腦音樂學會</td>
+<td>國立台灣藝術教育館南海劇場</td>
+<td>給長笛與電腦之互動音樂作品《飛蛾與火》</td>
+</tr>
+<tr>
+<td>2008/10/28</td>
+<td>北京國際電子音樂節《台灣電子音樂家專場音樂會》</td>
+<td>北京中央音樂學院</td>
+<td>北京中央音樂學院</td>
+<td>電子音樂《風雷引》</td>
+</tr>
+<tr>
+<td>2008/10/08</td>
+<td>"A Diamond in the mud" Project,&nbsp;<em>A Miniature Audio Exhibition of Stereophonic Soundscape &amp; Hörspiel Works</em></td>
+<td>Swiss Federal Institute of Technology Zurich</td>
+<td>Literaturhaus Basel, Switzerland</td>
+<td>電子音樂《三摩地》</td>
+</tr>
+<tr>
+<td>2008/08/29</td>
+<td>ICMC 2008 (International Computer Music Conference)</td>
+<td>Queen's University, Belfast, Northern Ireland, U.K.</td>
+<td>Queen's University, Belfast, Northern Ireland, U.K.</td>
+<td>電子音樂《風雷引》</td>
+</tr>
+<tr>
+<td>2008/06/04</td>
+<td>交響屏教大之夢</td>
+<td>屏東教育大學</td>
+<td>台北縣藝文中心演藝廳</td>
+<td>給管樂團與打擊樂器《冬之迴響》</td>
+</tr>
+<tr>
+<td>2008/05/31</td>
+<td>交響屏教大之夢</td>
+<td>屏東教育大學</td>
+<td>屏東六堆客家文化園區演藝廳</td>
+<td>給管樂團與打擊樂器《冬之迴響》</td>
+</tr>
+<tr>
+<td>2008/05/24</td>
+<td>電腦音樂與音訊技術研討會&nbsp;(WOCMAT 2008)</td>
+<td>台灣大學、台南藝術大學</td>
+<td>台灣大學</td>
+<td>電子音樂《風雷引》</td>
+</tr>
+<tr>
+<td>2008/04/25</td>
+<td>台南科技大學「互動創作研討會」</td>
+<td>台南科技大學多媒體與電腦娛樂科學系</td>
+<td>台南科技大學</td>
+<td>影音互動裝置《漣漪》（與黃英修博士合作）</td>
+</tr>
+<tr>
+<td>2008/03/18</td>
+<td>第十二屆古巴國際電子音樂節&nbsp;Spring in Havana</td>
+<td>The Cuban Institute of Music and the National Laboratory of Electroacousitc Music</td>
+<td>Habana, Cuba</td>
+<td>電子音樂《風雷引》</td>
+</tr>
+<tr>
+<td>2008/03/16</td>
+<td>Santa Fe International Festival of Electroacoustic Music</td>
+<td>College of Santa Fe</td>
+<td>College of Santa Fe, New Mexico, USA</td>
+<td>電子音樂《風雷引》</td>
+</tr>
+<tr>
+<td>2007/12/03</td>
+<td>NYU New Music Ensemble Concert</td>
+<td>Department of Music and Performing Arts Professions, New York University, Steinhardt</td>
+<td>New York University, Steinhardt School of Culture, Education, and Human Development, USA</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2007/10/31</td>
+<td>製樂小集系列音樂會&nbsp;—&nbsp;秋韻雅集</td>
+<td>許常會基金會</td>
+<td>許常會基金會藝文廳</td>
+<td>給長笛與電腦之互動音樂作品《飛蛾與火》</td>
+</tr>
+<tr>
+<td>2007/10/11</td>
+<td>台灣電腦音樂創作巡迴展</td>
+<td>中國電腦音樂學會</td>
+<td>新竹市立演藝廳</td>
+<td>給薩克斯風與電腦之互動音樂作品《風的素描》</td>
+</tr>
+<tr>
+<td>2007/05/13</td>
+<td>MusikTriennale Köln&nbsp;國際音樂節</td>
+<td>MusikTriennale Köln</td>
+<td>Köln, Germany</td>
+<td>給豎笛、小提琴、大提琴、鋼琴之四重奏《扁舟行》</td>
+</tr>
+<tr>
+<td>2007/05/10</td>
+<td>SEAMS 2007</td>
+<td>Society for Electro- Acoustic Music in Sweden</td>
+<td>Stockholm, Sweden</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2007/03/25</td>
+<td>Voices of Change作曲比賽音樂會</td>
+<td>美國Dallas交響樂團</td>
+<td>Southern Methodist University, USA</td>
+<td>給豎笛、小提琴、大提琴、鋼琴之四重奏《扁舟行》</td>
+</tr>
+<tr>
+<td>2007/03/18</td>
+<td>電腦音樂與音訊技術研討會&nbsp;(WOCMAT 2007)</td>
+<td>交通大學音樂研究所</td>
+<td>交通大學</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2007/03/09</td>
+<td>SEAMUS National Conference 2007</td>
+<td>Society for Electro-Acoustic Music in the United States</td>
+<td>Iowa State University, USA</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2007/02/19</td>
+<td>The 4th Annual Richard and Candance Faulk Scholars Concert (Faulk Scholars獎學金得主作品發表會)</td>
+<td>北德州大學作曲系</td>
+<td>University of North Texas, USA</td>
+<td>給長笛與電腦之互動音樂作品《飛蛾與火》;&nbsp;給豎笛、小提琴、大提琴、鋼琴之四重奏《扁舟行》</td>
+</tr>
+<tr>
+<td>2006/12/05</td>
+<td>「2006&nbsp;許常惠音樂創作獎」國際比賽決賽音樂會</td>
+<td>文建會</td>
+<td>中山堂</td>
+<td>給二胡、長笛、大提琴、鋼琴之四重奏《雪咒》</td>
+</tr>
+<tr>
+<td>2006/11/10</td>
+<td>ICMC 2006 (International Computer Music Conference)</td>
+<td>International Computer Music Association</td>
+<td>New Orleans, USA</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2006/07/03</td>
+<td>Synthese Festival 2006</td>
+<td>Institut International de Musique Electroacoustique de Bourges</td>
+<td>Bourges, France</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2006/03/31</td>
+<td>SEAMUS National Conference 2006</td>
+<td>Society for Electro-Acoustic Music in the United States</td>
+<td>University of Oregon, USA</td>
+<td>給薩克斯風與電腦之互動音樂作品《風的素描》</td>
+</tr>
+<tr>
+<td>2006/03/31</td>
+<td>Spark Festival of Electronic Music and Art 2006</td>
+<td>University&nbsp;of Minnesota</td>
+<td>University of Minnesota, USA</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>03/18/2006</td>
+<td>電腦音樂與音訊技術研討會&nbsp;(WOCMAT 2006)</td>
+<td>台灣師範大學音樂系</td>
+<td>台灣師範大學</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2006/03/06 ~ 2006/03/12</td>
+<td>第十一屆古巴國際電子音樂節Primavera En La Habana</td>
+<td>The Cuban Institute of Music and the National Laboratory of Electroacousitc Music</td>
+<td>Habana, Cuba</td>
+<td>影音作品《輪迴》、電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2006/02/05</td>
+<td>Santa FeInternational Festival of Electroacoustic Music&nbsp;&nbsp;2006</td>
+<td>College of Santa Fe</td>
+<td>College of Santa Fe, New Mexico, USA</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2005/11/12</td>
+<td>LaTex 2005 Electronic Music Festival</td>
+<td>University of Texas-Austin</td>
+<td>University of Texas-Austin, Texas, USA</td>
+<td>電子音樂《海底尋夢》</td>
+</tr>
+<tr>
+<td>2005/09/05</td>
+<td>ICMC 2006 (International Computer Music Conference)</td>
+<td>International Computer Music Association</td>
+<td>Barcelona, Spain</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2005/05/14</td>
+<td>台灣擊樂創作新聲&nbsp;–鼓掌</td>
+<td>台北打擊樂團</td>
+<td>台北新舞台</td>
+<td>擊樂六重奏《雨夜札記》</td>
+</tr>
+<tr>
+<td>2005/05/07</td>
+<td>The 2nd annual Bellingham Electronic Arts Festival</td>
+<td>Western Washington University</td>
+<td>Western Washington University, USA</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2005/04/19</td>
+<td>The 2nd&nbsp;Annual Richard and Candance Faulk Scholars Concert (Faulk Scholars獎學金得主作品發表會)</td>
+<td>北德州大學作曲系</td>
+<td>北德州大學作曲系</td>
+<td>給薩克斯風與電腦之互動音樂作品《風的素描》;&nbsp;給高音薩克斯風、中音撒克斯風、鋼琴之三重奏《秋夜之舞》</td>
+</tr>
+<tr>
+<td>2005/03/15</td>
+<td>SEAMUS National Conference 2005</td>
+<td>Society for Electro-Acoustic Music in the United States</td>
+<td>Ball State University, Indiana, USA</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2005/03/12</td>
+<td>電腦音樂與音訊技術研討會&nbsp;(WOCMAT 2005)</td>
+<td>台灣大學</td>
+<td>台灣大學</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2005/02/07</td>
+<td>New Music Arts Series - New Music / New Media</td>
+<td>Southern Oklahoma State University</td>
+<td>Southern Oklahoma State University, USA</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2004/11/18</td>
+<td>Most Significant Bytes 2004 II – Multimedia Concert</td>
+<td>Mount Union College</td>
+<td>Mount Union College, Ohio, USA</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2004/11/12</td>
+<td>LaTex 2004 Electronic Music Festival</td>
+<td>Shepherd School of Music</td>
+<td>Shepherd School of Music, Texas, USA</td>
+<td>影音作品《輪迴》</td>
+</tr>
+<tr>
+<td>2004/04/25</td>
+<td>Santa FeInternational Festival of Electroacoustic Music, 2004</td>
+<td>College of Santa Fe</td>
+<td>College of Santa Fe, New Mexico, USA</td>
+<td>電子音樂《三摩地》</td>
+</tr>
+<tr>
+<td>2004/09/26</td>
+<td>「2004年青年作曲者傑出作品甄選、演奏」</td>
+<td>許常會基金會</td>
+<td>許常會基金會藝文廳</td>
+<td>給高音薩克斯風、中音撒克斯風、鋼琴之三重奏《秋夜之舞》</td>
+</tr>
+<tr>
+<td>2004/03/15 ~ 2004/03/27</td>
+<td>第十屆古巴國際電子音樂節Primavera En La Habana</td>
+<td>The Cuban Institute of Music and the National Laboratory of Electroacousitc Music</td>
+<td>Habana, Cuba</td>
+<td>電子音樂《三摩地》</td>
+</tr>
+<tr>
+<td>2002/11/23</td>
+<td>啟動台灣的聲音&nbsp;–管弦樂篇</td>
+<td>中正文化中心</td>
+<td>中正文化中心</td>
+<td>管弦樂《時間印象》</td>
+</tr>
+</tbody>
+</table>
+    </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_tai">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content">
+
+                      <div class="close-teacher_list_tai">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container"  onscroll="scrollimg('tai01');">
+                                <div class="teacher_detail_img">
+    <img class="tai01" src="./images/tai01.png">
+    </div>
+    <div class="teacher_detail_description">
+<h2>戴楠青 Tai, Nan-ching</h2>
+<p><strong>E-mail</strong>：<a href="mailto:nctai@ntut.edu.tw">nctai@ntut.edu.tw</a><br>
+<strong>聯絡電話</strong> ：02-2771-2171 ext 8909<br>
+<strong>個人網頁</strong> ：<a href="http://www.cc.ntut.edu.tw/~nctai/" target="_blank">Light &amp; Space Research Lab</a><br>
+<strong>職稱</strong>：專任助理教授<br>
+<strong>研究範疇</strong>：數位製造 (Digital Fabrication) / &nbsp;實體互動設計 (Tangible Interaction Design) / &nbsp;高動態範圍數位影像 (High Dynamic Range Imagery) / &nbsp;光 (Light) / &nbsp;空間感知 (Space Perception)
+</p>
+<p><strong>學歷</strong>：<br>
+美國華盛頓大學建成環境博士<br>
+美國華盛頓大學建築碩士<br>
+國立台灣大學造船暨海洋工程學系學士</p>
+<p><strong>現職</strong>：<br>
+國立臺北科技大學互動設計研究所專任助理教授<br>
+淡江大學建築學系兼任助理教授</p>
+<p><strong>學術經歷</strong>：<br>
+淡江大學建築學系專任助理教授<br>
+美國華盛頓大學建築系研究員 (Pre-Doc Research Associate)<br>
+美國華盛頓大學建築系博士前教師 (Pre-Doc Teaching Associate)<br>
+美國華盛頓大學建築系兼任講師 (Part-Time Lecture)<br>
+美國華盛頓大學永續建築研究室研究員 (UW BaSiC Initiative Research Associate)</p>
+<p><strong>實務經歷</strong>：<br>
+西雅圖 Gail Wong 建築師事務所，設計顧問<br>
+西雅圖 Jo Moniz 建築師事務所，設計顧問<br>
+西雅圖 Pyatok 建築師事務所，實習設計師<br>
+西雅圖 Rob Harrison 建築師事務所，實習設計師<ggbr>
+西雅圖 Bassetti 建築師事務所，實習設計師<br>
+美國華盛頓大學景觀建築系網頁設計員<br>
+德國布萊梅 Lüssern 船廠實習生</p>
+
+<p><strong>論文及著述</strong></p>
+
+<p><strong>期刊論文</strong></p>
+<p>AHCI‭ & ‬SCI‭</p>
+<ol>
+  <li>N‭. ‬Tai. “Computational Investigation of the Illusory Depth Effect of Luminance Contrast on a Three-Dimensional Architectural Scene with Binocular Vision.” Journal of Asian Architecture and Building Engineering‭ (‬AHCI‭ & ‬SCIE‭), ‬Vol‭. ‬14‭, ‬No‭. ‬2‭, ‬2015‭, ‬pp 331-338‭. ‬DOI‭: ‬10.3130‭/‬jaabe.14.331‭.‬  EI‭:</li>
+  <li>N‭. ‬Tai. “Computational Investigation of the Effect of Luminance Contrast on Depth Perception in Physical and Simulated Scenes.” Computer-Aided Design and Applications (Scopus‭, ‬EI‭), ‬Vol‭. ‬12‭, ‬No‭. ‬1‭, ‬2014‭, ‬pp 61-66‭. ‬DOI‭: ‬10.1080/16864360.2014.949575
+</li>
+  <li>N‭. ‬Tai. “Application of Luminance Contrast in Architectural Design.” Computer-Aided Design and Applications ‭(‬Scopus‭, ‬EI‭)‬‭, ‬Vol‭. ‬10‭, ‬No‭. ‬6‭, ‬2013‭, ‬pp 953-963‭. ‬DOI‭: ‬10.3722‭/‬cadaps.2013.953-963</li>
+  <li>N. Tai and M. Inanici. “Luminance Contrast as Depth Cue: Investigation and Design Applications.” Computer-Aided Design and Applications (EI), Vol. 9, No. 5, 2012, pp 691-705.&nbsp;DOI: 10.3722/cadaps.2012.691-705</li>
+  <li>N. Tai. “Daylighting and Its Impact on Depth Perception in a Daylit Space.” Journal of Light &amp; Visual Environment (EI), Vol. 36, No. 1, 2012, pp 16-22.</li>
+  <li>N. Tai. “Space Perception in Real and Pictorial Spaces: Investigation of Size-Related and Tone-Related Pictorial Depth Cues through Computer Simulations.” Computer-Aided Design and Applications (EI), Vol. 9, No. 2, 2012, pp 235-251. DOI: 10.3722/cadaps.2012.235-251</li>
+</ol>
+
+<p><strong>研討會論文</strong></p>
+<ol>
+  <li>Y. Wu, N. Tai, Y. Hsu, and T. Yeh. “Integrating Coupon and E-Coupon: A Tangible Device for On- and Off-Location Marketing”. In Proceedings of the International Academic Conference on Social Sciences and Management (IACSSM 2015), pp 547-555. Okinawa, Japan, July 29-31, 2015.</li>
+  <li>R. Ong and N. Tai. “The Effect of Colored Lighting on Color-Depth Perception – Comparing Two Techniques”. In Proceedings of the 12th Annual International CAD Conference (CAD’15), pp 398-401. London, United Kingdom, June 22-25, 2015.</li>
+  <li>R. Ong and N. Tai. “Altering Perceived Depth of Objects with Colored Lighting”. In “Color and Image”, Proceedings of the Midterm Meeting of the International Colour Association (AIC 2015), pp 1307-1312. Tokyo, Japan, May 19-22, 2015.</li>
+  <li>N. Tai. “Nested Perspective: An Art Installation that Intersects the Physical and Virtual Social Worlds”. In Proceedings of the 6th Augmented Human International Conference (AH 2015), pp 205-206, Singapore, March 9-12, 2015. DOI: 10.1145/2735711.2735786</li>
+  <li>N. Tai. “Binocular Disparity and Depth Cue of Luminance Contrast: Investigation of Perceptual Influence of Binocular Disparity on Depth Effect of Luminance Contrast through Stereo Display”. In “Rethinking Comprehensive Design: Speculative Counterculture”, Proceedings of the 19th International Conference on Computer-Aided Architectural Design Research in Asia (CAADRIA 2014), pp 637-646, Kyoto, April 14-16, 2014.</li>
+  <li>C. Chuang and N. Tai. “Digital Environment to Envision and Experience the Art of Light and Space”. Computer Art Congress 3, Paris, France, November 26-28, 2012. (Accepted on 07/27/2012)</li>
+  <li>N. Tai and M. Inanici. “Space Perception and Luminance Contrast: Investigation and Design Applications through Perceptually Based Computer Simulations”. Symposium on Simulation for Architecture and Urban Design (SimAUD), Orlando, April 12-15, 2010.</li>
+  <li>N. Tai and M. Inanici. “Lighting in Real and Pictorial Spaces: A Computational Framework to Investigate the Scene Based Lighting Distributions and Their Impact on Depth Perception”. Association of Computer Aided Design and Research in Asia (CAADRIA) 2010 Conference, Hong Kong, April 7-10, 2010.</li>
+  <li>N. Tai and M. Inanici. “Depth Perception as a Function of Lighting, Time, and Spatiality”.&nbsp; Accepted as short paper, presented in the poster session in the Illuminating Engineering Society (IES) 2009 Conference, Seattle, November 15-17, 2009.</li>
+  <li>N. Tai and M. Inanici. “Depth Perception in Real and Pictorial Spaces: A Computational Framework to Represent and Simulate the Built Environment”. Association of Computer Aided Design and Research in Asia (CAADRIA) 2009 Conference, Yunlin, Taiwan, April 22-25, 2009.</li>
+</ol>
+<p><strong>專利</strong></p>
+<ol>
+  <li>使用社群網路程式驅動獲得實體物件之互動系統及其方法, 公開編號:201612822</li>
+</ol>
+<p><strong>創作作品</strong></p>
+<ol>
+  <li>Nested Perspective，展於新加坡Augmented Human 2015 國際研討會，Demo Session，March 9, 10, 11, 2015</li>
+  <li>SEE[N]，展於「絕對光音」於臺北MEME覓空間，2014</li>
+  <li>L.INK，展於 「Design In」於美國紐約經濟文化辦事處，2013</li>
+</ol>
+<p><strong>專書多媒體製作</strong><br>
+  </p><p>“設計圖學”之多媒體光碟教材設計<br>
+  Electronic component of“Design Drawing”.<br>
+  (Francis D.K. Ching. “Design Drawing”. New Jersey: John Wiley &amp; Sons, Inc., 2010.)</p>
+  <p>“建築：形體，空間，與秩序”之多媒體光碟教材設計<br>
+  Electronic component of “Architecture: Form, Space, and Order”.<br>
+  (Francis D.K. Ching. “Architecture, Form, Space &amp; Order”. New Jersey: John Wiley &amp; Sons, Inc., 2007.)</p>
+
+
+
+
+
+
+    </div>  
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_lung">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content" >
+
+                      <div class="close-teacher_list_lung">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container"  onscroll="scrollimg('lung01');">
+                                <div class="teacher_detail_img">
+    <img class="lung01" src="./images/lung01.png">
+    </div>
+    <div class="teacher_detail_description">
+<h2>龍祈澔&nbsp;Lung, Chi-Hao</h2>
+<p><strong>E-mail</strong>：<a href="mailto:drag0725@yahoo.com.tw">drag0725@yahoo.com.tw</a><br>
+ <strong>聯絡電話</strong>：02-2771-2171 ext 8910 <br>
+ <strong>職稱</strong>：專任助理教授 <br>
+<strong>研究範疇</strong>：虛擬與網路空間 (Virtual andCyberspace) &nbsp;/ &nbsp;後人類文化 (Post-Human Culture) &nbsp;/ &nbsp;數位介面與超身體現象 (Digital UI and Hyper Body phenomena) &nbsp;/ &nbsp;數位藝術相關研究 (Digital Arts)</p>
+<p><strong>學歷</strong>：<br>
+  澳洲University of Sunshine Coast&nbsp;藝術創作博士<br>
+  澳洲Griffith University數位設計碩士<br>
+  國立台灣藝術大學美術系學士</p>
+<p><strong>現職</strong>：<br>
+  國立臺北科技大學互動設計研究所專任助理教授<br>
+  國立台灣藝術大學視覺傳達學系兼任助理教授</p>
+<p><strong>學術經歷</strong>：<br>
+  台北實踐大學3D動畫兼任講師<br>
+  國立台灣藝術大學視覺傳達學系兼任講師<br>
+  國立交通大學應用藝術研究所數位影像創作業界教師<br>
+  南華大學視覺媒體藝術學系專任助理教授</p>
+  <p><strong>實務與獎展經歷：</strong></p>
+<p><strong>&lt;實務&gt;</strong></p>
+<ul>
+  <li>台北丸井廣告公司設計師</li>
+  <li>頑石創意擔任動畫及產品設計</li>
+</ul>
+<p><strong>&lt;獲獎經歷&gt;</strong></p>
+<ul>
+  <li>2010年 入選高雄獎</li>
+  <li>2007年「聽見．樂世界」系列精品獲GD-Mark&nbsp;優良產品設計獎</li>
+  <li>2006年 領導製作卡滋幫動畫網路內容獲國際動畫雛形獎</li>
+  <li>2000年 獲南瀛美展的水墨創作獎</li>
+  <li>2000年 Georg Jensen Shape Is The Style&nbsp;素描創作比賽冠軍</li>
+  <li>1999年 第9屆國際版畫素描雙年展</li>
+  <li>1999年 獲NOKIA藝術創作獎</li>
+  <li>1999年 獲國立臺灣藝術大學年度傑出藝術創作獎</li>
+</ul>
+<p><strong>&lt;展覽&gt;</strong></p>
+<ul>
+  <li>2011年 藝術脈流計畫－脈波貳 未來之身&nbsp; 華山藝文特區</li>
+  <li>2011年 夏日風情聯展 一票票藝術空間</li>
+  <li>2010年 小時候－70s世代藝術家族群 Part-2洪建全教育文化基金會覓空間、土思藝術</li>
+  <li>2009年 一閃而過－台灣’70s世代藝術家族群&nbsp; 鳳甲美術館</li>
+  <li>2009年 The Second Big Bang-the new age of human evolution, Project Art Gallery Wollongong NSW Australia</li>
+</ul>
+
+
+
+    </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="teacher_list_ko">
+             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="border1">
+              <div class="border2">
+                  <div class="animatedModal-content"  >
+
+                      <div class="close-teacher_list_ko">
+                  
+                      </div>
+
+                      <div class="modal-content">
+                          <!--Your modal content goes here-->
+
+
+                          <div id="single-post-container" onscroll="scrollimg('ko01');">
+                                <div class="teacher_detail_img">
+    <img class="ko01" src="./images/ko01.png">
+    </div>
+    <div class="teacher_detail_description">
+<h2>葛如鈞 Ko, Ju-Chun</h2>
+<p><strong>E-mail</strong>：<a href="mailto:dablog@gmail.com">dablog@gmail.com</a><br>
+ <strong>聯絡電話</strong>：02-2771-2171 ext 8911 <br>
+ <strong>職稱</strong>：專任助理教授 <br>
+<strong>研究範疇</strong>：虛擬實境 / 擴增實境 / 人機互動介面 / 數位媒體設計 / 行動APP開發設計</p>
+<p><strong>學歷</strong>：<br>
+  國立臺灣大學 資訊網路與多媒體研究所 博士 (2012/01畢)<br>
+  澳元智大學 資訊傳播所-數媒設計組 碩士 (2005/06畢)<br>
+  淡江大學 資訊傳播系 學士 (2003/06畢)</p>
+<p><strong>現職</strong>：<br>
+  國立臺北科技大學互動設計研究所專任助理教授</p>
+
+<p><strong>學術經歷</strong>：</p>
+<ul>
+  <li>日本慶應大學媒體設計研究所 博士後研究 (2014/02-08)</li>
+  <li>台北市政府替代役 (2012-2013.11.25)</li>
+  <li>實踐大學媒傳所 兼任助理教授 (2011/09-2012/06)<p></p>
+  </li>
+</ul>
+<p><strong>Experience</strong></p>
+<ul>
+  <li>講師助理, 私立蘭陽技術學院 — 2005</li>
+  <li>講師, 國立臺灣大學 計算機中心資訊應用課程: Flash多媒體動畫 — 2005~ 2008</li>
+  <li>共同創辦人, OpenHCI 2009 第一屆臺灣大學人機互動跨校系學生工作坊」 — http://2009.openhci.com/ –– 2009</li>
+  <li>講師, 「文建會 2010年科技與表演藝術結合旗艦計畫-表演藝術與科技跨界工作坊系列-『2010 多媒體3D互動工作坊』」 — http://www.artplustech.org.tw/</li>
+  <li>研究助理, 國科會工程處整合型計畫「機器人輔助之人性化術後照護環境 (Human-Centric Robot-Assisted Recovery Environment)」 —2005~ 2008</li>
+  <li>創辦人暨第一任會長, 國立臺灣大學網媒所所學生會 — 2010~ 2011</li>
+  <li>研究助理, 國科會工程處整合型計畫「活化術後老人身心功能優質照護環境」 (A High-quality Recovery Environment for Revitalizing Post-surgery Elders' Physiological and Psychological Functions)」 —2008~ 2011</li>
+  <li>研究助理, 國立臺灣大學醫學院附設醫院 100 年度研究計畫「胸腔手術病人之呼吸復健與多媒體輔助之研究 (Research on Respiratory Rehabilitation and Multimedia Assistance for post-thoracic surgery patients.)」 — 2011</li>
+  <li>顧問, 受邀擔任100年新聞局網路文宣顧問 –– 2011</li>
+  <li>創辦人兼任執行長, Linkwish, Inc. 林克威許（股）公司 –– 2011～2012</li>
+  <li>評審, 經濟部工業局/台視/友松製作 電視競賽節目 AppStar 高手爭霸戰–– 2011</li>
+  <li>創辦人, TPE TechMeetup 2012 第一屆臺灣大學青年科技創業座談分享 — http://www.techmeetup.tw/ –– 2012</li>
+  <li>創辦人, Facebook Hack Taiwan Meetup&nbsp;</li>
+  <li>兼任助理教授, 實踐大學媒體傳達設計系/研究所 –– 2011～2012</li>
+  <li>執行團隊兼任執行長, SLP (Startup Leadership Program) Taipei –– 2013～2014</li>
+</ul>
+<p><strong>授課與演講</strong></p>
+<ul>
+  <li>「在網路時代生存的十大秘技」–國安會 99年度網路議題諮詢會議 講座</li>
+  <li>「無畏網路浪潮、築起對話營火」–總統府 99年度網路議題諮詢會議與談報告</li>
+  <li>經濟部官方網站改善會議 –經濟部秘書室公關新聞科</li>
+  <li>「網路媒體溝通策略」–100年度中高階公務人員赴美國研究所及喬治華盛頓大學短期研習國內第二階段課程</li>
+  <li>網路媒體溝通策略」–行政院勞工委員會高階人員領導才能發展研習班 講座</li>
+  <li>「100年度國民年金宣導計畫專家諮詢會議」– 內政部社會司</li>
+  <li>行政院新聞局政府網路文宣檢視顧問團 顧問</li>
+  <li>「網路社群溝通互動」–行政院大陸委員會專題演講 講座</li>
+  <li>「網路社群媒體溝通策略」– 交通部專題演講 講座</li>
+  <li>「更快更好更便宜，提升網路競爭力」– 100年6月18日總統府治國週記對談</li>
+  <li>「媒體溝通策略–與網路社群互動」–國立嘉義大學 講座</li>
+  <li>「媒體溝通策略–與網路社群互動」–行政院勞工委員會中部辦公室 講座</li>
+  <li>「網路社群溝通工具」–行政院新聞局 專題演講</li>
+  <li>「網路媒體溝通策略」–行政院僑務委員會 專題演講</li>
+  <li>「網路社群媒體互動」–衛生署100年度第3次衛生機關聯繫會議 專題演講</li>
+  <li>100 年度行政院暨所屬中央機關科長研習班第 28, 34, 46, 51, 52, 60, 66, 69,70,&nbsp;84 期課程 講座</li>
+</ul>
+<p><strong>Award</strong></p>
+<ul>
+  <li>連續四屆入圍/獲獎於 臺北數位藝術節暨李國鼎科技藝術獎（2007, 2008, 2009, 2010）</li>
+  <li>入選, 「一個都不能少」, 第二屆臺北數位藝術節; 臺北, 臺灣 -- 2007.12</li>
+  <li>Finalists, "Not One Less", The Second Taipei Digital Art Festival; Taipei, Taiwan</li>
+  <li>銀獎, 「一個都不能少」, 李國鼎科技藝術獎; 臺北, 臺灣 -- 2007.12</li>
+  <li>Silver Prize, "Not One Less", kt Digital Art Award 2007; Taipei, Taiwan</li>
+  <li>銀獎, 「塔羅斯」, 李國鼎科技藝術獎; 臺北, 臺灣 -- 2008.9</li>
+  <li>Silver Prize, "Wetris", kt Digital Art Award 2008; Taipei, Taiwan</li>
+  <li>決選, 「Tetris360」, 國際獨立遊戲祭大賞 2008 ; 華盛頓, 美國 -- 2008.10</li>
+  <li>Final lists, "Tetris360", Independent Arcade Festivals 2008; Washinton, USA</li>
+  <li>參獎, 「 轉吧！轉吧！八面玲瓏璇光柱」, 第三屆宏碁龍騰微笑創意競賽 ; 臺北,&nbsp;臺灣 -- 2008.11</li>
+  <li>Third place award, " We Touch, We Play, We're All Around in a Round：Multitouch Cylindrical Display", The 3rd ACER Long-Term Award; Washinton, USA</li>
+  <li>技術創新獎, 「點蝕成金」, 李國鼎科技藝術獎; 臺北, 臺灣 -- 2009.9</li>
+  <li>Technical Break Through Prize, "Turning Rust into Gold.", kt Digital Art Award 2009; Taipei, Taiwan</li>
+  <li>決選, 「正眛相」, 李國鼎科技藝術獎; 臺北, 臺灣 -- 2010.9</li>
+  <li>Finalist, "正眛相", kt Digital Art Award 2010; Taipei, Taiwan</li>
+  <li>受邀演出, 「只聽到X的感覺」科技藝術表演, 台北市文化局指導– 2010新媒體跨領域表演藝術交流祭; 鴉埠, 臺北, 臺灣 — 2010.12</li>
+  <li>"Just F/Hearing to X", Taiwan Electronic Tiger Festival, 鴉埠; Taipei, Taiwan</li>
+  <li>受邀展出, 「 正眛相」, 超旅程－2012未來媒體藝術節; 關渡美術館, 臺北, 臺灣&nbsp;— 2012.1</li>
+</ul>
+<p><strong>Publication</strong></p>
+<ol>
+  <li>朱菲比、林純儀、王祥安、葛如鈞。互動式多媒體網頁編輯，TANET 2008，臺南，義守大學，2008年5月。</li>
+  <li>葛如鈞、余孟杰、洪一平。結合生理回饋與互動 式多媒體於放鬆訓練，二○○七數位生活科技研討會，臺南，成功大學，2007年5月。</li>
+  <li>Su-Chu Hsu, Ju-Chun Ko, “Authorship and Liquidity in Wikiart.” WikiPedia 2007: The International Conference of Wikimedia, Taipei, Taiwan, July 2007.</li>
+  <li>Ju-Chun Ko, Yi-Ping Hung, Hao-Hua Chu, “Mug-Tree: A Playful Mug to Encourage Healthy Habit of Drinking Fluid Regularly.” ACM UbiComp 2007, Innsbruck, Austria, September 2007.</li>
+  <li>Meng-Chieh Yu, Yi-Ping Hung, King-Jen Chang, Jin-Shing Chen, Su-Chu Hsu, Ju-Chun Ko, Ching-Yao, “Multimedia Feedback for Improving Breathing Habit.” IEEEU-Media 2008, Lanzhou University, China, July 2008.</li>
+  <li>Yu-Hsin Chang, Li-Wei Chan, Ju-Chun Ko, Ming-Sui Lee, Jane Hsu, Yi-Ping Hung,“QPalm: A gesture recognition system for remote control with list menu.” IEEE UMedia2008, Lanzhou University, China, July 2008.</li>
+  <li>Christine Lin, Fei-pi Chu, Hsiang-An Wang, Ju-Chun Ko, “Interactive MultimediaOn-line Editor Applied to E-learning.” eLearn 2008, USA, September 2008.</li>
+  <li>Christine Lin, Fei-pi Chu, Hsiang-An Wang, Ju-Chun Ko, “An InteractiveMultimedia Web Editor.” IEEE e-Science 2008, USA, December 2008.</li>
+  <li>Jin-Yao Lin, Yen-Yu Chen, Ju-Chun Ko, HuiShan Kao, Wei-Han Chen, Tsun-HungHsu, Yi-Ping Hung, “i-m-Tube: an Interactive Multi-Resolution Tubular Display.”ACM Multimedia 2009, Beijing, China, 19-24th October 2009.</li>
+  <li>Meng-Chieh Chiu, Shih-Ping Chang, Yu-Chen Chang, Hao-Hua Chu, Cheryl Chia-Hui Chen, Fei-Hsiu Hsiao, Ju-Chun Ko, “Playful bottle: a mobile social persuasionsystem to motivate healthy water intake.” ACM UbiComp 2007, Innsbruck, Austria,September 2007.</li>
+  <li>Ju-Chun Ko, Li-Wei Chan, Yi-Ping Hung, “Public issues on projected userinterface,” ACM SIGCHI 2010 Extended Abstract. Atlanta, USA, 10-15th April 2010.</li>
+  <li>Li-Wei Chan, Hsiang-Tao Wu, Hui-Shan Kao, Home-Ru Lin, Ju-Chun Ko, Mike Y.Chen, Jane Hsu, Yi-Ping Hung, “Beyond the surface: 3D interactions for tabletopsystems.” ACM SIGGRAPH 2010 Emerging Technologies, Los Angeles, USA,26-30th July 2010.</li>
+  <li>Li-Wei Chan, Hsiang-Tao Wu, Hui-Shan Kao, Ju-Chun Ko, Home-Ru Lin, Mike Y.Chen, Jane Hsu, Yi-Ping Hung, “Enabling Beyond Surface Interactions for InteractiveSurface with An Invisible Projection.” ACM UIST 2010, New York, USA, 3-6thOctober 2010.</li>
+  <li>Ju-Chun Ko, Wei-Han Chen, Meng-Chieh Yu, Han-Hung Lin, Jin-Yao Lin, Szu-WeiWu, Yi-Yu Chung, I-Ling Hu, Wei-Ting Peng, Shih-Yao Lin, Chia Han Chang, Pei-Hsuan Chou, King-Jen Chang, Mei-Lan Chang, Sue-huei Chen, Jin-Shing Chen,Ming-Sui Lee, Mike Y. Chen, Yi-Ping Hung, “i-m-Space: Interactive Multimedia-Enhanced Space for Rehabilitation of Breast Cancer Patients.” ACM Multimedia2010, Florence, Italy, 25-29th October 2010.</li>
+  <li>Ju-Chun Ko, Wei-Han Chen, Meng-Chieh Yu, Han-Hung Lin, Jin-Yao Lin, Szu-WeiWu, Yi-Yu Chung, I-Ling Hu, Wei-Ting Peng, Shih-Yao Lin, Chia Han Chang, Pei-Hsuan Chou, King-Jen Chang, Mei-Lan Chang, Sue-huei Chen, Jin-Shing Chen,Ming-Sui Lee, Mike Y. Chen, Yi-Ping Hung, “i-m-Space: Interactive Multimedia-Enhanced Space for Rehabilitation of Breast Cancer Patients.” Journal ofNeuroEngineering and Rehabilitation. (Submitted. Pending Review)</li>
+  <li>Chun-Ko Hsieh, Xin Tong, Yi-Ping Hung, Chia-Ping Chen, Ju-Chun Ko, Meng-Chieh Yu, Han-Hung Lin, Szu-Wei Wu, Yi-Yu Chung, Liang-Chun Lin, Ming-SuiLee, Chu-Song Chen, Jiaping Wang, Quo-Ping Lin, I-Ling Liu, “TransformationalBreathing between Present and Past: Virtual Exhibition System of the Mao-KungTing.” ACM MMM’10: the 16th international conference on Advances in Multimedia Modeling</li>
+</ol>
+
+
+    </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+ </div>
+
+
+<!--DEMO test-->
+
+
+
+
+
+  <footer>
+    <!--中文版copyright-->
+    <span>opyright  2015 NTUT IxD </span>
+    <span>All Rights Reserved.</span>
+    <span>校址: 10608台北市忠孝東路三段一號</span>
+    <span>電話: 886-2-2771-2171 ext.8903</span>
+    <span>傳真: 886-2-8773-2913</span>
+    <!--英文版copyright-->
+  <!--  <span>Copyright © 2015 NTUT IxD</span>
+    <span>All Rights Reserved.</span>
+    <span>1, Sec. 3, Zhongxiao E. Rd., Taipei 10608 Taiwan, R.O.C.</span>
+    <span>Tel: 886-2-2771-2171#8903 </span>
+    <span>Fax: 886-2-8773-2913</span> -->
+  </footer>
+
+
+    <script src="js/nav-for-pages.js"></script>
+  <script src="js/nav-set.js"></script>
+  
+        <script src="js/animatedModal.js"></script>
+
+    <script type="text/javascript">
+
+  $('.scroll').click(function(){
+    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+    $body.animate({
+      scrollTop: $('#filter-button').offset().top
+    }, 600);
+
+    return false;
+  });
+
+
+
+
+
+
+
+
+
+
+            //demo 01
+            $("#lee01").animatedModal({
+                 modalTarget:'teacher_list_lee'
+
+            });
+            $("#wu01").animatedModal({
+                 modalTarget:'teacher_list_wu'
+
+            });
+            $("#tsau01").animatedModal({
+                 modalTarget:'teacher_list_tsau'
+
+            });
+            $("#chen01").animatedModal({
+                 modalTarget:'teacher_list_chen'
+
+            });
+            $("#wang01").animatedModal({
+                 modalTarget:'teacher_list_wang'
+
+            });
+            $("#cheng01").animatedModal({
+                 modalTarget:'teacher_list_cheng'
+
+            });
+            $("#tai01").animatedModal({
+                 modalTarget:'teacher_list_tai'
+
+            });
+            $("#lung01").animatedModal({
+                 modalTarget:'teacher_list_lung'
+
+            });
+            $("#ko01").animatedModal({
+                 modalTarget:'teacher_list_ko'
+
+            });
+
+
+      $(document).ready(function() {
+
+
+      });
+
+
+
+
+        // define images
+            var images = [
+              "./images/teacher01.png",
+              "./images/teacher02.png",
+              "./images/teacher03.png",
+              "./images/teacher04.png",
+              "./images/teacher05.png",
+              "./images/teacher06.png",
+              "./images/teacher07.png"
+            ];
+
+            // TweenMax can tween any property of any object. We use this object to cycle through the array
+            var obj = {curImg: 0};
+
+            // create tween
+            var tween = TweenMax.to(obj, 0.5,
+              {
+                curImg: images.length - 1,  // animate propery curImg to number of images
+                roundProps: "curImg",       // only integers so it can be used as an array index
+                repeat: 1,                  // repeat 1 times
+                immediateRender: true,      // load first image automatically
+                ease: Linear.easeNone,      // show every image the same ammount of time
+                onUpdate: function () {
+                  $("#myimg").attr("src", images[obj.curImg]); // set the image source
+                }
+              }
+            );
+
+            // init controller
+            var controller = new ScrollMagic.Controller();
+
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
+                    .setTween(tween)
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+
+            // handle form change
+            $("form.move input[name=duration]:radio").change(function () {
+              scene.duration($(this).val());
+            });
+
+    //mixup
+    $('#Container').mixItUp({
+      load: {
+        filter: '.category-teacher-1'
+      }
+    });
+  </script>
+
+    <!-------------------------------------------Loading ------------------------------------------------------------>
+
+    <script>
+        $(window).load(function () {
+            $(".Loading").fadeOut("slow");
+        });
+    </script>
+
+    <!-------------------------------------------Loading End------------------------------------------------------------>
+
+    <!-------------------------------------------    Font   ------------------------------------------------------------>
+    <script src="https://use.typekit.net/buy8zro.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-------------------------------------------  Font End  ----------------------------------------------------------->
+</body>
+</html>

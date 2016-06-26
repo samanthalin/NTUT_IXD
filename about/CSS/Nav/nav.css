@@ -1,0 +1,194 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+@media (min-width: 768px) {
+
+    .logo{
+        z-index: 0;
+    }
+
+    .topNav{
+
+      z-index: 1;
+        height: 45px;
+        width: 600px;
+        background: #444;
+        position: fixed;
+        left: 20vw;
+
+
+      margin-left: -600px;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      -webkit-transition: transform 0.5s ease-in;
+      -webkit-transition: -webkit-transform 0.5s ease-in;
+      transition: -webkit-transform 0.5s ease-in;
+      transition: transform 0.5s ease-in;
+      transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+
+
+
+    }
+
+
+    .open {
+      -webkit-transform: translate(0, 60px);
+      transform: translate(100%, 0px);
+      -webkit-animation: ddAnim 2s forwards;
+    }
+
+
+    .topNav ul {
+        margin-left: 10px;
+        float: left;
+    }
+
+    .topNav ul li{
+        display: inline;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 45px;
+        width: 100px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+
+
+    .topNav ul li a{
+        color: #fff;
+        cursor: pointer;
+        font-size: medium;
+        letter-spacing: normal;
+    }
+
+    .topNav ul li a:hover{
+        color: #ff2255;
+    }
+
+    .topNav-word{
+        float: right;
+        margin-right: 10px;
+        border-left: solid 1px #fff;
+        padding-left: 10px;
+        line-height: 1rem;
+        position: relative;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+    .topNav-word .zh{
+      width: 26px;
+      height: 26px;
+      background-image: url(../../IMG/zh.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+    }
+    .topNav-word .zh:hover{
+      background-image: url(../../IMG/zh_hover.png);
+    }
+    .topNav-word .en{
+      width: 26px;
+      height: 26px;
+      background-image: url(../../IMG/en.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+    }
+    .topNav-word .en:hover{
+      background-image: url(../../IMG/en_hover.png);
+    }
+
+
+    body header .logo .logo-text{
+        padding-left: 0px;
+    }
+
+
+    .topNav-icon{
+        color: #fff;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 45px 45px 0;
+        border-color: transparent #ff2255 transparent transparent;
+    }
+
+    .topNav-icon:hover{
+      border-color: transparent #444444 transparent transparent;
+    }
+
+    .topNav-icon i{
+      font-size: 20px;
+      position: absolute;
+      top: 3px;
+      margin-left: 23px;
+    }
+
+
+
+
+    .logo{
+   /* background-image: url('../images/nav-dufault.png');*/
+   background-image: url('/demo/About+News+Work/IMG/Nav/nav-active.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    }
+
+
+    .logo-change{
+    background-image: url('/demo/About+News+Work/IMG/Nav/nav-active.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    }
+
+    .mobile-version{
+        display: none;
+    }
+
+    body .hamburger{
+        display: none;
+    }
+
+
+    
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+   body header .title  {
+    /*font-size: 2rem;*/
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    body header .title  {
+
+      font-size: 1.5rem;
+
+
+    }
+}
+
+@media (max-width: 767px) {
+    .topNav-icon{
+        font-size: 1.5rem;
+         top: 10px;
+        right: 10px;
+
+    }
+
+    .pc-version{
+        display: none;
+    }
+
+    .topNav-icon{
+      display:none; 
+    }
+}

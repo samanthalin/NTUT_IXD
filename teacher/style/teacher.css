@@ -1,0 +1,725 @@
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body,html{
+    font-family: 'Noto Sans TC', sans-serif !important;
+}
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@charset "UTF-8";
+body,html {
+  font: 12px/20px 'open sans',sans-serif, "source-han-sans-traditional" !important;
+}
+
+
+/*Loading*/
+.Loading{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:#ccddcc;
+    z-index:100000;
+    text-align:center;
+    overflow:hidden;
+}
+.loader {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 10px solid #FBFBFB;
+  top: 40%;
+  animation: loader 4s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #FBFBFB;
+  animation: loader-inner 4s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+
+
+.teacher_heroslider{
+   
+    width: 100%;
+}
+
+body .category-teacher-1 .teacher-list .news{
+ border-width: 0px;
+}
+
+
+.teacher_detail{
+	border: 15px solid #ff2255;
+}
+
+body .teacher_detail_img{
+    position: fixed;
+    width:38%;
+    height:60%;
+    text-align:center;
+    float:left;
+    margin-right:5%;
+    margin-top: 5px;
+}
+@media screen and (max-width:767px) {
+    body .teacher_detail_img {
+        position:relative;
+        width:80%;
+        float:initial;
+        margin-left:10%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	   .teacher_detail_img{
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	   .teacher_detail_img{
+		float: left;
+	}
+}
+
+@media screen and (max-width: 480px) {
+      .teacher_banner{
+        margin-top:20vw;
+      }
+    }
+
+
+
+body .teacher_detail_description{
+    width:45%;
+    float:right;
+}
+@media screen and (max-width:767px) {
+    body .teacher_detail_description {
+        position:relative;
+        width:80%;
+        float:initial;
+        margin-left:10%;
+    }
+}
+
+.teacher_detail_description{
+ padding: 20px;
+}
+
+.teacher_detail_description h2{
+ line-height: 1.2;
+}
+
+
+.teacher_detail_description p,
+.teacher_detail_description ul,
+.teacher_detail_description ol
+{
+ margin: 20px 0px 20px 0px !important; 
+}
+
+.teacher_detail_description li
+{
+ margin-bottom: 10px; 
+}
+
+
+
+/*teacher list*/
+
+
+body .filter {
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    height: 80px;
+    clear: both;
+}
+body .filter a:hover { color: #ff2a54 }
+body .filter :nth-child(1),
+body .filter :nth-child(2),
+body .filter :nth-child(3),
+body .filter :nth-child(4),
+body .filter :nth-child(5) {
+    margin-top: 20px;
+    display: inline-block;
+}
+@media screen and (max-width:629px) { 
+    body .filter {
+        height: auto;
+        padding-top: 5px;
+    }
+    body .filter span { display: none }
+    body .filter :nth-child(1),
+    body .filter :nth-child(3),
+    body .filter :nth-child(5) {
+        display: block;
+        margin-top: 0;
+    }
+    body .filter :nth-child(2),
+    body .filter :nth-child(4) { display: none }
+    body .filter a {
+        display: block;
+        margin-bottom: 5px;
+    }
+    body .filter br { display: none }
+}
+@media screen and (min-width:629px) { 
+    body .filter { padding-bottom: 20px }
+}
+
+
+body .teacher-list {
+    position: relative;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -605px;
+    width: 1211px;
+}
+body .teacher-list .news {
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 450px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    background-color: #e8ead5;
+    float: left;
+    border: 2px solid #353530;
+}
+body .teacher-list .news:nth-child(4n+1) { margin-left: 0 }
+body .teacher-list .news .news-img {
+    width: 100%;
+    height: 280px;
+    background-color: #eed9af;
+    margin-bottom:15px;
+}
+body .teacher-list .news .news-text {
+    width: 100%;
+    height: 170px;
+    background-color: #488784;
+    margin-top: 280px;
+}
+@media screen and (min-width:940px) and (max-width:1250px) { 
+    body .teacher-list .news:nth-child(4n+1) { margin-left: 25px }
+    body .teacher-list .news:nth-child(3n+1) { margin-left: 0 }
+}
+@media screen and (min-width:630px) and (max-width:939px) { 
+    body .teacher-list .news:nth-child(4n+1) { margin-left: 25px }
+    body .teacher-list .news:nth-child(2n+1) { margin-left: 0 }
+}
+@media screen and (max-width:629px) { 
+    body .teacher-list .news { margin-left: 0 }
+}
+@media screen and (min-width:940px) and (max-width:1250px) { 
+    body .teacher-list {
+        width: 902px;
+        margin-left: -451px;
+    }
+}
+@media screen and (min-width:630px) and (max-width:939px) { 
+    body .teacher-list {
+        width: 593px;
+        margin-left: -297px;
+    }
+}
+@media screen and (max-width:629px) { 
+    body .teacher-list {
+        width: 284px;
+        margin-left: -142px;
+    }
+}
+
+
+
+
+.content img { 
+width: 100px;}
+
+
+h2{
+	font-size: 2rem;
+}
+
+.content{
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.teacher-list .teacher-form {
+    text-align: left;
+}
+.teacher-list .teacher-img{
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+
+
+.teacher-list .teacher-lee{
+    background-image: url(../images/Lee.jpg);
+
+}
+
+.teacher-list .teacher-wu{
+  background-image: url(../images/Wu.jpg);
+}
+
+.teacher-list .teacher-tsau{
+  background-image: url(../images/Tsau.jpg);
+}
+
+.teacher-list .teacher-chen{
+  background-image: url(../images/Chen.jpg);
+}
+
+.teacher-list .teacher-wang{
+  background-image: url(../images/Wang.jpg);
+}
+
+.teacher-list .teacher-cheng{
+  background-image: url(../images/Cheng.jpg);
+}
+
+.teacher-list .teacher-tai{
+  background-image: url(../images/Tai.png);
+}
+
+.teacher-list .teacher-lung{
+  background-image: url(../images/Lung.jpg);
+}
+
+.teacher-list .teacher-ko{
+  background-image: url(../images/Ko.jpg);
+}
+
+
+
+.teacher-list .teacher-text{
+    padding: 30px 20px;
+}
+
+
+
+
+/*Modal*/
+.animatedModal-content{
+    background-color:#fff;
+    position:fixed;
+    top:15%;
+    left:10%;
+    display:block;
+    width:80%;
+    height:70%;
+    box-sizing:content-box;
+}
+.animatedModal-content img{
+      height: 100%;
+}
+    @media screen and (min-width:768px){
+        .animatedModal-content img{
+              margin-top: -10%;
+        }
+    }
+
+ 
+@media screen and (max-width:767px) {
+    .animatedModal-content {
+        width:100%;
+        height:95%;
+        top:0;
+        left:0;
+    }
+}
+.modal-content{
+    margin-left:25px;
+    margin-right:25px;
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 90%;
+}
+#teacher_list_lee .border1,
+#teacher_list_wu .border1,
+#teacher_list_tsau .border1,
+#teacher_list_chen .border1,
+#teacher_list_wang .border1,
+#teacher_list_cheng .border1,
+#teacher_list_tai .border1,
+#teacher_list_lung .border1,
+#teacher_list_ko .border1{
+    background-color:#ff2a54;
+    position:fixed;
+    display:block;
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    z-index: 9998;
+    border-color: #ff2a54;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    box-sizing: initial;
+}
+@media screen and (max-width:767px) {
+    #teacher_list_lee .border1,
+    #teacher_list_wu .border1,
+    #teacher_list_tsau .border1,
+    #teacher_list_chen .border1,
+    #teacher_list_wang .border1,
+    #teacher_list_cheng .border1,
+    #teacher_list_tai .border1,
+    #teacher_list_lung .border1,
+    #teacher_list_ko .border1 {
+        width:100%;
+        height:100%;
+        top:0%;
+        left:0%;
+    }
+}
+    #teacher_list_lee .border2,
+    #teacher_list_wu .border2,
+    #teacher_list_tsau .border2,
+    #teacher_list_chen .border2,
+    #teacher_list_wang .border2,
+    #teacher_list_cheng .border2,
+    #teacher_list_tai .border2,
+    #teacher_list_lung .border2,
+    #teacher_list_ko .border2{
+    background-color:#ff2a54;
+    position:fixed;
+    display:block;
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    z-index: 9997;
+    border-color: #ff2a54;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    box-sizing: initial;;
+}
+@media screen and (max-width:767px) {
+    #teacher_list_lee .border2,
+    #teacher_list_wu .border2,
+    #teacher_list_tsau .border2,
+    #teacher_list_chen .border2,
+    #teacher_list_wang .border2,
+    #teacher_list_cheng .border2,
+    #teacher_list_tai .border2,
+    #teacher_list_lung .border2,
+    #teacher_list_ko .border2 {
+        border-style:none;
+    }
+}
+.close-teacher_list_lee,
+.close-teacher_list_wu,
+.close-teacher_list_tsau,
+.close-teacher_list_chen,
+.close-teacher_list_wang,
+.close-teacher_list_cheng,
+.close-teacher_list_tai,
+.close-teacher_list_lung,
+.close-teacher_list_ko{
+    width: 50px;
+    height:50px;
+    float:right;
+    text-align: right;
+    background-image:url("../images/cross_circle_gray.svg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin:15px;
+}
+.close-teacher_list_lee:hover,
+.close-teacher_list_wu:hover,
+.close-teacher_list_tsau:hover,
+.close-teacher_list_chen:hover,
+.close-teacher_list_wang:hover,
+.close-teacher_list_cheng:hover,
+.close-teacher_list_tai:hover,
+.close-teacher_list_lung:hover,
+.close-teacher_list_ko:hover {
+    background-image:url("../images/cross_circle_pink.svg");
+    transform: rotate(180deg);
+    transition: 0.5s ; 
+    cursor: pointer;
+}
+
+
+.modal-content #single-post-container{
+  width: 100%;
+    height: 90%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+
+
+/*教師諮詢*/
+.teacher-advisory {
+    line-height: 1.2;
+}
+.teacher-advisory tr,
+.teacher-advisory th,
+.teacher-advisory td
+{
+    border:1px solid #323237;
+}
+
+.teacher-advisory tr:first-child,
+.teacher-advisory  tr:nth-child(2){
+    background-color: #ff2255;
+}
+
+
+  .teacher-advisory table{
+        width: 100%;
+      
+    }
+
+
+ .teacher-advisory {
+     margin-bottom: 100px;
+    text-align: center;
+     position: relative;
+    overflow: hidden;
+    left: 50%;
+     width: 902px;
+         margin-left: -451px;
+ }
+
+
+@media screen and (min-width:940px) and (max-width:1250px) { 
+    .teacher-advisory  {
+        width: 902px;
+         margin-left: -451px;
+      
+    }
+
+  
+}
+@media screen and (min-width:630px) and (max-width:939px) { 
+   .teacher-advisory {
+        width: 593px;
+         margin-left: -296px;
+      
+    }
+}
+@media screen and (max-width:629px) { 
+    .teacher-advisory  {
+        width: 284px;
+       margin-left: -142px;
+    }
+}
+
+
+
+/*兼任師資*/
+.sub-teacher-list img{
+    width: 50%;
+}
+
+.sub-teacher-list .teacher-text{
+    text-align: left;
+}
+
+body .sub-teacher-list .teacher-list .news{
+    background-color: #fff;
+    border-width: 0px;
+}
+
+.sub-teacher-list h2{
+    
+   text-align: center;
+   line-height: 4;
+    
+ }
+
+ @media screen and (min-width:630px) { 
+   img.teacher_advisory_time_mobile{
+        display: none;
+    }
+
+}
+@media screen and (max-width:629px) { 
+    img.teacher_advisory_time_pc{
+        display: none;
+      
+    }
+}
+
+
+/*諮商時間*/
+.sub-teacher-list .teacher-advisory img{
+    width: 100%;
+}
+
+
+@media screen and (min-width:940px) and (max-width:1250px) { 
+   .sub-teacher-list h2  {
+     
+      
+    }
+
+  
+}
+@media screen and (min-width:630px) and (max-width:939px) { 
+   .sub-teacher-list h2{
+       
+      
+    }
+}
+@media screen and (max-width:629px) { 
+    .sub-teacher-list h2  {
+        
+    }
+}
+
+
+
+/*mix up*/
+input,button,select,textarea{outline:none}
+ *:focus { outline: none; }
+
+ .mix{
+    display: none;
+}
+
+#filter-button{
+
+    width: 100%;
+    text-align: center;
+}
+
+#filter-button button.filter{
+   
+clear:both;
+width: initial;
+height: initial;
+padding: 10px 20px;
+margin: 50px 10px;
+border-radius: 50px;
+border:2px solid #000;
+background-color: #fff;
+font-size: 1.5rem;
+font-family:'open sans',sans-serif, "source-han-sans-traditional" !important;
+}
+    @media screen and (max-width: 480px){
+        #filter-button button.filter{
+            margin: 10px 10px;
+        }
+    }
+
+#filter-button button.filter:hover{
+     cursor: pointer;
+color: #fff;
+background-color: #ff2255;
+
+}
+.hidden{
+    display:none;
+}
+
+
+/*scoll down*/
+
+
+.scroll {
+  width: 36px;
+  height: 58px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+
+.scroll .fa {
+  color: #000;
+  text-align: center;
+  font-size: 1.6em;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  -webkit-animation: mymove 4s infinite;
+  /* Chrome, Safari, Opera */
+  animation: mymove 4s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/* Standard syntax */
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 0px;
+  }
+}
